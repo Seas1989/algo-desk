@@ -11,6 +11,8 @@
 
 ![总览](docs/screenshot-home.png)
 
+![做题计划](docs/screenshot-plan.png)
+
 ## 多账号
 
 没有服务器，所以不校验密码，也不假装有。顶栏「登录」做的事是：**在这台浏览器里记下你要看的账号**——一个 CF handle + 一个可选的洛谷 UID，存本机 `localStorage`，可存多个、来回切换、随时移除。handle 和 UID 本来就是公开标识，不存在泄露什么。洛谷 UID 不知道填什么？直接粘整条个人主页链接（`luogu.com.cn/user/<UID>`）就能识别。

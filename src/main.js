@@ -270,7 +270,11 @@ function render() {
       route === 'about'
         ? views.about()
         : route === 'home'
-          ? guestLanding({ onChange: onAccountChange })
+          ? guestLanding({
+              onChange: onAccountChange,
+              // 试看：不落盘、不加账号，只把这次请求当临时账号
+              onTry: (handle) => applyAccount({ id: 'adhoc', cf: handle, luogu: '', label: handle, adhoc: true }),
+            })
           : guestPrompt(route, { onChange: onAccountChange });
     const main = h('main', { class: 'wrap page-in' }, el);
     shell(main);

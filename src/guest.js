@@ -20,8 +20,23 @@ function loginCta(onChange, text = '登录，看自己的数据') {
   return h('button', { class: 'btn primary', type: 'button', onClick: () => openLogin({ onChange }) }, text);
 }
 
-/** 首页：把「这是什么」讲清楚 */
-export function guestLanding({ onChange } = {}) {
+/** 首页：把「这是什么」讲清楚，并且让陌生人 5 秒看到自己的数据 */
+export function guestLanding({ onChange, onTry } = {}) {
+  const handle = h('input', {
+    class: 'input guest-handle',
+    type: 'text',
+    placeholder: '输入 Codeforces handle',
+    autocomplete: 'off',
+    spellcheck: 'false',
+  });
+  const go = () => {
+    const v = handle.value.trim();
+    if (v) onTry?.(v);
+  };
+  handle.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') go();
+  });
+
   return h(
     'div',
     { class: 'stack' },
@@ -35,8 +50,18 @@ export function guestLanding({ onChange } = {}) {
         { class: 'lede' },
         '把 Codeforces 和洛谷的比赛、没做完的题、该补的算法放在一张桌子上。',
       ),
-      h('div', { class: 'guest-actions' }, loginCta(onChange)),
-      h('p', { class: 'guest-note' }, '这个站没有服务器，账号只记在你自己这台浏览器里，不会上传。'),
+      h(
+        'div',
+        { class: 'guest-try' },
+        handle,
+        h('button', { class: 'btn primary', type: 'button', onClick: go }, '立即看我的'),
+      ),
+      h(
+        'p',
+        { class: 'guest-note' },
+        '不用注册、不用密码——数据是从 Codeforces 公开接口现拉的。想长期用再点「登录」，账号只记在本机。',
+      ),
+      h('div', { class: 'guest-actions guest-actions-sub' }, loginCta(onChange, '登录 / 添加洛谷')),
     ),
 
     h(

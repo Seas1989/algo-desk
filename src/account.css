@@ -380,3 +380,9 @@ body.acct-open {
 .plan-ai-field { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--dim); }
 .plan-num { width: 62px; padding: 6px 8px; min-width: 0; }
 .plan-ai .plan-err { flex: 1 1 100%; }
+
+/* 首页「立即体验」输入 */
+.guest-try { display: flex; gap: 8px; margin: 18px 0 10px; flex-wrap: wrap; }
+.guest-handle { width: 260px; max-width: 100%; }
+.guest-actions-sub { margin-top: 14px; }
+.guest-actions-sub .btn { font-size: 12px; padding: 6px 12px; }
