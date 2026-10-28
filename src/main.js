@@ -191,6 +191,7 @@ function navBar() {
         data ? h('span', { class: 'updated mono' }, `更新 ${fmtDate(Date.parse(data.summary.generatedAt) / 1000)}`) : null,
         handleSearchBar(),
         themeButton(),
+        h('a', { class: 'btn ghost', href: 'https://www.luogu.com.cn', target: '_blank', rel: 'noreferrer' }, '洛谷 ↗'),
         h('a', { class: 'btn ghost', href: 'https://codeforces.com', target: '_blank', rel: 'noreferrer' }, 'Codeforces ↗'),
       ),
     ),
