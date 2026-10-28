@@ -57,14 +57,22 @@ function absorb(res) {
   }
 }
 
+/**
+ * 发请求。洛谷前面挂着一层反爬：首次访问会 302/307 回同一地址并下发 C3VK cookie，
+ * 必须带着它原样重发（POST 也要重发，不能降级成 GET）。这里统一处理，最多 4 轮。
+ */
 async function req(route, init = {}) {
-  const res = await fetch(BASE + route, {
-    redirect: 'manual',
-    ...init,
-    headers: { 'user-agent': UA, cookie: cookieHeader(), ...(init.headers || {}) },
-  });
-  absorb(res);
-  return res;
+  for (let i = 0; i < 4; i++) {
+    const res = await fetch(BASE + route, {
+      redirect: 'manual',
+      ...init,
+      headers: { 'user-agent': UA, cookie: cookieHeader(), ...(init.headers || {}) },
+    });
+    absorb(res);
+    if (res.status >= 300 && res.status < 400) continue; // 拿到 C3VK 后重发
+    return res;
+  }
+  throw new Error(`洛谷反复重定向，拿不到 ${route}（反爬没放行，稍后再试）`);
 }
 
 /** 页面里嵌的 lentille-context JSON；拿不到就试整体 JSON（/_lfe/*） */

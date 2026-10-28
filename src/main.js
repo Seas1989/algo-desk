@@ -178,7 +178,12 @@ async function loadData() {
   const getOpt = async (f) => {
     try {
       const res = await fetch(new URL(f, dataBase), { cache: 'no-cache' });
-      return res.ok ? res.json() : null;
+      if (!res.ok) return null;
+      // 开发服务器对不存在的文件会回 index.html（200 + text/html），
+      // 直接 res.json() 会抛错并把整个 loadData 带崩，所以先看类型
+      const type = res.headers.get('content-type') || '';
+      if (!type.includes('json')) return null;
+      return await res.json();
     } catch {
       return null;
     }
