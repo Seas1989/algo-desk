@@ -88,7 +88,7 @@
    "problems": [
     {
      "index": "A",
-     "name": "Good Contest",
+     "name": "Хороший контест",
      "rating": 800,
      "tags": [
       "greedy"
@@ -100,7 +100,7 @@
     },
     {
      "index": "B",
-     "name": "Three Piles",
+     "name": "Три кучки",
      "rating": 800,
      "tags": [
       "games",
@@ -114,7 +114,7 @@
     },
     {
      "index": "C",
-     "name": "AND, OR, Sort!",
+     "name": "И, ИЛИ, сортировка!",
      "rating": 1000,
      "tags": [
       "greedy",
@@ -127,7 +127,7 @@
     },
     {
      "index": "D",
-     "name": "Falling Concrete",
+     "name": "Падающий бетон",
      "rating": 1400,
      "tags": [
       "constructive algorithms",
@@ -142,7 +142,7 @@
     },
     {
      "index": "E",
-     "name": "Prime Destruction",
+     "name": "Разрушение простых",
      "rating": 1400,
      "tags": [
       "brute force",
@@ -157,7 +157,7 @@
     },
     {
      "index": "F",
-     "name": "MEX Replacement",
+     "name": "Замена MEX",
      "rating": 2000,
      "tags": [
       "binary search",
@@ -174,7 +174,7 @@
     },
     {
      "index": "G",
-     "name": "Modular Tree",
+     "name": "Модульное дерево",
      "rating": 2200,
      "tags": [
       "dfs and similar",
@@ -191,7 +191,7 @@
     },
     {
      "index": "H",
-     "name": "Deque Malfunction",
+     "name": "Неисправность дека",
      "rating": 2400,
      "tags": [
       "binary search",
@@ -258,7 +258,7 @@
    "problems": [
     {
      "index": "A",
-     "name": "Riptide",
+     "name": "Прилив",
      "rating": 800,
      "tags": [
       "implementation",
@@ -271,7 +271,7 @@
     },
     {
      "index": "B",
-     "name": "Evanescent",
+     "name": "Сокращение",
      "rating": 900,
      "tags": [
       "implementation",
@@ -285,7 +285,7 @@
     },
     {
      "index": "C1",
-     "name": "Marenol (easy version)",
+     "name": "Marenol (простая версия)",
      "rating": 1000,
      "tags": [
       "greedy"
@@ -297,7 +297,7 @@
     },
     {
      "index": "C2",
-     "name": "Marenol (hard version)",
+     "name": "Marenol (сложная версия)",
      "rating": 1200,
      "tags": [
       "greedy",
@@ -310,7 +310,7 @@
     },
     {
      "index": "D",
-     "name": "Silhouette",
+     "name": "Силуэт",
      "rating": 1300,
      "tags": [
       "constructive algorithms",
@@ -324,7 +324,7 @@
     },
     {
      "index": "E",
-     "name": "Chronostasis",
+     "name": "Хроностаз",
      "rating": 1500,
      "tags": [
       "binary search",
@@ -338,7 +338,7 @@
     },
     {
      "index": "F",
-     "name": "Whiplash",
+     "name": "Кнут",
      "rating": 1900,
      "tags": [
       "bitmasks",
@@ -353,7 +353,7 @@
     },
     {
      "index": "G",
-     "name": "Nightcrawler",
+     "name": "Ночной змей",
      "rating": 2200,
      "tags": [
       "data structures",
@@ -391,7 +391,7 @@
    "problems": [
     {
      "index": "A",
-     "name": "Zero Sum",
+     "name": "Нулевая сумма",
      "rating": 800,
      "tags": [
       "constructive algorithms",
@@ -405,7 +405,7 @@
     },
     {
      "index": "B",
-     "name": "Yet Another Constructive",
+     "name": "Еще один конструктив",
      "rating": 900,
      "tags": [
       "constructive algorithms"
@@ -417,7 +417,7 @@
     },
     {
      "index": "C",
-     "name": "Inversion of a Subsequence",
+     "name": "Инверсия подпоследовательности",
      "rating": 1100,
      "tags": [
       "greedy",
@@ -430,7 +430,7 @@
     },
     {
      "index": "D1",
-     "name": "XOR Sorting (Easy Version)",
+     "name": "XOR-сортировка (простая версия)",
      "rating": 1500,
      "tags": [
       "bitmasks",
@@ -443,7 +443,7 @@
     },
     {
      "index": "D2",
-     "name": "XOR Sorting (Hard Version)",
+     "name": "XOR-сортировка (сложная версия)",
      "rating": 2000,
      "tags": [
       "bitmasks",
@@ -457,7 +457,7 @@
     },
     {
      "index": "E",
-     "name": "Build a Tree",
+     "name": "Постройте дерево",
      "rating": 2300,
      "tags": [
       "constructive algorithms",
@@ -471,7 +471,7 @@
     },
     {
      "index": "F",
-     "name": "Paths on a Grid",
+     "name": "Пути по таблице",
      "rating": 2900,
      "tags": [
       "data structures",
@@ -506,7 +506,7 @@
    "problems": [
     {
      "index": "A",
-     "name": "Who Watches the Watchpig?",
+     "name": "Кто сторожит свиносторожей?",
      "rating": 800,
      "tags": [
       "greedy"
@@ -518,7 +518,7 @@
     },
     {
      "index": "B",
-     "name": "Delete and Concatenate",
+     "name": "Удалить и сконкатенировать",
      "rating": 1100,
      "tags": [
       "greedy"
@@ -544,7 +544,7 @@
     },
     {
      "index": "D1",
-     "name": "Construct an Array (Easy Version)",
+     "name": "Построение массива (простая версия)",
      "rating": 1700,
      "tags": [
       "dfs and similar",
@@ -558,7 +558,7 @@
     },
     {
      "index": "D2",
-     "name": "Construct an Array (Hard Version)",
+     "name": "Построение массива (сложная версия)",
      "rating": 2000,
      "tags": [
       "2-sat",
@@ -574,7 +574,7 @@
     },
     {
      "index": "E",
-     "name": "Tom and Jerry",
+     "name": "Том и Джерри",
      "rating": 2300,
      "tags": [
       "dfs and similar",
@@ -589,7 +589,7 @@
     },
     {
      "index": "F",
-     "name": "Familiar?",
+     "name": "Знакомо?",
      "rating": 2800,
      "tags": [
       "brute force",
@@ -603,7 +603,7 @@
     },
     {
      "index": "G",
-     "name": "NPC Challenge",
+     "name": "NPC-челлендж",
      "rating": 3000,
      "tags": [
       "divide and conquer",
@@ -616,7 +616,7 @@
     },
     {
      "index": "H",
-     "name": "Connect Connect See",
+     "name": "Видимые соединения",
      "rating": 3500,
      "tags": [
       "brute force",
@@ -650,7 +650,7 @@
    "problems": [
     {
      "index": "A",
-     "name": "farmpiggie and Subset Sum",
+     "name": "farmpiggie и сумма подмножеств",
      "rating": 800,
      "tags": [
       "constructive algorithms"
@@ -662,7 +662,7 @@
     },
     {
      "index": "B",
-     "name": "ezraft and Array",
+     "name": "ezraft и массив",
      "rating": 900,
      "tags": [
       "constructive algorithms",
@@ -675,7 +675,7 @@
     },
     {
      "index": "C",
-     "name": "0mar and Alternating Sums",
+     "name": "0mar и чередующиеся суммы",
      "rating": 1400,
      "tags": [
       "combinatorics",
@@ -689,7 +689,7 @@
     },
     {
      "index": "D",
-     "name": "diss_quack and Array Game",
+     "name": "diss_quack и игра с массивом",
      "rating": 1900,
      "tags": [
       "bitmasks",
@@ -704,7 +704,7 @@
     },
     {
      "index": "E",
-     "name": "lce4113 and Security Game",
+     "name": "lce4113 и игра в охрану",
      "rating": 2600,
      "tags": [
       "bitmasks",
@@ -719,7 +719,7 @@
     },
     {
      "index": "F",
-     "name": "Whoname and Unsorted Array",
+     "name": "Whoname и неотсортированный массив",
      "rating": 2900,
      "tags": [
       "constructive algorithms"
@@ -752,7 +752,7 @@
    "problems": [
     {
      "index": "A",
-     "name": "Games on the Train",
+     "name": "Игры в поезде",
      "rating": 800,
      "tags": [
       "greedy",
@@ -765,7 +765,7 @@
     },
     {
      "index": "B",
-     "name": "Tatar TV Show",
+     "name": "Татарское телешоу",
      "rating": 800,
      "tags": [
       "greedy",
@@ -779,7 +779,7 @@
     },
     {
      "index": "C",
-     "name": "Omsk Programmers",
+     "name": "Омские программисты",
      "rating": 1000,
      "tags": [
       "brute force",
@@ -793,7 +793,7 @@
     },
     {
      "index": "D",
-     "name": "Brand New Tatar TV Show",
+     "name": "Совершенно новое татарское телешоу",
      "rating": 1300,
      "tags": [
       "binary search",
@@ -809,7 +809,7 @@
     },
     {
      "index": "E",
-     "name": "Friendly Gifts",
+     "name": "Дружеские подарки",
      "rating": 1700,
      "tags": [
       "brute force",
@@ -822,7 +822,7 @@
     },
     {
      "index": "F1",
-     "name": "Elections in Saransk (easy version)",
+     "name": "Выборы в Саранске (простая версия)",
      "rating": 1700,
      "tags": [
       "number theory"
@@ -834,7 +834,7 @@
     },
     {
      "index": "F2",
-     "name": "Elections in Saransk (hard version)",
+     "name": "Выборы в Саранске (сложная версия)",
      "rating": 2200,
      "tags": [
       "combinatorics",
@@ -849,7 +849,7 @@
     },
     {
      "index": "G",
-     "name": "Criterion in Burlandia",
+     "name": "Критерий в Бурляндии",
      "rating": 2600,
      "tags": [
       "binary search",
@@ -890,7 +890,7 @@
    "problems": [
     {
      "index": "A",
-     "name": "Euclid, Sequence and Two Numbers",
+     "name": "Евклид, последовательность, два числа",
      "rating": 800,
      "tags": [
       "math",
@@ -904,7 +904,7 @@
     },
     {
      "index": "B",
-     "name": "Palindrome, Twelve and Two Terms",
+     "name": "Палиндром, двенадцать, два слагаемых",
      "rating": 800,
      "tags": [
       "brute force",
@@ -918,7 +918,7 @@
     },
     {
      "index": "C",
-     "name": "Vessels, Heights and Two Versions (Easy Version)",
+     "name": "Сосуды, высоты, две версии (простая версия)",
      "rating": 1200,
      "tags": [
       "dfs and similar",
@@ -934,7 +934,7 @@
     },
     {
      "index": "D",
-     "name": "XOR, Expression and Two Binary Numbers",
+     "name": "Ксор, выражение, два бинарных числа",
      "rating": 1500,
      "tags": [
       "bitmasks",
@@ -950,7 +950,7 @@
     },
     {
      "index": "E",
-     "name": "Vlad, Misha and Two Arrays",
+     "name": "Влад, Миша, два массива",
      "rating": 2100,
      "tags": [
       "brute force",
@@ -966,7 +966,7 @@
     },
     {
      "index": "F",
-     "name": "Vessels, Heights and Two Versions (Hard Version)",
+     "name": "Сосуды, высоты, две версии (сложная версия)",
      "rating": 2000,
      "tags": [
       "data structures",
@@ -983,7 +983,7 @@
     },
     {
      "index": "G",
-     "name": "Stripe, Token and Two Players",
+     "name": "Полоска, фишка, два игрока",
      "rating": 2700,
      "tags": [
       "data structures",
@@ -1018,7 +1018,7 @@
    "problems": [
     {
      "index": "A",
-     "name": "Convergence",
+     "name": "Сходимость",
      "rating": 800,
      "tags": [
       "greedy",
@@ -1031,7 +1031,7 @@
     },
     {
      "index": "B",
-     "name": "Cake Leveling",
+     "name": "Выравнивание тортика",
      "rating": 900,
      "tags": [
       "binary search",
@@ -1045,7 +1045,7 @@
     },
     {
      "index": "C1",
-     "name": "Seating Arrangement (Easy Version)",
+     "name": "Рассадка за столами (простая версия)",
      "rating": 1300,
      "tags": [
       "binary search",
@@ -1060,7 +1060,7 @@
     },
     {
      "index": "C2",
-     "name": "Seating Arrangement (Hard Version)",
+     "name": "Рассадка за столами (сложная версия)",
      "rating": 1600,
      "tags": [
       "binary search",
@@ -1075,7 +1075,7 @@
     },
     {
      "index": "D",
-     "name": "Magical Tiered Cake",
+     "name": "Магический многоярусный тортик",
      "rating": 2000,
      "tags": [
       "constructive algorithms",
@@ -1090,7 +1090,7 @@
     },
     {
      "index": "E",
-     "name": "Snaking Arrangement",
+     "name": "Змеиное расположение",
      "rating": 2600,
      "tags": [
       "combinatorics",
@@ -1103,7 +1103,7 @@
     },
     {
      "index": "F",
-     "name": "The Cake Is a Lie",
+     "name": "Тортик - ложь",
      "rating": 3000,
      "tags": [
       "greedy",
@@ -1138,7 +1138,7 @@
    "problems": [
     {
      "index": "A",
-     "name": "Slimes on a Line",
+     "name": "Слаймы на прямой",
      "rating": 800,
      "tags": [
       "brute force",
@@ -1152,7 +1152,7 @@
     },
     {
      "index": "B",
-     "name": "Absolute Cinema",
+     "name": "Это шедевр!",
      "rating": 800,
      "tags": [
       "greedy",
@@ -1165,7 +1165,7 @@
     },
     {
      "index": "C1",
-     "name": "We Be Flipping (Easy Version)",
+     "name": "Время переворотов (простая версия)",
      "rating": 900,
      "tags": [
       "constructive algorithms",
@@ -1178,7 +1178,7 @@
     },
     {
      "index": "C2",
-     "name": "We Be Flipping (Hard Version)",
+     "name": "Время переворотов (сложная версия)",
      "rating": 1400,
      "tags": [
       "constructive algorithms",
@@ -1192,7 +1192,7 @@
     },
     {
      "index": "D",
-     "name": "Me When Median Problem",
+     "name": "Я, когда задача на медиану",
      "rating": 1700,
      "tags": [
       "binary search",
@@ -1205,7 +1205,7 @@
     },
     {
      "index": "E",
-     "name": "Deconstruction Tree",
+     "name": "Дерево деструкции",
      "rating": 2100,
      "tags": [
       "combinatorics",
@@ -1221,7 +1221,7 @@
     },
     {
      "index": "F",
-     "name": "Load Unbalancing",
+     "name": "Дисбаланс нагрузки",
      "rating": 2400,
      "tags": [
       "binary search",
@@ -1236,7 +1236,7 @@
     },
     {
      "index": "G",
-     "name": "Roadworks",
+     "name": "Дорожные работы",
      "rating": 3000,
      "tags": [
       "binary search",
@@ -1252,7 +1252,7 @@
     },
     {
      "index": "H",
-     "name": "Wowee Binary String",
+     "name": "Ух ты, бинарная строка",
      "rating": 3300,
      "tags": [
       "combinatorics",
@@ -1266,7 +1266,7 @@
     },
     {
      "index": "I",
-     "name": "The Endians",
+     "name": "Концы",
      "rating": 3500,
      "tags": [
       "dp",
@@ -1300,7 +1300,7 @@
    "problems": [
     {
      "index": "A",
-     "name": "Optimal Purchase",
+     "name": "Оптимальная покупка",
      "rating": 800,
      "tags": [
       "implementation",
@@ -1313,7 +1313,7 @@
     },
     {
      "index": "B",
-     "name": "Digit String",
+     "name": "Цифровая строка",
      "rating": 1000,
      "tags": [
       "greedy",
@@ -1327,7 +1327,7 @@
     },
     {
      "index": "C",
-     "name": "Arrange the Numbers in a Circle",
+     "name": "Расставьте числа по кругу",
      "rating": 1300,
      "tags": [
       "constructive algorithms",
@@ -1341,7 +1341,7 @@
     },
     {
      "index": "D",
-     "name": "Good Schedule",
+     "name": "Хорошее расписание",
      "rating": 1700,
      "tags": [
       "dp",
@@ -1354,7 +1354,7 @@
     },
     {
      "index": "E",
-     "name": "Minimum Influence",
+     "name": "Минимальное влияние",
      "rating": 2200,
      "tags": [
       "binary search",
@@ -1372,7 +1372,7 @@
     },
     {
      "index": "F",
-     "name": "Game on Growing Tree",
+     "name": "Игра на растущем дереве",
      "rating": 2700,
      "tags": [
       "binary search",
@@ -1411,7 +1411,7 @@
    "problems": [
     {
      "index": "A",
-     "name": "Marisa Steals Reimu's Takeout",
+     "name": "Мариса крадёт заказы Рейму",
      "rating": 800,
      "tags": [
       "greedy",
@@ -1424,7 +1424,7 @@
     },
     {
      "index": "B",
-     "name": "Remilia Plays Soku",
+     "name": "Ремилия играет в Соку",
      "rating": 1100,
      "tags": [
       "games",
@@ -1437,7 +1437,7 @@
     },
     {
      "index": "C1",
-     "name": "Cirno and Number (Easy Version)",
+     "name": "Цирно и число (простая версия)",
      "rating": 1500,
      "tags": [
       "binary search",
@@ -1453,7 +1453,7 @@
     },
     {
      "index": "C2",
-     "name": "Cirno and Number (Hard Version)",
+     "name": "Цирно и число (сложная версия)",
      "rating": 1600,
      "tags": [
       "binary search",
@@ -1469,7 +1469,7 @@
     },
     {
      "index": "D",
-     "name": "Sanae, Cross and Color",
+     "name": "Санаэ, крест и цвет",
      "rating": 1900,
      "tags": [
       "binary search",
@@ -1483,7 +1483,7 @@
     },
     {
      "index": "E1",
-     "name": "Amanojaku and Sequence (Easy Version)",
+     "name": "Аманожаку и последовательность (простая версия)",
      "rating": 2400,
      "tags": [
       "combinatorics",
@@ -1496,7 +1496,7 @@
     },
     {
      "index": "E2",
-     "name": "Amanojaku and Sequence (Hard Version)",
+     "name": "Аманожаку и последовательность (сложная версия)",
      "rating": 2500,
      "tags": [
       "combinatorics",
@@ -1511,7 +1511,7 @@
     },
     {
      "index": "F",
-     "name": "Momoyo and the Network",
+     "name": "Момойо и сеть",
      "rating": 2700,
      "tags": [
       "binary search",
@@ -1548,7 +1548,7 @@
    "problems": [
     {
      "index": "A",
-     "name": "Zhily and Array Operating",
+     "name": "Жили и операции с массивом",
      "rating": 800,
      "tags": [
       "constructive algorithms",
@@ -1561,7 +1561,7 @@
     },
     {
      "index": "B",
-     "name": "Zhily and Mex and Max",
+     "name": "Жили, Mex и Max",
      "rating": 1200,
      "tags": [
       "constructive algorithms",
@@ -1597,7 +1597,7 @@
    "problems": [
     {
      "index": "A",
-     "name": "Koshary",
+     "name": "Кошари ",
      "rating": 800,
      "tags": [
       "implementation",
@@ -1622,7 +1622,7 @@
     },
     {
      "index": "C",
-     "name": "Snowfall",
+     "name": "Снегопад",
      "rating": 800,
      "tags": [
       "constructive algorithms",
@@ -1635,7 +1635,7 @@
     },
     {
      "index": "D",
-     "name": "Palindromex",
+     "name": "ПалиндроМЕХ",
      "rating": 1200,
      "tags": [
       "binary search",
@@ -1653,7 +1653,7 @@
     },
     {
      "index": "E",
-     "name": "It All Went Sideways",
+     "name": "Всё съехало",
      "rating": 1400,
      "tags": [
       "binary search",
@@ -1668,7 +1668,7 @@
     },
     {
      "index": "F",
-     "name": "It Just Keeps Going Sideways",
+     "name": "Всё продолжает съезжать",
      "rating": 1700,
      "tags": [
       "binary search",
@@ -1684,7 +1684,7 @@
     },
     {
      "index": "G",
-     "name": "Drowning",
+     "name": "Утопление",
      "rating": 2000,
      "tags": [
       "binary search",
@@ -1698,7 +1698,7 @@
     },
     {
      "index": "H",
-     "name": "Fallen Leaves",
+     "name": "Опавшие листья",
      "rating": 2100,
      "tags": [
       "dfs and similar",
@@ -1733,7 +1733,7 @@
    "problems": [
     {
      "index": "A",
-     "name": "Disturbing Distribution",
+     "name": "Перераспределение распределения",
      "rating": 800,
      "tags": [
       "greedy",
@@ -1746,7 +1746,7 @@
     },
     {
      "index": "B",
-     "name": "Everything Everywhere",
+     "name": "Всё везде",
      "rating": 900,
      "tags": [
       "greedy",
@@ -1760,7 +1760,7 @@
     },
     {
      "index": "C",
-     "name": "Mental Monumental (Easy Version)",
+     "name": "Ментально монументально (простая версия)",
      "rating": 1500,
      "tags": [
       "binary search",
@@ -1776,7 +1776,7 @@
     },
     {
      "index": "D",
-     "name": "Reserved Reversals",
+     "name": "Отменённые развороты",
      "rating": 1900,
      "tags": [
       "constructive algorithms",
@@ -1791,7 +1791,7 @@
     },
     {
      "index": "E",
-     "name": "Mental Monumental (Hard Version)",
+     "name": "Ментально монументально (сложная версия)",
      "rating": 2300,
      "tags": [
       "data structures",
@@ -1806,7 +1806,7 @@
     },
     {
      "index": "F",
-     "name": "Inversion Invasion",
+     "name": "Инфильтрация инверсий",
      "rating": 2800,
      "tags": [
       "math",
@@ -1819,7 +1819,7 @@
     },
     {
      "index": "G",
-     "name": "Stop Spot",
+     "name": "Точка остановки",
      "rating": 3000,
      "tags": [
       "implementation",
@@ -1854,7 +1854,7 @@
    "problems": [
     {
      "index": "A",
-     "name": "A Wonderful Contest",
+     "name": "Замечательный контест",
      "rating": 800,
      "tags": [
       "brute force",
@@ -1868,7 +1868,7 @@
     },
     {
      "index": "B",
-     "name": "Artistic Balance Tree",
+     "name": "Художественное сбалансированное дерево",
      "rating": 1100,
      "tags": [
       "greedy",
@@ -1881,7 +1881,7 @@
     },
     {
      "index": "C",
-     "name": "Median Partition",
+     "name": "Разбиение по медиане",
      "rating": 1500,
      "tags": [
       "dp",
@@ -1894,7 +1894,7 @@
     },
     {
      "index": "D",
-     "name": "Permutation Construction",
+     "name": "Построение перестановки",
      "rating": 1800,
      "tags": [
       "constructive algorithms",
@@ -1908,7 +1908,7 @@
     },
     {
      "index": "E",
-     "name": "Seek the Truth",
+     "name": "Докопаться до правды",
      "rating": 2000,
      "tags": [
       "binary search",
@@ -1923,7 +1923,7 @@
     },
     {
      "index": "F",
-     "name": "Building Tree",
+     "name": "Построение дерева",
      "rating": 2600,
      "tags": [
       "data structures",
@@ -1939,7 +1939,7 @@
     },
     {
      "index": "G",
-     "name": "Statistics on Tree",
+     "name": "Статистика на дереве",
      "rating": 3100,
      "tags": [
       "binary search",
@@ -1956,7 +1956,7 @@
     },
     {
      "index": "H",
-     "name": "Counting Sort?",
+     "name": "Сортировка подсчётом?",
      "rating": 3500,
      "tags": [
       "brute force",
@@ -1991,7 +1991,7 @@
    "problems": [
     {
      "index": "A",
-     "name": "A Number Between Two Others",
+     "name": "Число между двумя другими",
      "rating": 800,
      "tags": [
       "greedy",
@@ -2004,7 +2004,7 @@
     },
     {
      "index": "B",
-     "name": "Alternating String",
+     "name": "Чередующаяся строка",
      "rating": 900,
      "tags": [
       "brute force",
@@ -2017,7 +2017,7 @@
     },
     {
      "index": "C",
-     "name": "Red-Black Pairs",
+     "name": "Красно-чёрные пары",
      "rating": 1100,
      "tags": [
       "dp",
@@ -2030,7 +2030,7 @@
     },
     {
      "index": "D",
-     "name": "Exceptional Segments",
+     "name": "Исключительные отрезки",
      "rating": 1500,
      "tags": [
       "bitmasks",
@@ -2044,7 +2044,7 @@
     },
     {
      "index": "E",
-     "name": "Covering Points with Circles",
+     "name": "Покрытие кругами",
      "rating": 2200,
      "tags": [
       "constructive algorithms",
@@ -2058,7 +2058,7 @@
     },
     {
      "index": "F",
-     "name": "String Cutting",
+     "name": "Нарезка строк",
      "rating": 2600,
      "tags": [
       "binary search",
@@ -2075,7 +2075,7 @@
     },
     {
      "index": "G",
-     "name": "Simple Problem",
+     "name": "Простая задача",
      "rating": 2900,
      "tags": [
       "brute force",
@@ -2094,7 +2094,7 @@
  "unsolved": [
   {
    "index": "A",
-   "name": "Riptide",
+   "name": "Прилив",
    "rating": 800,
    "tags": [
     "implementation",
@@ -2111,7 +2111,7 @@
   },
   {
    "index": "B",
-   "name": "Evanescent",
+   "name": "Сокращение",
    "rating": 900,
    "tags": [
     "implementation",
@@ -2129,7 +2129,7 @@
   },
   {
    "index": "C1",
-   "name": "Marenol (easy version)",
+   "name": "Marenol (простая версия)",
    "rating": 1000,
    "tags": [
     "greedy"
@@ -2145,7 +2145,7 @@
   },
   {
    "index": "C",
-   "name": "Red-Black Pairs",
+   "name": "Красно-чёрные пары",
    "rating": 1100,
    "tags": [
     "dp",
@@ -2162,7 +2162,7 @@
   },
   {
    "index": "C2",
-   "name": "Marenol (hard version)",
+   "name": "Marenol (сложная версия)",
    "rating": 1200,
    "tags": [
     "greedy",
@@ -2179,7 +2179,7 @@
   },
   {
    "index": "D",
-   "name": "Silhouette",
+   "name": "Силуэт",
    "rating": 1300,
    "tags": [
     "constructive algorithms",
@@ -2197,7 +2197,7 @@
   },
   {
    "index": "E",
-   "name": "Prime Destruction",
+   "name": "Разрушение простых",
    "rating": 1400,
    "tags": [
     "brute force",
@@ -2216,7 +2216,7 @@
   },
   {
    "index": "C2",
-   "name": "We Be Flipping (Hard Version)",
+   "name": "Время переворотов (сложная версия)",
    "rating": 1400,
    "tags": [
     "constructive algorithms",
@@ -2234,7 +2234,7 @@
   },
   {
    "index": "C",
-   "name": "Mental Monumental (Easy Version)",
+   "name": "Ментально монументально (простая версия)",
    "rating": 1500,
    "tags": [
     "binary search",
@@ -2254,7 +2254,7 @@
   },
   {
    "index": "E",
-   "name": "Chronostasis",
+   "name": "Хроностаз",
    "rating": 1500,
    "tags": [
     "binary search",
@@ -2272,7 +2272,7 @@
   },
   {
    "index": "C1",
-   "name": "Cirno and Number (Easy Version)",
+   "name": "Цирно и число (простая версия)",
    "rating": 1500,
    "tags": [
     "binary search",
@@ -2292,7 +2292,7 @@
   },
   {
    "index": "D",
-   "name": "XOR, Expression and Two Binary Numbers",
+   "name": "Ксор, выражение, два бинарных числа",
    "rating": 1500,
    "tags": [
     "bitmasks",
@@ -2312,7 +2312,7 @@
   },
   {
    "index": "D",
-   "name": "Exceptional Segments",
+   "name": "Исключительные отрезки",
    "rating": 1500,
    "tags": [
     "bitmasks",
@@ -2330,7 +2330,7 @@
   },
   {
    "index": "C2",
-   "name": "Seating Arrangement (Hard Version)",
+   "name": "Рассадка за столами (сложная версия)",
    "rating": 1600,
    "tags": [
     "binary search",
@@ -2349,7 +2349,7 @@
   },
   {
    "index": "C2",
-   "name": "Cirno and Number (Hard Version)",
+   "name": "Цирно и число (сложная версия)",
    "rating": 1600,
    "tags": [
     "binary search",
@@ -2369,7 +2369,7 @@
   },
   {
    "index": "F1",
-   "name": "Elections in Saransk (easy version)",
+   "name": "Выборы в Саранске (простая версия)",
    "rating": 1700,
    "tags": [
     "number theory"
@@ -2385,7 +2385,7 @@
   },
   {
    "index": "D",
-   "name": "Me When Median Problem",
+   "name": "Я, когда задача на медиану",
    "rating": 1700,
    "tags": [
     "binary search",
@@ -2402,7 +2402,7 @@
   },
   {
    "index": "D",
-   "name": "Good Schedule",
+   "name": "Хорошее расписание",
    "rating": 1700,
    "tags": [
     "dp",
@@ -2419,7 +2419,7 @@
   },
   {
    "index": "D",
-   "name": "Reserved Reversals",
+   "name": "Отменённые развороты",
    "rating": 1900,
    "tags": [
     "constructive algorithms",
@@ -2438,7 +2438,7 @@
   },
   {
    "index": "F",
-   "name": "Whiplash",
+   "name": "Кнут",
    "rating": 1900,
    "tags": [
     "bitmasks",
@@ -2457,7 +2457,7 @@
   },
   {
    "index": "D",
-   "name": "diss_quack and Array Game",
+   "name": "diss_quack и игра с массивом",
    "rating": 1900,
    "tags": [
     "bitmasks",
@@ -2476,7 +2476,7 @@
   },
   {
    "index": "D",
-   "name": "Sanae, Cross and Color",
+   "name": "Санаэ, крест и цвет",
    "rating": 1900,
    "tags": [
     "binary search",
@@ -2494,7 +2494,7 @@
   },
   {
    "index": "D2",
-   "name": "XOR Sorting (Hard Version)",
+   "name": "XOR-сортировка (сложная версия)",
    "rating": 2000,
    "tags": [
     "bitmasks",
@@ -2512,7 +2512,7 @@
   },
   {
    "index": "D2",
-   "name": "Construct an Array (Hard Version)",
+   "name": "Построение массива (сложная версия)",
    "rating": 2000,
    "tags": [
     "2-sat",
@@ -2532,7 +2532,7 @@
   },
   {
    "index": "F",
-   "name": "Vessels, Heights and Two Versions (Hard Version)",
+   "name": "Сосуды, высоты, две версии (сложная версия)",
    "rating": 2000,
    "tags": [
     "data structures",
@@ -2553,7 +2553,7 @@
   },
   {
    "index": "F",
-   "name": "MEX Replacement",
+   "name": "Замена MEX",
    "rating": 2000,
    "tags": [
     "binary search",
@@ -2574,7 +2574,7 @@
   },
   {
    "index": "D",
-   "name": "Magical Tiered Cake",
+   "name": "Магический многоярусный тортик",
    "rating": 2000,
    "tags": [
     "constructive algorithms",
@@ -2593,7 +2593,7 @@
   },
   {
    "index": "G",
-   "name": "Drowning",
+   "name": "Утопление",
    "rating": 2000,
    "tags": [
     "binary search",
@@ -2611,7 +2611,7 @@
   },
   {
    "index": "E",
-   "name": "Seek the Truth",
+   "name": "Докопаться до правды",
    "rating": 2000,
    "tags": [
     "binary search",
@@ -2630,7 +2630,7 @@
   },
   {
    "index": "E",
-   "name": "Vlad, Misha and Two Arrays",
+   "name": "Влад, Миша, два массива",
    "rating": 2100,
    "tags": [
     "brute force",
@@ -2650,7 +2650,7 @@
   },
   {
    "index": "E",
-   "name": "Deconstruction Tree",
+   "name": "Дерево деструкции",
    "rating": 2100,
    "tags": [
     "combinatorics",
@@ -2670,7 +2670,7 @@
   },
   {
    "index": "H",
-   "name": "Fallen Leaves",
+   "name": "Опавшие листья",
    "rating": 2100,
    "tags": [
     "dfs and similar",
@@ -2688,7 +2688,7 @@
   },
   {
    "index": "G",
-   "name": "Modular Tree",
+   "name": "Модульное дерево",
    "rating": 2200,
    "tags": [
     "dfs and similar",
@@ -2709,7 +2709,7 @@
   },
   {
    "index": "G",
-   "name": "Nightcrawler",
+   "name": "Ночной змей",
    "rating": 2200,
    "tags": [
     "data structures",
@@ -2730,7 +2730,7 @@
   },
   {
    "index": "F2",
-   "name": "Elections in Saransk (hard version)",
+   "name": "Выборы в Саранске (сложная версия)",
    "rating": 2200,
    "tags": [
     "combinatorics",
@@ -2749,7 +2749,7 @@
   },
   {
    "index": "E",
-   "name": "Minimum Influence",
+   "name": "Минимальное влияние",
    "rating": 2200,
    "tags": [
     "binary search",
@@ -2771,7 +2771,7 @@
   },
   {
    "index": "E",
-   "name": "Covering Points with Circles",
+   "name": "Покрытие кругами",
    "rating": 2200,
    "tags": [
     "constructive algorithms",
@@ -2789,7 +2789,7 @@
   },
   {
    "index": "E",
-   "name": "Build a Tree",
+   "name": "Постройте дерево",
    "rating": 2300,
    "tags": [
     "constructive algorithms",
@@ -2807,7 +2807,7 @@
   },
   {
    "index": "E",
-   "name": "Tom and Jerry",
+   "name": "Том и Джерри",
    "rating": 2300,
    "tags": [
     "dfs and similar",
@@ -2826,7 +2826,7 @@
   },
   {
    "index": "E",
-   "name": "Mental Monumental (Hard Version)",
+   "name": "Ментально монументально (сложная версия)",
    "rating": 2300,
    "tags": [
     "data structures",
@@ -2845,7 +2845,7 @@
   },
   {
    "index": "H",
-   "name": "Deque Malfunction",
+   "name": "Неисправность дека",
    "rating": 2400,
    "tags": [
     "binary search",
@@ -2864,7 +2864,7 @@
   },
   {
    "index": "F",
-   "name": "Load Unbalancing",
+   "name": "Дисбаланс нагрузки",
    "rating": 2400,
    "tags": [
     "binary search",
@@ -2883,7 +2883,7 @@
   },
   {
    "index": "E1",
-   "name": "Amanojaku and Sequence (Easy Version)",
+   "name": "Аманожаку и последовательность (простая версия)",
    "rating": 2400,
    "tags": [
     "combinatorics",
@@ -2900,7 +2900,7 @@
   },
   {
    "index": "E2",
-   "name": "Amanojaku and Sequence (Hard Version)",
+   "name": "Аманожаку и последовательность (сложная версия)",
    "rating": 2500,
    "tags": [
     "combinatorics",
@@ -2919,7 +2919,7 @@
   },
   {
    "index": "E",
-   "name": "lce4113 and Security Game",
+   "name": "lce4113 и игра в охрану",
    "rating": 2600,
    "tags": [
     "bitmasks",
@@ -2938,7 +2938,7 @@
   },
   {
    "index": "G",
-   "name": "Criterion in Burlandia",
+   "name": "Критерий в Бурляндии",
    "rating": 2600,
    "tags": [
     "binary search",
@@ -2962,7 +2962,7 @@
   },
   {
    "index": "E",
-   "name": "Snaking Arrangement",
+   "name": "Змеиное расположение",
    "rating": 2600,
    "tags": [
     "combinatorics",
@@ -2979,7 +2979,7 @@
   },
   {
    "index": "F",
-   "name": "Building Tree",
+   "name": "Построение дерева",
    "rating": 2600,
    "tags": [
     "data structures",
@@ -2999,7 +2999,7 @@
   },
   {
    "index": "F",
-   "name": "String Cutting",
+   "name": "Нарезка строк",
    "rating": 2600,
    "tags": [
     "binary search",
@@ -3020,7 +3020,7 @@
   },
   {
    "index": "G",
-   "name": "Stripe, Token and Two Players",
+   "name": "Полоска, фишка, два игрока",
    "rating": 2700,
    "tags": [
     "data structures",
@@ -3038,7 +3038,7 @@
   },
   {
    "index": "F",
-   "name": "Game on Growing Tree",
+   "name": "Игра на растущем дереве",
    "rating": 2700,
    "tags": [
     "binary search",
@@ -3060,7 +3060,7 @@
   },
   {
    "index": "F",
-   "name": "Momoyo and the Network",
+   "name": "Момойо и сеть",
    "rating": 2700,
    "tags": [
     "binary search",
@@ -3080,7 +3080,7 @@
   },
   {
    "index": "F",
-   "name": "Familiar?",
+   "name": "Знакомо?",
    "rating": 2800,
    "tags": [
     "brute force",
@@ -3098,7 +3098,7 @@
   },
   {
    "index": "F",
-   "name": "Inversion Invasion",
+   "name": "Инфильтрация инверсий",
    "rating": 2800,
    "tags": [
     "math",
@@ -3115,7 +3115,7 @@
   },
   {
    "index": "F",
-   "name": "Paths on a Grid",
+   "name": "Пути по таблице",
    "rating": 2900,
    "tags": [
     "data structures",
@@ -3133,7 +3133,7 @@
   },
   {
    "index": "F",
-   "name": "Whoname and Unsorted Array",
+   "name": "Whoname и неотсортированный массив",
    "rating": 2900,
    "tags": [
     "constructive algorithms"
@@ -3149,7 +3149,7 @@
   },
   {
    "index": "G",
-   "name": "Simple Problem",
+   "name": "Простая задача",
    "rating": 2900,
    "tags": [
     "brute force",
@@ -3168,7 +3168,7 @@
   },
   {
    "index": "G",
-   "name": "NPC Challenge",
+   "name": "NPC-челлендж",
    "rating": 3000,
    "tags": [
     "divide and conquer",
@@ -3185,7 +3185,7 @@
   },
   {
    "index": "F",
-   "name": "The Cake Is a Lie",
+   "name": "Тортик - ложь",
    "rating": 3000,
    "tags": [
     "greedy",
@@ -3203,7 +3203,7 @@
   },
   {
    "index": "G",
-   "name": "Roadworks",
+   "name": "Дорожные работы",
    "rating": 3000,
    "tags": [
     "binary search",
@@ -3223,7 +3223,7 @@
   },
   {
    "index": "G",
-   "name": "Stop Spot",
+   "name": "Точка остановки",
    "rating": 3000,
    "tags": [
     "implementation",
@@ -3241,7 +3241,7 @@
   },
   {
    "index": "G",
-   "name": "Statistics on Tree",
+   "name": "Статистика на дереве",
    "rating": 3100,
    "tags": [
     "binary search",
@@ -3262,7 +3262,7 @@
   },
   {
    "index": "H",
-   "name": "Wowee Binary String",
+   "name": "Ух ты, бинарная строка",
    "rating": 3300,
    "tags": [
     "combinatorics",
@@ -3280,7 +3280,7 @@
   },
   {
    "index": "H",
-   "name": "Connect Connect See",
+   "name": "Видимые соединения",
    "rating": 3500,
    "tags": [
     "brute force",
@@ -3297,7 +3297,7 @@
   },
   {
    "index": "I",
-   "name": "The Endians",
+   "name": "Концы",
    "rating": 3500,
    "tags": [
     "dp",
@@ -3314,7 +3314,7 @@
   },
   {
    "index": "H",
-   "name": "Counting Sort?",
+   "name": "Сортировка подсчётом?",
    "rating": 3500,
    "tags": [
     "brute force",
@@ -3349,7 +3349,7 @@
   {
    "contestId": 2055,
    "index": "B",
-   "name": "Crafting",
+   "name": "Крафтинг",
    "rating": 1000,
    "tags": [
     "constructive algorithms",
@@ -3371,7 +3371,7 @@
    "problems": [
     {
      "index": "A",
-     "name": "Riptide",
+     "name": "Прилив",
      "rating": 800,
      "tags": [
       "implementation",
@@ -3388,7 +3388,7 @@
     },
     {
      "index": "B",
-     "name": "Evanescent",
+     "name": "Сокращение",
      "rating": 900,
      "tags": [
       "implementation",
@@ -3406,7 +3406,7 @@
     },
     {
      "index": "C1",
-     "name": "Marenol (easy version)",
+     "name": "Marenol (простая версия)",
      "rating": 1000,
      "tags": [
       "greedy"
@@ -3444,7 +3444,7 @@
    "problems": [
     {
      "index": "C",
-     "name": "Red-Black Pairs",
+     "name": "Красно-чёрные пары",
      "rating": 1100,
      "tags": [
       "dp",
@@ -3461,7 +3461,7 @@
     },
     {
      "index": "C2",
-     "name": "Marenol (hard version)",
+     "name": "Marenol (сложная версия)",
      "rating": 1200,
      "tags": [
       "greedy",
@@ -3478,7 +3478,7 @@
     },
     {
      "index": "D",
-     "name": "Silhouette",
+     "name": "Силуэт",
      "rating": 1300,
      "tags": [
       "constructive algorithms",
@@ -3504,7 +3504,7 @@
    "problems": [
     {
      "index": "E",
-     "name": "Prime Destruction",
+     "name": "Разрушение простых",
      "rating": 1400,
      "tags": [
       "brute force",
@@ -3523,7 +3523,7 @@
     },
     {
      "index": "C2",
-     "name": "We Be Flipping (Hard Version)",
+     "name": "Время переворотов (сложная версия)",
      "rating": 1400,
      "tags": [
       "constructive algorithms",
@@ -3541,7 +3541,7 @@
     },
     {
      "index": "C",
-     "name": "Mental Monumental (Easy Version)",
+     "name": "Ментально монументально (простая версия)",
      "rating": 1500,
      "tags": [
       "binary search",
@@ -3561,7 +3561,7 @@
     },
     {
      "index": "E",
-     "name": "Chronostasis",
+     "name": "Хроностаз",
      "rating": 1500,
      "tags": [
       "binary search",
@@ -3579,7 +3579,7 @@
     },
     {
      "index": "C1",
-     "name": "Cirno and Number (Easy Version)",
+     "name": "Цирно и число (простая версия)",
      "rating": 1500,
      "tags": [
       "binary search",
@@ -3599,7 +3599,7 @@
     },
     {
      "index": "D",
-     "name": "XOR, Expression and Two Binary Numbers",
+     "name": "Ксор, выражение, два бинарных числа",
      "rating": 1500,
      "tags": [
       "bitmasks",
@@ -3619,7 +3619,7 @@
     },
     {
      "index": "D",
-     "name": "Exceptional Segments",
+     "name": "Исключительные отрезки",
      "rating": 1500,
      "tags": [
       "bitmasks",
@@ -3645,7 +3645,7 @@
    "problems": [
     {
      "index": "C2",
-     "name": "Seating Arrangement (Hard Version)",
+     "name": "Рассадка за столами (сложная версия)",
      "rating": 1600,
      "tags": [
       "binary search",
@@ -3664,7 +3664,7 @@
     },
     {
      "index": "C2",
-     "name": "Cirno and Number (Hard Version)",
+     "name": "Цирно и число (сложная версия)",
      "rating": 1600,
      "tags": [
       "binary search",
@@ -3684,7 +3684,7 @@
     },
     {
      "index": "F1",
-     "name": "Elections in Saransk (easy version)",
+     "name": "Выборы в Саранске (простая версия)",
      "rating": 1700,
      "tags": [
       "number theory"
@@ -3700,7 +3700,7 @@
     },
     {
      "index": "D",
-     "name": "Me When Median Problem",
+     "name": "Я, когда задача на медиану",
      "rating": 1700,
      "tags": [
       "binary search",
@@ -3717,7 +3717,7 @@
     },
     {
      "index": "D",
-     "name": "Good Schedule",
+     "name": "Хорошее расписание",
      "rating": 1700,
      "tags": [
       "dp",
@@ -3742,7 +3742,7 @@
    "problems": [
     {
      "index": "D",
-     "name": "Reserved Reversals",
+     "name": "Отменённые развороты",
      "rating": 1900,
      "tags": [
       "constructive algorithms",
@@ -3761,7 +3761,7 @@
     },
     {
      "index": "F",
-     "name": "Whiplash",
+     "name": "Кнут",
      "rating": 1900,
      "tags": [
       "bitmasks",
@@ -3780,7 +3780,7 @@
     },
     {
      "index": "D",
-     "name": "diss_quack and Array Game",
+     "name": "diss_quack и игра с массивом",
      "rating": 1900,
      "tags": [
       "bitmasks",
@@ -3799,7 +3799,7 @@
     },
     {
      "index": "D",
-     "name": "Sanae, Cross and Color",
+     "name": "Санаэ, крест и цвет",
      "rating": 1900,
      "tags": [
       "binary search",
@@ -3825,7 +3825,7 @@
    "problems": [
     {
      "index": "D2",
-     "name": "XOR Sorting (Hard Version)",
+     "name": "XOR-сортировка (сложная версия)",
      "rating": 2000,
      "tags": [
       "bitmasks",
@@ -3843,7 +3843,7 @@
     },
     {
      "index": "D2",
-     "name": "Construct an Array (Hard Version)",
+     "name": "Построение массива (сложная версия)",
      "rating": 2000,
      "tags": [
       "2-sat",
@@ -3863,7 +3863,7 @@
     },
     {
      "index": "F",
-     "name": "Vessels, Heights and Two Versions (Hard Version)",
+     "name": "Сосуды, высоты, две версии (сложная версия)",
      "rating": 2000,
      "tags": [
       "data structures",
@@ -3884,7 +3884,7 @@
     },
     {
      "index": "F",
-     "name": "MEX Replacement",
+     "name": "Замена MEX",
      "rating": 2000,
      "tags": [
       "binary search",
@@ -3905,7 +3905,7 @@
     },
     {
      "index": "D",
-     "name": "Magical Tiered Cake",
+     "name": "Магический многоярусный тортик",
      "rating": 2000,
      "tags": [
       "constructive algorithms",
@@ -3924,7 +3924,7 @@
     },
     {
      "index": "G",
-     "name": "Drowning",
+     "name": "Утопление",
      "rating": 2000,
      "tags": [
       "binary search",
@@ -3942,7 +3942,7 @@
     },
     {
      "index": "E",
-     "name": "Seek the Truth",
+     "name": "Докопаться до правды",
      "rating": 2000,
      "tags": [
       "binary search",
@@ -3961,7 +3961,7 @@
     },
     {
      "index": "E",
-     "name": "Vlad, Misha and Two Arrays",
+     "name": "Влад, Миша, два массива",
      "rating": 2100,
      "tags": [
       "brute force",
@@ -3981,7 +3981,7 @@
     },
     {
      "index": "E",
-     "name": "Deconstruction Tree",
+     "name": "Дерево деструкции",
      "rating": 2100,
      "tags": [
       "combinatorics",
@@ -4001,7 +4001,7 @@
     },
     {
      "index": "H",
-     "name": "Fallen Leaves",
+     "name": "Опавшие листья",
      "rating": 2100,
      "tags": [
       "dfs and similar",
@@ -4027,7 +4027,7 @@
    "problems": [
     {
      "index": "G",
-     "name": "Modular Tree",
+     "name": "Модульное дерево",
      "rating": 2200,
      "tags": [
       "dfs and similar",
@@ -4048,7 +4048,7 @@
     },
     {
      "index": "G",
-     "name": "Nightcrawler",
+     "name": "Ночной змей",
      "rating": 2200,
      "tags": [
       "data structures",
@@ -4069,7 +4069,7 @@
     },
     {
      "index": "F2",
-     "name": "Elections in Saransk (hard version)",
+     "name": "Выборы в Саранске (сложная версия)",
      "rating": 2200,
      "tags": [
       "combinatorics",
@@ -4088,7 +4088,7 @@
     },
     {
      "index": "E",
-     "name": "Minimum Influence",
+     "name": "Минимальное влияние",
      "rating": 2200,
      "tags": [
       "binary search",
@@ -4110,7 +4110,7 @@
     },
     {
      "index": "E",
-     "name": "Covering Points with Circles",
+     "name": "Покрытие кругами",
      "rating": 2200,
      "tags": [
       "constructive algorithms",
@@ -4128,7 +4128,7 @@
     },
     {
      "index": "E",
-     "name": "Build a Tree",
+     "name": "Постройте дерево",
      "rating": 2300,
      "tags": [
       "constructive algorithms",
@@ -4146,7 +4146,7 @@
     },
     {
      "index": "E",
-     "name": "Tom and Jerry",
+     "name": "Том и Джерри",
      "rating": 2300,
      "tags": [
       "dfs and similar",
@@ -4165,7 +4165,7 @@
     },
     {
      "index": "E",
-     "name": "Mental Monumental (Hard Version)",
+     "name": "Ментально монументально (сложная версия)",
      "rating": 2300,
      "tags": [
       "data structures",
@@ -4184,7 +4184,7 @@
     },
     {
      "index": "H",
-     "name": "Deque Malfunction",
+     "name": "Неисправность дека",
      "rating": 2400,
      "tags": [
       "binary search",
@@ -4203,7 +4203,7 @@
     },
     {
      "index": "F",
-     "name": "Load Unbalancing",
+     "name": "Дисбаланс нагрузки",
      "rating": 2400,
      "tags": [
       "binary search",
@@ -4222,7 +4222,7 @@
     },
     {
      "index": "E1",
-     "name": "Amanojaku and Sequence (Easy Version)",
+     "name": "Аманожаку и последовательность (простая версия)",
      "rating": 2400,
      "tags": [
       "combinatorics",
@@ -4239,7 +4239,7 @@
     },
     {
      "index": "E2",
-     "name": "Amanojaku and Sequence (Hard Version)",
+     "name": "Аманожаку и последовательность (сложная версия)",
      "rating": 2500,
      "tags": [
       "combinatorics",
@@ -4258,7 +4258,7 @@
     },
     {
      "index": "E",
-     "name": "lce4113 and Security Game",
+     "name": "lce4113 и игра в охрану",
      "rating": 2600,
      "tags": [
       "bitmasks",
@@ -4277,7 +4277,7 @@
     },
     {
      "index": "G",
-     "name": "Criterion in Burlandia",
+     "name": "Критерий в Бурляндии",
      "rating": 2600,
      "tags": [
       "binary search",
@@ -4301,7 +4301,7 @@
     },
     {
      "index": "E",
-     "name": "Snaking Arrangement",
+     "name": "Змеиное расположение",
      "rating": 2600,
      "tags": [
       "combinatorics",
@@ -4318,7 +4318,7 @@
     },
     {
      "index": "F",
-     "name": "Building Tree",
+     "name": "Построение дерева",
      "rating": 2600,
      "tags": [
       "data structures",
@@ -4338,7 +4338,7 @@
     },
     {
      "index": "F",
-     "name": "String Cutting",
+     "name": "Нарезка строк",
      "rating": 2600,
      "tags": [
       "binary search",
@@ -4359,7 +4359,7 @@
     },
     {
      "index": "G",
-     "name": "Stripe, Token and Two Players",
+     "name": "Полоска, фишка, два игрока",
      "rating": 2700,
      "tags": [
       "data structures",
@@ -4377,7 +4377,7 @@
     },
     {
      "index": "F",
-     "name": "Game on Growing Tree",
+     "name": "Игра на растущем дереве",
      "rating": 2700,
      "tags": [
       "binary search",
@@ -4399,7 +4399,7 @@
     },
     {
      "index": "F",
-     "name": "Momoyo and the Network",
+     "name": "Момойо и сеть",
      "rating": 2700,
      "tags": [
       "binary search",
@@ -4419,7 +4419,7 @@
     },
     {
      "index": "F",
-     "name": "Familiar?",
+     "name": "Знакомо?",
      "rating": 2800,
      "tags": [
       "brute force",
@@ -4437,7 +4437,7 @@
     },
     {
      "index": "F",
-     "name": "Inversion Invasion",
+     "name": "Инфильтрация инверсий",
      "rating": 2800,
      "tags": [
       "math",
@@ -4454,7 +4454,7 @@
     },
     {
      "index": "F",
-     "name": "Paths on a Grid",
+     "name": "Пути по таблице",
      "rating": 2900,
      "tags": [
       "data structures",
@@ -4472,7 +4472,7 @@
     },
     {
      "index": "F",
-     "name": "Whoname and Unsorted Array",
+     "name": "Whoname и неотсортированный массив",
      "rating": 2900,
      "tags": [
       "constructive algorithms"
@@ -4488,7 +4488,7 @@
     },
     {
      "index": "G",
-     "name": "Simple Problem",
+     "name": "Простая задача",
      "rating": 2900,
      "tags": [
       "brute force",
@@ -4507,7 +4507,7 @@
     },
     {
      "index": "G",
-     "name": "NPC Challenge",
+     "name": "NPC-челлендж",
      "rating": 3000,
      "tags": [
       "divide and conquer",
@@ -4524,7 +4524,7 @@
     },
     {
      "index": "F",
-     "name": "The Cake Is a Lie",
+     "name": "Тортик - ложь",
      "rating": 3000,
      "tags": [
       "greedy",
@@ -4542,7 +4542,7 @@
     },
     {
      "index": "G",
-     "name": "Roadworks",
+     "name": "Дорожные работы",
      "rating": 3000,
      "tags": [
       "binary search",
@@ -4562,7 +4562,7 @@
     },
     {
      "index": "G",
-     "name": "Stop Spot",
+     "name": "Точка остановки",
      "rating": 3000,
      "tags": [
       "implementation",
@@ -4580,7 +4580,7 @@
     },
     {
      "index": "G",
-     "name": "Statistics on Tree",
+     "name": "Статистика на дереве",
      "rating": 3100,
      "tags": [
       "binary search",
@@ -4601,7 +4601,7 @@
     },
     {
      "index": "H",
-     "name": "Wowee Binary String",
+     "name": "Ух ты, бинарная строка",
      "rating": 3300,
      "tags": [
       "combinatorics",
@@ -4619,7 +4619,7 @@
     },
     {
      "index": "H",
-     "name": "Connect Connect See",
+     "name": "Видимые соединения",
      "rating": 3500,
      "tags": [
       "brute force",
@@ -4636,7 +4636,7 @@
     },
     {
      "index": "I",
-     "name": "The Endians",
+     "name": "Концы",
      "rating": 3500,
      "tags": [
       "dp",
@@ -4653,7 +4653,7 @@
     },
     {
      "index": "H",
-     "name": "Counting Sort?",
+     "name": "Сортировка подсчётом?",
      "rating": 3500,
      "tags": [
       "brute force",
@@ -4679,7 +4679,7 @@
    "problems": [
     {
      "index": "C1",
-     "name": "Marenol (easy version)",
+     "name": "Marenol (простая версия)",
      "rating": 1000,
      "tags": [
       "greedy"
@@ -4695,7 +4695,7 @@
     },
     {
      "index": "C",
-     "name": "Red-Black Pairs",
+     "name": "Красно-чёрные пары",
      "rating": 1100,
      "tags": [
       "dp",
@@ -4712,7 +4712,7 @@
     },
     {
      "index": "C2",
-     "name": "Marenol (hard version)",
+     "name": "Marenol (сложная версия)",
      "rating": 1200,
      "tags": [
       "greedy",
@@ -4729,7 +4729,7 @@
     },
     {
      "index": "C2",
-     "name": "We Be Flipping (Hard Version)",
+     "name": "Время переворотов (сложная версия)",
      "rating": 1400,
      "tags": [
       "constructive algorithms",
@@ -4747,7 +4747,7 @@
     },
     {
      "index": "C",
-     "name": "Mental Monumental (Easy Version)",
+     "name": "Ментально монументально (простая версия)",
      "rating": 1500,
      "tags": [
       "binary search",
@@ -4767,7 +4767,7 @@
     },
     {
      "index": "E",
-     "name": "Chronostasis",
+     "name": "Хроностаз",
      "rating": 1500,
      "tags": [
       "binary search",
@@ -4785,7 +4785,7 @@
     },
     {
      "index": "C1",
-     "name": "Cirno and Number (Easy Version)",
+     "name": "Цирно и число (простая версия)",
      "rating": 1500,
      "tags": [
       "binary search",
@@ -4805,7 +4805,7 @@
     },
     {
      "index": "C2",
-     "name": "Seating Arrangement (Hard Version)",
+     "name": "Рассадка за столами (сложная версия)",
      "rating": 1600,
      "tags": [
       "binary search",
@@ -4824,7 +4824,7 @@
     },
     {
      "index": "C2",
-     "name": "Cirno and Number (Hard Version)",
+     "name": "Цирно и число (сложная версия)",
      "rating": 1600,
      "tags": [
       "binary search",
@@ -4844,7 +4844,7 @@
     },
     {
      "index": "D",
-     "name": "Me When Median Problem",
+     "name": "Я, когда задача на медиану",
      "rating": 1700,
      "tags": [
       "binary search",
@@ -4861,7 +4861,7 @@
     },
     {
      "index": "D",
-     "name": "Good Schedule",
+     "name": "Хорошее расписание",
      "rating": 1700,
      "tags": [
       "dp",
@@ -4878,7 +4878,7 @@
     },
     {
      "index": "D",
-     "name": "Reserved Reversals",
+     "name": "Отменённые развороты",
      "rating": 1900,
      "tags": [
       "constructive algorithms",
@@ -4897,7 +4897,7 @@
     },
     {
      "index": "D",
-     "name": "diss_quack and Array Game",
+     "name": "diss_quack и игра с массивом",
      "rating": 1900,
      "tags": [
       "bitmasks",
@@ -4916,7 +4916,7 @@
     },
     {
      "index": "D2",
-     "name": "XOR Sorting (Hard Version)",
+     "name": "XOR-сортировка (сложная версия)",
      "rating": 2000,
      "tags": [
       "bitmasks",
@@ -4934,7 +4934,7 @@
     },
     {
      "index": "F",
-     "name": "Vessels, Heights and Two Versions (Hard Version)",
+     "name": "Сосуды, высоты, две версии (сложная версия)",
      "rating": 2000,
      "tags": [
       "data structures",
@@ -4955,7 +4955,7 @@
     },
     {
      "index": "F",
-     "name": "MEX Replacement",
+     "name": "Замена MEX",
      "rating": 2000,
      "tags": [
       "binary search",
@@ -4976,7 +4976,7 @@
     },
     {
      "index": "D",
-     "name": "Magical Tiered Cake",
+     "name": "Магический многоярусный тортик",
      "rating": 2000,
      "tags": [
       "constructive algorithms",
@@ -4995,7 +4995,7 @@
     },
     {
      "index": "G",
-     "name": "Modular Tree",
+     "name": "Модульное дерево",
      "rating": 2200,
      "tags": [
       "dfs and similar",
@@ -5016,7 +5016,7 @@
     },
     {
      "index": "G",
-     "name": "Nightcrawler",
+     "name": "Ночной змей",
      "rating": 2200,
      "tags": [
       "data structures",
@@ -5037,7 +5037,7 @@
     },
     {
      "index": "E",
-     "name": "Minimum Influence",
+     "name": "Минимальное влияние",
      "rating": 2200,
      "tags": [
       "binary search",
@@ -5059,7 +5059,7 @@
     },
     {
      "index": "E",
-     "name": "Mental Monumental (Hard Version)",
+     "name": "Ментально монументально (сложная версия)",
      "rating": 2300,
      "tags": [
       "data structures",
@@ -5078,7 +5078,7 @@
     },
     {
      "index": "H",
-     "name": "Deque Malfunction",
+     "name": "Неисправность дека",
      "rating": 2400,
      "tags": [
       "binary search",
@@ -5097,7 +5097,7 @@
     },
     {
      "index": "F",
-     "name": "Load Unbalancing",
+     "name": "Дисбаланс нагрузки",
      "rating": 2400,
      "tags": [
       "binary search",
@@ -5116,7 +5116,7 @@
     },
     {
      "index": "F",
-     "name": "String Cutting",
+     "name": "Нарезка строк",
      "rating": 2600,
      "tags": [
       "binary search",
@@ -5137,7 +5137,7 @@
     },
     {
      "index": "G",
-     "name": "Simple Problem",
+     "name": "Простая задача",
      "rating": 2900,
      "tags": [
       "brute force",
@@ -5156,7 +5156,7 @@
     },
     {
      "index": "F",
-     "name": "The Cake Is a Lie",
+     "name": "Тортик - ложь",
      "rating": 3000,
      "tags": [
       "greedy",
@@ -5174,7 +5174,7 @@
     },
     {
      "index": "G",
-     "name": "Roadworks",
+     "name": "Дорожные работы",
      "rating": 3000,
      "tags": [
       "binary search",
@@ -5200,7 +5200,7 @@
    "problems": [
     {
      "index": "C",
-     "name": "Red-Black Pairs",
+     "name": "Красно-чёрные пары",
      "rating": 1100,
      "tags": [
       "dp",
@@ -5217,7 +5217,7 @@
     },
     {
      "index": "E",
-     "name": "Prime Destruction",
+     "name": "Разрушение простых",
      "rating": 1400,
      "tags": [
       "brute force",
@@ -5236,7 +5236,7 @@
     },
     {
      "index": "C2",
-     "name": "We Be Flipping (Hard Version)",
+     "name": "Время переворотов (сложная версия)",
      "rating": 1400,
      "tags": [
       "constructive algorithms",
@@ -5254,7 +5254,7 @@
     },
     {
      "index": "C1",
-     "name": "Cirno and Number (Easy Version)",
+     "name": "Цирно и число (простая версия)",
      "rating": 1500,
      "tags": [
       "binary search",
@@ -5274,7 +5274,7 @@
     },
     {
      "index": "D",
-     "name": "XOR, Expression and Two Binary Numbers",
+     "name": "Ксор, выражение, два бинарных числа",
      "rating": 1500,
      "tags": [
       "bitmasks",
@@ -5294,7 +5294,7 @@
     },
     {
      "index": "C2",
-     "name": "Cirno and Number (Hard Version)",
+     "name": "Цирно и число (сложная версия)",
      "rating": 1600,
      "tags": [
       "binary search",
@@ -5314,7 +5314,7 @@
     },
     {
      "index": "D",
-     "name": "Good Schedule",
+     "name": "Хорошее расписание",
      "rating": 1700,
      "tags": [
       "dp",
@@ -5331,7 +5331,7 @@
     },
     {
      "index": "D",
-     "name": "Reserved Reversals",
+     "name": "Отменённые развороты",
      "rating": 1900,
      "tags": [
       "constructive algorithms",
@@ -5350,7 +5350,7 @@
     },
     {
      "index": "D",
-     "name": "Magical Tiered Cake",
+     "name": "Магический многоярусный тортик",
      "rating": 2000,
      "tags": [
       "constructive algorithms",
@@ -5369,7 +5369,7 @@
     },
     {
      "index": "E",
-     "name": "Deconstruction Tree",
+     "name": "Дерево деструкции",
      "rating": 2100,
      "tags": [
       "combinatorics",
@@ -5389,7 +5389,7 @@
     },
     {
      "index": "H",
-     "name": "Fallen Leaves",
+     "name": "Опавшие листья",
      "rating": 2100,
      "tags": [
       "dfs and similar",
@@ -5407,7 +5407,7 @@
     },
     {
      "index": "G",
-     "name": "Modular Tree",
+     "name": "Модульное дерево",
      "rating": 2200,
      "tags": [
       "dfs and similar",
@@ -5428,7 +5428,7 @@
     },
     {
      "index": "G",
-     "name": "Nightcrawler",
+     "name": "Ночной змей",
      "rating": 2200,
      "tags": [
       "data structures",
@@ -5449,7 +5449,7 @@
     },
     {
      "index": "F2",
-     "name": "Elections in Saransk (hard version)",
+     "name": "Выборы в Саранске (сложная версия)",
      "rating": 2200,
      "tags": [
       "combinatorics",
@@ -5468,7 +5468,7 @@
     },
     {
      "index": "H",
-     "name": "Deque Malfunction",
+     "name": "Неисправность дека",
      "rating": 2400,
      "tags": [
       "binary search",
@@ -5487,7 +5487,7 @@
     },
     {
      "index": "F",
-     "name": "Load Unbalancing",
+     "name": "Дисбаланс нагрузки",
      "rating": 2400,
      "tags": [
       "binary search",
@@ -5506,7 +5506,7 @@
     },
     {
      "index": "G",
-     "name": "Stripe, Token and Two Players",
+     "name": "Полоска, фишка, два игрока",
      "rating": 2700,
      "tags": [
       "data structures",
@@ -5524,7 +5524,7 @@
     },
     {
      "index": "F",
-     "name": "Game on Growing Tree",
+     "name": "Игра на растущем дереве",
      "rating": 2700,
      "tags": [
       "binary search",
@@ -5546,7 +5546,7 @@
     },
     {
      "index": "F",
-     "name": "Momoyo and the Network",
+     "name": "Момойо и сеть",
      "rating": 2700,
      "tags": [
       "binary search",
@@ -5566,7 +5566,7 @@
     },
     {
      "index": "F",
-     "name": "Familiar?",
+     "name": "Знакомо?",
      "rating": 2800,
      "tags": [
       "brute force",
@@ -5584,7 +5584,7 @@
     },
     {
      "index": "F",
-     "name": "Paths on a Grid",
+     "name": "Пути по таблице",
      "rating": 2900,
      "tags": [
       "data structures",
@@ -5602,7 +5602,7 @@
     },
     {
      "index": "G",
-     "name": "Roadworks",
+     "name": "Дорожные работы",
      "rating": 3000,
      "tags": [
       "binary search",
@@ -5622,7 +5622,7 @@
     },
     {
      "index": "H",
-     "name": "Wowee Binary String",
+     "name": "Ух ты, бинарная строка",
      "rating": 3300,
      "tags": [
       "combinatorics",
@@ -5640,7 +5640,7 @@
     },
     {
      "index": "I",
-     "name": "The Endians",
+     "name": "Концы",
      "rating": 3500,
      "tags": [
       "dp",
@@ -5657,7 +5657,7 @@
     },
     {
      "index": "H",
-     "name": "Counting Sort?",
+     "name": "Сортировка подсчётом?",
      "rating": 3500,
      "tags": [
       "brute force",
@@ -5681,7 +5681,7 @@
    "problems": [
     {
      "index": "D",
-     "name": "Silhouette",
+     "name": "Силуэт",
      "rating": 1300,
      "tags": [
       "constructive algorithms",
@@ -5699,7 +5699,7 @@
     },
     {
      "index": "E",
-     "name": "Prime Destruction",
+     "name": "Разрушение простых",
      "rating": 1400,
      "tags": [
       "brute force",
@@ -5718,7 +5718,7 @@
     },
     {
      "index": "C",
-     "name": "Mental Monumental (Easy Version)",
+     "name": "Ментально монументально (простая версия)",
      "rating": 1500,
      "tags": [
       "binary search",
@@ -5738,7 +5738,7 @@
     },
     {
      "index": "D",
-     "name": "XOR, Expression and Two Binary Numbers",
+     "name": "Ксор, выражение, два бинарных числа",
      "rating": 1500,
      "tags": [
       "bitmasks",
@@ -5758,7 +5758,7 @@
     },
     {
      "index": "D",
-     "name": "Exceptional Segments",
+     "name": "Исключительные отрезки",
      "rating": 1500,
      "tags": [
       "bitmasks",
@@ -5776,7 +5776,7 @@
     },
     {
      "index": "C2",
-     "name": "Seating Arrangement (Hard Version)",
+     "name": "Рассадка за столами (сложная версия)",
      "rating": 1600,
      "tags": [
       "binary search",
@@ -5795,7 +5795,7 @@
     },
     {
      "index": "D",
-     "name": "Reserved Reversals",
+     "name": "Отменённые развороты",
      "rating": 1900,
      "tags": [
       "constructive algorithms",
@@ -5814,7 +5814,7 @@
     },
     {
      "index": "F",
-     "name": "Whiplash",
+     "name": "Кнут",
      "rating": 1900,
      "tags": [
       "bitmasks",
@@ -5833,7 +5833,7 @@
     },
     {
      "index": "F",
-     "name": "MEX Replacement",
+     "name": "Замена MEX",
      "rating": 2000,
      "tags": [
       "binary search",
@@ -5854,7 +5854,7 @@
     },
     {
      "index": "G",
-     "name": "Drowning",
+     "name": "Утопление",
      "rating": 2000,
      "tags": [
       "binary search",
@@ -5872,7 +5872,7 @@
     },
     {
      "index": "E",
-     "name": "Vlad, Misha and Two Arrays",
+     "name": "Влад, Миша, два массива",
      "rating": 2100,
      "tags": [
       "brute force",
@@ -5892,7 +5892,7 @@
     },
     {
      "index": "G",
-     "name": "Modular Tree",
+     "name": "Модульное дерево",
      "rating": 2200,
      "tags": [
       "dfs and similar",
@@ -5913,7 +5913,7 @@
     },
     {
      "index": "F2",
-     "name": "Elections in Saransk (hard version)",
+     "name": "Выборы в Саранске (сложная версия)",
      "rating": 2200,
      "tags": [
       "combinatorics",
@@ -5932,7 +5932,7 @@
     },
     {
      "index": "E",
-     "name": "Minimum Influence",
+     "name": "Минимальное влияние",
      "rating": 2200,
      "tags": [
       "binary search",
@@ -5954,7 +5954,7 @@
     },
     {
      "index": "E",
-     "name": "Covering Points with Circles",
+     "name": "Покрытие кругами",
      "rating": 2200,
      "tags": [
       "constructive algorithms",
@@ -5972,7 +5972,7 @@
     },
     {
      "index": "E",
-     "name": "Mental Monumental (Hard Version)",
+     "name": "Ментально монументально (сложная версия)",
      "rating": 2300,
      "tags": [
       "data structures",
@@ -5991,7 +5991,7 @@
     },
     {
      "index": "E1",
-     "name": "Amanojaku and Sequence (Easy Version)",
+     "name": "Аманожаку и последовательность (простая версия)",
      "rating": 2400,
      "tags": [
       "combinatorics",
@@ -6008,7 +6008,7 @@
     },
     {
      "index": "E2",
-     "name": "Amanojaku and Sequence (Hard Version)",
+     "name": "Аманожаку и последовательность (сложная версия)",
      "rating": 2500,
      "tags": [
       "combinatorics",
@@ -6027,7 +6027,7 @@
     },
     {
      "index": "E",
-     "name": "lce4113 and Security Game",
+     "name": "lce4113 и игра в охрану",
      "rating": 2600,
      "tags": [
       "bitmasks",
@@ -6046,7 +6046,7 @@
     },
     {
      "index": "F",
-     "name": "Inversion Invasion",
+     "name": "Инфильтрация инверсий",
      "rating": 2800,
      "tags": [
       "math",
@@ -6063,7 +6063,7 @@
     },
     {
      "index": "F",
-     "name": "The Cake Is a Lie",
+     "name": "Тортик - ложь",
      "rating": 3000,
      "tags": [
       "greedy",
@@ -6087,7 +6087,7 @@
    "problems": [
     {
      "index": "C",
-     "name": "Mental Monumental (Easy Version)",
+     "name": "Ментально монументально (простая версия)",
      "rating": 1500,
      "tags": [
       "binary search",
@@ -6107,7 +6107,7 @@
     },
     {
      "index": "E",
-     "name": "Chronostasis",
+     "name": "Хроностаз",
      "rating": 1500,
      "tags": [
       "binary search",
@@ -6125,7 +6125,7 @@
     },
     {
      "index": "C1",
-     "name": "Cirno and Number (Easy Version)",
+     "name": "Цирно и число (простая версия)",
      "rating": 1500,
      "tags": [
       "binary search",
@@ -6145,7 +6145,7 @@
     },
     {
      "index": "C2",
-     "name": "Seating Arrangement (Hard Version)",
+     "name": "Рассадка за столами (сложная версия)",
      "rating": 1600,
      "tags": [
       "binary search",
@@ -6164,7 +6164,7 @@
     },
     {
      "index": "C2",
-     "name": "Cirno and Number (Hard Version)",
+     "name": "Цирно и число (сложная версия)",
      "rating": 1600,
      "tags": [
       "binary search",
@@ -6184,7 +6184,7 @@
     },
     {
      "index": "D",
-     "name": "Me When Median Problem",
+     "name": "Я, когда задача на медиану",
      "rating": 1700,
      "tags": [
       "binary search",
@@ -6201,7 +6201,7 @@
     },
     {
      "index": "D",
-     "name": "Sanae, Cross and Color",
+     "name": "Санаэ, крест и цвет",
      "rating": 1900,
      "tags": [
       "binary search",
@@ -6219,7 +6219,7 @@
     },
     {
      "index": "F",
-     "name": "MEX Replacement",
+     "name": "Замена MEX",
      "rating": 2000,
      "tags": [
       "binary search",
@@ -6240,7 +6240,7 @@
     },
     {
      "index": "G",
-     "name": "Drowning",
+     "name": "Утопление",
      "rating": 2000,
      "tags": [
       "binary search",
@@ -6258,7 +6258,7 @@
     },
     {
      "index": "E",
-     "name": "Seek the Truth",
+     "name": "Докопаться до правды",
      "rating": 2000,
      "tags": [
       "binary search",
@@ -6277,7 +6277,7 @@
     },
     {
      "index": "E",
-     "name": "Minimum Influence",
+     "name": "Минимальное влияние",
      "rating": 2200,
      "tags": [
       "binary search",
@@ -6299,7 +6299,7 @@
     },
     {
      "index": "H",
-     "name": "Deque Malfunction",
+     "name": "Неисправность дека",
      "rating": 2400,
      "tags": [
       "binary search",
@@ -6318,7 +6318,7 @@
     },
     {
      "index": "F",
-     "name": "Load Unbalancing",
+     "name": "Дисбаланс нагрузки",
      "rating": 2400,
      "tags": [
       "binary search",
@@ -6337,7 +6337,7 @@
     },
     {
      "index": "G",
-     "name": "Criterion in Burlandia",
+     "name": "Критерий в Бурляндии",
      "rating": 2600,
      "tags": [
       "binary search",
@@ -6361,7 +6361,7 @@
     },
     {
      "index": "F",
-     "name": "String Cutting",
+     "name": "Нарезка строк",
      "rating": 2600,
      "tags": [
       "binary search",
@@ -6382,7 +6382,7 @@
     },
     {
      "index": "F",
-     "name": "Game on Growing Tree",
+     "name": "Игра на растущем дереве",
      "rating": 2700,
      "tags": [
       "binary search",
@@ -6404,7 +6404,7 @@
     },
     {
      "index": "F",
-     "name": "Momoyo and the Network",
+     "name": "Момойо и сеть",
      "rating": 2700,
      "tags": [
       "binary search",
@@ -6424,7 +6424,7 @@
     },
     {
      "index": "G",
-     "name": "Roadworks",
+     "name": "Дорожные работы",
      "rating": 3000,
      "tags": [
       "binary search",
@@ -6444,7 +6444,7 @@
     },
     {
      "index": "G",
-     "name": "Statistics on Tree",
+     "name": "Статистика на дереве",
      "rating": 3100,
      "tags": [
       "binary search",
@@ -6471,7 +6471,7 @@
    "problems": [
     {
      "index": "C",
-     "name": "Mental Monumental (Easy Version)",
+     "name": "Ментально монументально (простая версия)",
      "rating": 1500,
      "tags": [
       "binary search",
@@ -6491,7 +6491,7 @@
     },
     {
      "index": "E",
-     "name": "Chronostasis",
+     "name": "Хроностаз",
      "rating": 1500,
      "tags": [
       "binary search",
@@ -6509,7 +6509,7 @@
     },
     {
      "index": "D",
-     "name": "Sanae, Cross and Color",
+     "name": "Санаэ, крест и цвет",
      "rating": 1900,
      "tags": [
       "binary search",
@@ -6527,7 +6527,7 @@
     },
     {
      "index": "D2",
-     "name": "XOR Sorting (Hard Version)",
+     "name": "XOR-сортировка (сложная версия)",
      "rating": 2000,
      "tags": [
       "bitmasks",
@@ -6545,7 +6545,7 @@
     },
     {
      "index": "F",
-     "name": "Vessels, Heights and Two Versions (Hard Version)",
+     "name": "Сосуды, высоты, две версии (сложная версия)",
      "rating": 2000,
      "tags": [
       "data structures",
@@ -6566,7 +6566,7 @@
     },
     {
      "index": "G",
-     "name": "Drowning",
+     "name": "Утопление",
      "rating": 2000,
      "tags": [
       "binary search",
@@ -6584,7 +6584,7 @@
     },
     {
      "index": "E",
-     "name": "Deconstruction Tree",
+     "name": "Дерево деструкции",
      "rating": 2100,
      "tags": [
       "combinatorics",
@@ -6604,7 +6604,7 @@
     },
     {
      "index": "G",
-     "name": "Nightcrawler",
+     "name": "Ночной змей",
      "rating": 2200,
      "tags": [
       "data structures",
@@ -6625,7 +6625,7 @@
     },
     {
      "index": "E",
-     "name": "Minimum Influence",
+     "name": "Минимальное влияние",
      "rating": 2200,
      "tags": [
       "binary search",
@@ -6647,7 +6647,7 @@
     },
     {
      "index": "E",
-     "name": "Mental Monumental (Hard Version)",
+     "name": "Ментально монументально (сложная версия)",
      "rating": 2300,
      "tags": [
       "data structures",
@@ -6666,7 +6666,7 @@
     },
     {
      "index": "H",
-     "name": "Deque Malfunction",
+     "name": "Неисправность дека",
      "rating": 2400,
      "tags": [
       "binary search",
@@ -6685,7 +6685,7 @@
     },
     {
      "index": "E2",
-     "name": "Amanojaku and Sequence (Hard Version)",
+     "name": "Аманожаку и последовательность (сложная версия)",
      "rating": 2500,
      "tags": [
       "combinatorics",
@@ -6704,7 +6704,7 @@
     },
     {
      "index": "G",
-     "name": "Criterion in Burlandia",
+     "name": "Критерий в Бурляндии",
      "rating": 2600,
      "tags": [
       "binary search",
@@ -6728,7 +6728,7 @@
     },
     {
      "index": "F",
-     "name": "Building Tree",
+     "name": "Построение дерева",
      "rating": 2600,
      "tags": [
       "data structures",
@@ -6748,7 +6748,7 @@
     },
     {
      "index": "G",
-     "name": "Stripe, Token and Two Players",
+     "name": "Полоска, фишка, два игрока",
      "rating": 2700,
      "tags": [
       "data structures",
@@ -6766,7 +6766,7 @@
     },
     {
      "index": "F",
-     "name": "Paths on a Grid",
+     "name": "Пути по таблице",
      "rating": 2900,
      "tags": [
       "data structures",
@@ -6784,7 +6784,7 @@
     },
     {
      "index": "G",
-     "name": "Roadworks",
+     "name": "Дорожные работы",
      "rating": 3000,
      "tags": [
       "binary search",
@@ -6804,7 +6804,7 @@
     },
     {
      "index": "H",
-     "name": "Connect Connect See",
+     "name": "Видимые соединения",
      "rating": 3500,
      "tags": [
       "brute force",
@@ -6827,7 +6827,7 @@
    "problems": [
     {
      "index": "A",
-     "name": "Riptide",
+     "name": "Прилив",
      "rating": 800,
      "tags": [
       "implementation",
@@ -6844,7 +6844,7 @@
     },
     {
      "index": "B",
-     "name": "Evanescent",
+     "name": "Сокращение",
      "rating": 900,
      "tags": [
       "implementation",
@@ -6862,7 +6862,7 @@
     },
     {
      "index": "C1",
-     "name": "Cirno and Number (Easy Version)",
+     "name": "Цирно и число (простая версия)",
      "rating": 1500,
      "tags": [
       "binary search",
@@ -6882,7 +6882,7 @@
     },
     {
      "index": "C2",
-     "name": "Cirno and Number (Hard Version)",
+     "name": "Цирно и число (сложная версия)",
      "rating": 1600,
      "tags": [
       "binary search",
@@ -6902,7 +6902,7 @@
     },
     {
      "index": "D",
-     "name": "Sanae, Cross and Color",
+     "name": "Санаэ, крест и цвет",
      "rating": 1900,
      "tags": [
       "binary search",
@@ -6920,7 +6920,7 @@
     },
     {
      "index": "D2",
-     "name": "Construct an Array (Hard Version)",
+     "name": "Построение массива (сложная версия)",
      "rating": 2000,
      "tags": [
       "2-sat",
@@ -6940,7 +6940,7 @@
     },
     {
      "index": "F",
-     "name": "Vessels, Heights and Two Versions (Hard Version)",
+     "name": "Сосуды, высоты, две версии (сложная версия)",
      "rating": 2000,
      "tags": [
       "data structures",
@@ -6961,7 +6961,7 @@
     },
     {
      "index": "F",
-     "name": "MEX Replacement",
+     "name": "Замена MEX",
      "rating": 2000,
      "tags": [
       "binary search",
@@ -6982,7 +6982,7 @@
     },
     {
      "index": "E",
-     "name": "Minimum Influence",
+     "name": "Минимальное влияние",
      "rating": 2200,
      "tags": [
       "binary search",
@@ -7004,7 +7004,7 @@
     },
     {
      "index": "E2",
-     "name": "Amanojaku and Sequence (Hard Version)",
+     "name": "Аманожаку и последовательность (сложная версия)",
      "rating": 2500,
      "tags": [
       "combinatorics",
@@ -7023,7 +7023,7 @@
     },
     {
      "index": "G",
-     "name": "Criterion in Burlandia",
+     "name": "Критерий в Бурляндии",
      "rating": 2600,
      "tags": [
       "binary search",
@@ -7047,7 +7047,7 @@
     },
     {
      "index": "F",
-     "name": "Building Tree",
+     "name": "Построение дерева",
      "rating": 2600,
      "tags": [
       "data structures",
@@ -7067,7 +7067,7 @@
     },
     {
      "index": "F",
-     "name": "Game on Growing Tree",
+     "name": "Игра на растущем дереве",
      "rating": 2700,
      "tags": [
       "binary search",
@@ -7089,7 +7089,7 @@
     },
     {
      "index": "G",
-     "name": "Stop Spot",
+     "name": "Точка остановки",
      "rating": 3000,
      "tags": [
       "implementation",
@@ -7113,7 +7113,7 @@
    "problems": [
     {
      "index": "E",
-     "name": "Prime Destruction",
+     "name": "Разрушение простых",
      "rating": 1400,
      "tags": [
       "brute force",
@@ -7132,7 +7132,7 @@
     },
     {
      "index": "C1",
-     "name": "Cirno and Number (Easy Version)",
+     "name": "Цирно и число (простая версия)",
      "rating": 1500,
      "tags": [
       "binary search",
@@ -7152,7 +7152,7 @@
     },
     {
      "index": "D",
-     "name": "Exceptional Segments",
+     "name": "Исключительные отрезки",
      "rating": 1500,
      "tags": [
       "bitmasks",
@@ -7170,7 +7170,7 @@
     },
     {
      "index": "D",
-     "name": "diss_quack and Array Game",
+     "name": "diss_quack и игра с массивом",
      "rating": 1900,
      "tags": [
       "bitmasks",
@@ -7189,7 +7189,7 @@
     },
     {
      "index": "F",
-     "name": "MEX Replacement",
+     "name": "Замена MEX",
      "rating": 2000,
      "tags": [
       "binary search",
@@ -7210,7 +7210,7 @@
     },
     {
      "index": "E",
-     "name": "Vlad, Misha and Two Arrays",
+     "name": "Влад, Миша, два массива",
      "rating": 2100,
      "tags": [
       "brute force",
@@ -7230,7 +7230,7 @@
     },
     {
      "index": "G",
-     "name": "Criterion in Burlandia",
+     "name": "Критерий в Бурляндии",
      "rating": 2600,
      "tags": [
       "binary search",
@@ -7254,7 +7254,7 @@
     },
     {
      "index": "F",
-     "name": "String Cutting",
+     "name": "Нарезка строк",
      "rating": 2600,
      "tags": [
       "binary search",
@@ -7275,7 +7275,7 @@
     },
     {
      "index": "F",
-     "name": "Familiar?",
+     "name": "Знакомо?",
      "rating": 2800,
      "tags": [
       "brute force",
@@ -7293,7 +7293,7 @@
     },
     {
      "index": "G",
-     "name": "Simple Problem",
+     "name": "Простая задача",
      "rating": 2900,
      "tags": [
       "brute force",
@@ -7312,7 +7312,7 @@
     },
     {
      "index": "G",
-     "name": "Statistics on Tree",
+     "name": "Статистика на дереве",
      "rating": 3100,
      "tags": [
       "binary search",
@@ -7333,7 +7333,7 @@
     },
     {
      "index": "H",
-     "name": "Connect Connect See",
+     "name": "Видимые соединения",
      "rating": 3500,
      "tags": [
       "brute force",
@@ -7350,7 +7350,7 @@
     },
     {
      "index": "H",
-     "name": "Counting Sort?",
+     "name": "Сортировка подсчётом?",
      "rating": 3500,
      "tags": [
       "brute force",
@@ -7374,7 +7374,7 @@
    "problems": [
     {
      "index": "C2",
-     "name": "Cirno and Number (Hard Version)",
+     "name": "Цирно и число (сложная версия)",
      "rating": 1600,
      "tags": [
       "binary search",
@@ -7394,7 +7394,7 @@
     },
     {
      "index": "D2",
-     "name": "Construct an Array (Hard Version)",
+     "name": "Построение массива (сложная версия)",
      "rating": 2000,
      "tags": [
       "2-sat",
@@ -7414,7 +7414,7 @@
     },
     {
      "index": "F",
-     "name": "Vessels, Heights and Two Versions (Hard Version)",
+     "name": "Сосуды, высоты, две версии (сложная версия)",
      "rating": 2000,
      "tags": [
       "data structures",
@@ -7435,7 +7435,7 @@
     },
     {
      "index": "D",
-     "name": "Magical Tiered Cake",
+     "name": "Магический многоярусный тортик",
      "rating": 2000,
      "tags": [
       "constructive algorithms",
@@ -7454,7 +7454,7 @@
     },
     {
      "index": "E",
-     "name": "Vlad, Misha and Two Arrays",
+     "name": "Влад, Миша, два массива",
      "rating": 2100,
      "tags": [
       "brute force",
@@ -7474,7 +7474,7 @@
     },
     {
      "index": "H",
-     "name": "Fallen Leaves",
+     "name": "Опавшие листья",
      "rating": 2100,
      "tags": [
       "dfs and similar",
@@ -7492,7 +7492,7 @@
     },
     {
      "index": "G",
-     "name": "Modular Tree",
+     "name": "Модульное дерево",
      "rating": 2200,
      "tags": [
       "dfs and similar",
@@ -7513,7 +7513,7 @@
     },
     {
      "index": "G",
-     "name": "Nightcrawler",
+     "name": "Ночной змей",
      "rating": 2200,
      "tags": [
       "data structures",
@@ -7534,7 +7534,7 @@
     },
     {
      "index": "E",
-     "name": "Tom and Jerry",
+     "name": "Том и Джерри",
      "rating": 2300,
      "tags": [
       "dfs and similar",
@@ -7553,7 +7553,7 @@
     },
     {
      "index": "G",
-     "name": "Criterion in Burlandia",
+     "name": "Критерий в Бурляндии",
      "rating": 2600,
      "tags": [
       "binary search",
@@ -7577,7 +7577,7 @@
     },
     {
      "index": "F",
-     "name": "Game on Growing Tree",
+     "name": "Игра на растущем дереве",
      "rating": 2700,
      "tags": [
       "binary search",
@@ -7599,7 +7599,7 @@
     },
     {
      "index": "F",
-     "name": "Momoyo and the Network",
+     "name": "Момойо и сеть",
      "rating": 2700,
      "tags": [
       "binary search",
@@ -7619,7 +7619,7 @@
     },
     {
      "index": "G",
-     "name": "Statistics on Tree",
+     "name": "Статистика на дереве",
      "rating": 3100,
      "tags": [
       "binary search",
@@ -7646,7 +7646,7 @@
    "problems": [
     {
      "index": "E",
-     "name": "Deconstruction Tree",
+     "name": "Дерево деструкции",
      "rating": 2100,
      "tags": [
       "combinatorics",
@@ -7666,7 +7666,7 @@
     },
     {
      "index": "H",
-     "name": "Fallen Leaves",
+     "name": "Опавшие листья",
      "rating": 2100,
      "tags": [
       "dfs and similar",
@@ -7684,7 +7684,7 @@
     },
     {
      "index": "G",
-     "name": "Modular Tree",
+     "name": "Модульное дерево",
      "rating": 2200,
      "tags": [
       "dfs and similar",
@@ -7705,7 +7705,7 @@
     },
     {
      "index": "G",
-     "name": "Nightcrawler",
+     "name": "Ночной змей",
      "rating": 2200,
      "tags": [
       "data structures",
@@ -7726,7 +7726,7 @@
     },
     {
      "index": "E",
-     "name": "Build a Tree",
+     "name": "Постройте дерево",
      "rating": 2300,
      "tags": [
       "constructive algorithms",
@@ -7744,7 +7744,7 @@
     },
     {
      "index": "E",
-     "name": "Tom and Jerry",
+     "name": "Том и Джерри",
      "rating": 2300,
      "tags": [
       "dfs and similar",
@@ -7763,7 +7763,7 @@
     },
     {
      "index": "G",
-     "name": "Criterion in Burlandia",
+     "name": "Критерий в Бурляндии",
      "rating": 2600,
      "tags": [
       "binary search",
@@ -7787,7 +7787,7 @@
     },
     {
      "index": "F",
-     "name": "Game on Growing Tree",
+     "name": "Игра на растущем дереве",
      "rating": 2700,
      "tags": [
       "binary search",
@@ -7809,7 +7809,7 @@
     },
     {
      "index": "F",
-     "name": "Momoyo and the Network",
+     "name": "Момойо и сеть",
      "rating": 2700,
      "tags": [
       "binary search",
@@ -7829,7 +7829,7 @@
     },
     {
      "index": "G",
-     "name": "Stop Spot",
+     "name": "Точка остановки",
      "rating": 3000,
      "tags": [
       "implementation",
@@ -7847,7 +7847,7 @@
     },
     {
      "index": "G",
-     "name": "Statistics on Tree",
+     "name": "Статистика на дереве",
      "rating": 3100,
      "tags": [
       "binary search",
@@ -7868,7 +7868,7 @@
     },
     {
      "index": "I",
-     "name": "The Endians",
+     "name": "Концы",
      "rating": 3500,
      "tags": [
       "dp",
@@ -7891,7 +7891,7 @@
    "problems": [
     {
      "index": "D",
-     "name": "Silhouette",
+     "name": "Силуэт",
      "rating": 1300,
      "tags": [
       "constructive algorithms",
@@ -7909,7 +7909,7 @@
     },
     {
      "index": "C2",
-     "name": "We Be Flipping (Hard Version)",
+     "name": "Время переворотов (сложная версия)",
      "rating": 1400,
      "tags": [
       "constructive algorithms",
@@ -7927,7 +7927,7 @@
     },
     {
      "index": "D",
-     "name": "Reserved Reversals",
+     "name": "Отменённые развороты",
      "rating": 1900,
      "tags": [
       "constructive algorithms",
@@ -7946,7 +7946,7 @@
     },
     {
      "index": "F",
-     "name": "Whiplash",
+     "name": "Кнут",
      "rating": 1900,
      "tags": [
       "bitmasks",
@@ -7965,7 +7965,7 @@
     },
     {
      "index": "D2",
-     "name": "Construct an Array (Hard Version)",
+     "name": "Построение массива (сложная версия)",
      "rating": 2000,
      "tags": [
       "2-sat",
@@ -7985,7 +7985,7 @@
     },
     {
      "index": "D",
-     "name": "Magical Tiered Cake",
+     "name": "Магический многоярусный тортик",
      "rating": 2000,
      "tags": [
       "constructive algorithms",
@@ -8004,7 +8004,7 @@
     },
     {
      "index": "E",
-     "name": "Seek the Truth",
+     "name": "Докопаться до правды",
      "rating": 2000,
      "tags": [
       "binary search",
@@ -8023,7 +8023,7 @@
     },
     {
      "index": "E",
-     "name": "Covering Points with Circles",
+     "name": "Покрытие кругами",
      "rating": 2200,
      "tags": [
       "constructive algorithms",
@@ -8041,7 +8041,7 @@
     },
     {
      "index": "E",
-     "name": "Build a Tree",
+     "name": "Постройте дерево",
      "rating": 2300,
      "tags": [
       "constructive algorithms",
@@ -8059,7 +8059,7 @@
     },
     {
      "index": "E",
-     "name": "Snaking Arrangement",
+     "name": "Змеиное расположение",
      "rating": 2600,
      "tags": [
       "combinatorics",
@@ -8076,7 +8076,7 @@
     },
     {
      "index": "F",
-     "name": "Whoname and Unsorted Array",
+     "name": "Whoname и неотсортированный массив",
      "rating": 2900,
      "tags": [
       "constructive algorithms"
@@ -8098,7 +8098,7 @@
    "problems": [
     {
      "index": "B",
-     "name": "Evanescent",
+     "name": "Сокращение",
      "rating": 900,
      "tags": [
       "implementation",
@@ -8116,7 +8116,7 @@
     },
     {
      "index": "C",
-     "name": "Mental Monumental (Easy Version)",
+     "name": "Ментально монументально (простая версия)",
      "rating": 1500,
      "tags": [
       "binary search",
@@ -8136,7 +8136,7 @@
     },
     {
      "index": "C2",
-     "name": "Seating Arrangement (Hard Version)",
+     "name": "Рассадка за столами (сложная версия)",
      "rating": 1600,
      "tags": [
       "binary search",
@@ -8155,7 +8155,7 @@
     },
     {
      "index": "F",
-     "name": "Vessels, Heights and Two Versions (Hard Version)",
+     "name": "Сосуды, высоты, две версии (сложная версия)",
      "rating": 2000,
      "tags": [
       "data structures",
@@ -8176,7 +8176,7 @@
     },
     {
      "index": "E",
-     "name": "Minimum Influence",
+     "name": "Минимальное влияние",
      "rating": 2200,
      "tags": [
       "binary search",
@@ -8198,7 +8198,7 @@
     },
     {
      "index": "E",
-     "name": "Build a Tree",
+     "name": "Постройте дерево",
      "rating": 2300,
      "tags": [
       "constructive algorithms",
@@ -8216,7 +8216,7 @@
     },
     {
      "index": "E",
-     "name": "Mental Monumental (Hard Version)",
+     "name": "Ментально монументально (сложная версия)",
      "rating": 2300,
      "tags": [
       "data structures",
@@ -8235,7 +8235,7 @@
     },
     {
      "index": "G",
-     "name": "Criterion in Burlandia",
+     "name": "Критерий в Бурляндии",
      "rating": 2600,
      "tags": [
       "binary search",
@@ -8259,7 +8259,7 @@
     },
     {
      "index": "G",
-     "name": "Roadworks",
+     "name": "Дорожные работы",
      "rating": 3000,
      "tags": [
       "binary search",
@@ -8285,7 +8285,7 @@
    "problems": [
     {
      "index": "D",
-     "name": "XOR, Expression and Two Binary Numbers",
+     "name": "Ксор, выражение, два бинарных числа",
      "rating": 1500,
      "tags": [
       "bitmasks",
@@ -8305,7 +8305,7 @@
     },
     {
      "index": "D",
-     "name": "Exceptional Segments",
+     "name": "Исключительные отрезки",
      "rating": 1500,
      "tags": [
       "bitmasks",
@@ -8323,7 +8323,7 @@
     },
     {
      "index": "F",
-     "name": "Whiplash",
+     "name": "Кнут",
      "rating": 1900,
      "tags": [
       "bitmasks",
@@ -8342,7 +8342,7 @@
     },
     {
      "index": "D",
-     "name": "diss_quack and Array Game",
+     "name": "diss_quack и игра с массивом",
      "rating": 1900,
      "tags": [
       "bitmasks",
@@ -8361,7 +8361,7 @@
     },
     {
      "index": "D2",
-     "name": "XOR Sorting (Hard Version)",
+     "name": "XOR-сортировка (сложная версия)",
      "rating": 2000,
      "tags": [
       "bitmasks",
@@ -8379,7 +8379,7 @@
     },
     {
      "index": "E",
-     "name": "Seek the Truth",
+     "name": "Докопаться до правды",
      "rating": 2000,
      "tags": [
       "binary search",
@@ -8398,7 +8398,7 @@
     },
     {
      "index": "F",
-     "name": "Load Unbalancing",
+     "name": "Дисбаланс нагрузки",
      "rating": 2400,
      "tags": [
       "binary search",
@@ -8417,7 +8417,7 @@
     },
     {
      "index": "E",
-     "name": "lce4113 and Security Game",
+     "name": "lce4113 и игра в охрану",
      "rating": 2600,
      "tags": [
       "bitmasks",
@@ -8436,7 +8436,7 @@
     },
     {
      "index": "G",
-     "name": "Criterion in Burlandia",
+     "name": "Критерий в Бурляндии",
      "rating": 2600,
      "tags": [
       "binary search",
@@ -8466,7 +8466,7 @@
    "problems": [
     {
      "index": "E",
-     "name": "Vlad, Misha and Two Arrays",
+     "name": "Влад, Миша, два массива",
      "rating": 2100,
      "tags": [
       "brute force",
@@ -8486,7 +8486,7 @@
     },
     {
      "index": "E",
-     "name": "Deconstruction Tree",
+     "name": "Дерево деструкции",
      "rating": 2100,
      "tags": [
       "combinatorics",
@@ -8506,7 +8506,7 @@
     },
     {
      "index": "F2",
-     "name": "Elections in Saransk (hard version)",
+     "name": "Выборы в Саранске (сложная версия)",
      "rating": 2200,
      "tags": [
       "combinatorics",
@@ -8525,7 +8525,7 @@
     },
     {
      "index": "E1",
-     "name": "Amanojaku and Sequence (Easy Version)",
+     "name": "Аманожаку и последовательность (простая версия)",
      "rating": 2400,
      "tags": [
       "combinatorics",
@@ -8542,7 +8542,7 @@
     },
     {
      "index": "E2",
-     "name": "Amanojaku and Sequence (Hard Version)",
+     "name": "Аманожаку и последовательность (сложная версия)",
      "rating": 2500,
      "tags": [
       "combinatorics",
@@ -8561,7 +8561,7 @@
     },
     {
      "index": "E",
-     "name": "Snaking Arrangement",
+     "name": "Змеиное расположение",
      "rating": 2600,
      "tags": [
       "combinatorics",
@@ -8578,7 +8578,7 @@
     },
     {
      "index": "F",
-     "name": "Familiar?",
+     "name": "Знакомо?",
      "rating": 2800,
      "tags": [
       "brute force",
@@ -8596,7 +8596,7 @@
     },
     {
      "index": "H",
-     "name": "Wowee Binary String",
+     "name": "Ух ты, бинарная строка",
      "rating": 3300,
      "tags": [
       "combinatorics",
@@ -8614,7 +8614,7 @@
     },
     {
      "index": "H",
-     "name": "Counting Sort?",
+     "name": "Сортировка подсчётом?",
      "rating": 3500,
      "tags": [
       "brute force",
@@ -8638,7 +8638,7 @@
    "problems": [
     {
      "index": "E",
-     "name": "Prime Destruction",
+     "name": "Разрушение простых",
      "rating": 1400,
      "tags": [
       "brute force",
@@ -8657,7 +8657,7 @@
     },
     {
      "index": "D",
-     "name": "XOR, Expression and Two Binary Numbers",
+     "name": "Ксор, выражение, два бинарных числа",
      "rating": 1500,
      "tags": [
       "bitmasks",
@@ -8677,7 +8677,7 @@
     },
     {
      "index": "F1",
-     "name": "Elections in Saransk (easy version)",
+     "name": "Выборы в Саранске (простая версия)",
      "rating": 1700,
      "tags": [
       "number theory"
@@ -8693,7 +8693,7 @@
     },
     {
      "index": "G",
-     "name": "Modular Tree",
+     "name": "Модульное дерево",
      "rating": 2200,
      "tags": [
       "dfs and similar",
@@ -8714,7 +8714,7 @@
     },
     {
      "index": "F2",
-     "name": "Elections in Saransk (hard version)",
+     "name": "Выборы в Саранске (сложная версия)",
      "rating": 2200,
      "tags": [
       "combinatorics",
@@ -8733,7 +8733,7 @@
     },
     {
      "index": "F",
-     "name": "Inversion Invasion",
+     "name": "Инфильтрация инверсий",
      "rating": 2800,
      "tags": [
       "math",
@@ -8750,7 +8750,7 @@
     },
     {
      "index": "G",
-     "name": "Simple Problem",
+     "name": "Простая задача",
      "rating": 2900,
      "tags": [
       "brute force",
@@ -8769,7 +8769,7 @@
     },
     {
      "index": "F",
-     "name": "The Cake Is a Lie",
+     "name": "Тортик - ложь",
      "rating": 3000,
      "tags": [
       "greedy",
@@ -8793,7 +8793,7 @@
    "problems": [
     {
      "index": "D",
-     "name": "XOR, Expression and Two Binary Numbers",
+     "name": "Ксор, выражение, два бинарных числа",
      "rating": 1500,
      "tags": [
       "bitmasks",
@@ -8813,7 +8813,7 @@
     },
     {
      "index": "E",
-     "name": "Vlad, Misha and Two Arrays",
+     "name": "Влад, Миша, два массива",
      "rating": 2100,
      "tags": [
       "brute force",
@@ -8833,7 +8833,7 @@
     },
     {
      "index": "G",
-     "name": "Criterion in Burlandia",
+     "name": "Критерий в Бурляндии",
      "rating": 2600,
      "tags": [
       "binary search",
@@ -8857,7 +8857,7 @@
     },
     {
      "index": "F",
-     "name": "Building Tree",
+     "name": "Построение дерева",
      "rating": 2600,
      "tags": [
       "data structures",
@@ -8877,7 +8877,7 @@
     },
     {
      "index": "F",
-     "name": "Game on Growing Tree",
+     "name": "Игра на растущем дереве",
      "rating": 2700,
      "tags": [
       "binary search",
@@ -8899,7 +8899,7 @@
     },
     {
      "index": "F",
-     "name": "Momoyo and the Network",
+     "name": "Момойо и сеть",
      "rating": 2700,
      "tags": [
       "binary search",
@@ -8919,7 +8919,7 @@
     },
     {
      "index": "G",
-     "name": "NPC Challenge",
+     "name": "NPC-челлендж",
      "rating": 3000,
      "tags": [
       "divide and conquer",
@@ -8936,7 +8936,7 @@
     },
     {
      "index": "G",
-     "name": "Statistics on Tree",
+     "name": "Статистика на дереве",
      "rating": 3100,
      "tags": [
       "binary search",
@@ -8963,7 +8963,7 @@
    "problems": [
     {
      "index": "A",
-     "name": "Riptide",
+     "name": "Прилив",
      "rating": 800,
      "tags": [
       "implementation",
@@ -8980,7 +8980,7 @@
     },
     {
      "index": "C2",
-     "name": "Marenol (hard version)",
+     "name": "Marenol (сложная версия)",
      "rating": 1200,
      "tags": [
       "greedy",
@@ -8997,7 +8997,7 @@
     },
     {
      "index": "D",
-     "name": "Silhouette",
+     "name": "Силуэт",
      "rating": 1300,
      "tags": [
       "constructive algorithms",
@@ -9015,7 +9015,7 @@
     },
     {
      "index": "F",
-     "name": "Whiplash",
+     "name": "Кнут",
      "rating": 1900,
      "tags": [
       "bitmasks",
@@ -9034,7 +9034,7 @@
     },
     {
      "index": "F",
-     "name": "MEX Replacement",
+     "name": "Замена MEX",
      "rating": 2000,
      "tags": [
       "binary search",
@@ -9055,7 +9055,7 @@
     },
     {
      "index": "G",
-     "name": "Nightcrawler",
+     "name": "Ночной змей",
      "rating": 2200,
      "tags": [
       "data structures",
@@ -9076,7 +9076,7 @@
     },
     {
      "index": "E",
-     "name": "Minimum Influence",
+     "name": "Минимальное влияние",
      "rating": 2200,
      "tags": [
       "binary search",
@@ -9104,7 +9104,7 @@
    "problems": [
     {
      "index": "D2",
-     "name": "Construct an Array (Hard Version)",
+     "name": "Построение массива (сложная версия)",
      "rating": 2000,
      "tags": [
       "2-sat",
@@ -9124,7 +9124,7 @@
     },
     {
      "index": "E",
-     "name": "Deconstruction Tree",
+     "name": "Дерево деструкции",
      "rating": 2100,
      "tags": [
       "combinatorics",
@@ -9144,7 +9144,7 @@
     },
     {
      "index": "F",
-     "name": "Building Tree",
+     "name": "Построение дерева",
      "rating": 2600,
      "tags": [
       "data structures",
@@ -9164,7 +9164,7 @@
     },
     {
      "index": "G",
-     "name": "Simple Problem",
+     "name": "Простая задача",
      "rating": 2900,
      "tags": [
       "brute force",
@@ -9183,7 +9183,7 @@
     },
     {
      "index": "G",
-     "name": "Statistics on Tree",
+     "name": "Статистика на дереве",
      "rating": 3100,
      "tags": [
       "binary search",
@@ -9210,7 +9210,7 @@
    "problems": [
     {
      "index": "B",
-     "name": "Evanescent",
+     "name": "Сокращение",
      "rating": 900,
      "tags": [
       "implementation",
@@ -9228,7 +9228,7 @@
     },
     {
      "index": "F",
-     "name": "String Cutting",
+     "name": "Нарезка строк",
      "rating": 2600,
      "tags": [
       "binary search",
@@ -9249,7 +9249,7 @@
     },
     {
      "index": "G",
-     "name": "Stop Spot",
+     "name": "Точка остановки",
      "rating": 3000,
      "tags": [
       "implementation",
@@ -9267,7 +9267,7 @@
     },
     {
      "index": "H",
-     "name": "Wowee Binary String",
+     "name": "Ух ты, бинарная строка",
      "rating": 3300,
      "tags": [
       "combinatorics",
@@ -9291,7 +9291,7 @@
    "problems": [
     {
      "index": "D",
-     "name": "diss_quack and Array Game",
+     "name": "diss_quack и игра с массивом",
      "rating": 1900,
      "tags": [
       "bitmasks",
@@ -9310,7 +9310,7 @@
     },
     {
      "index": "E",
-     "name": "Tom and Jerry",
+     "name": "Том и Джерри",
      "rating": 2300,
      "tags": [
       "dfs and similar",
@@ -9329,7 +9329,7 @@
     },
     {
      "index": "G",
-     "name": "Stripe, Token and Two Players",
+     "name": "Полоска, фишка, два игрока",
      "rating": 2700,
      "tags": [
       "data structures",
@@ -9347,7 +9347,7 @@
     },
     {
      "index": "F",
-     "name": "Game on Growing Tree",
+     "name": "Игра на растущем дереве",
      "rating": 2700,
      "tags": [
       "binary search",
@@ -9375,7 +9375,7 @@
    "problems": [
     {
      "index": "F",
-     "name": "Vessels, Heights and Two Versions (Hard Version)",
+     "name": "Сосуды, высоты, две версии (сложная версия)",
      "rating": 2000,
      "tags": [
       "data structures",
@@ -9396,7 +9396,7 @@
     },
     {
      "index": "E",
-     "name": "Tom and Jerry",
+     "name": "Том и Джерри",
      "rating": 2300,
      "tags": [
       "dfs and similar",
@@ -9415,7 +9415,7 @@
     },
     {
      "index": "F",
-     "name": "Building Tree",
+     "name": "Построение дерева",
      "rating": 2600,
      "tags": [
       "data structures",
@@ -9441,7 +9441,7 @@
    "problems": [
     {
      "index": "E",
-     "name": "Seek the Truth",
+     "name": "Докопаться до правды",
      "rating": 2000,
      "tags": [
       "binary search",
@@ -9460,7 +9460,7 @@
     },
     {
      "index": "E",
-     "name": "lce4113 and Security Game",
+     "name": "lce4113 и игра в охрану",
      "rating": 2600,
      "tags": [
       "bitmasks",
@@ -9479,7 +9479,7 @@
     },
     {
      "index": "G",
-     "name": "NPC Challenge",
+     "name": "NPC-челлендж",
      "rating": 3000,
      "tags": [
       "divide and conquer",
@@ -9502,7 +9502,7 @@
    "problems": [
     {
      "index": "F",
-     "name": "String Cutting",
+     "name": "Нарезка строк",
      "rating": 2600,
      "tags": [
       "binary search",
@@ -9523,7 +9523,7 @@
     },
     {
      "index": "F",
-     "name": "Paths on a Grid",
+     "name": "Пути по таблице",
      "rating": 2900,
      "tags": [
       "data structures",
@@ -9547,7 +9547,7 @@
    "problems": [
     {
      "index": "D2",
-     "name": "Construct an Array (Hard Version)",
+     "name": "Построение массива (сложная версия)",
      "rating": 2000,
      "tags": [
       "2-sat",
@@ -9573,7 +9573,7 @@
    "problems": [
     {
      "index": "E",
-     "name": "Covering Points with Circles",
+     "name": "Покрытие кругами",
      "rating": 2200,
      "tags": [
       "constructive algorithms",
@@ -9597,7 +9597,7 @@
    "problems": [
     {
      "index": "E",
-     "name": "lce4113 and Security Game",
+     "name": "lce4113 и игра в охрану",
      "rating": 2600,
      "tags": [
       "bitmasks",
@@ -9622,7 +9622,7 @@
    "problems": [
     {
      "index": "F",
-     "name": "String Cutting",
+     "name": "Нарезка строк",
      "rating": 2600,
      "tags": [
       "binary search",

@@ -148,7 +148,14 @@ const lgProfile = await luoguGet(`/user/${LUOGU_UID}`, { name: 'lg-profile' });
 const lgPractice = await luoguGet(`/user/${LUOGU_UID}/practice`, { name: 'lg-practice' });
 const lgTrainings = await luoguGet('/training/list', { name: 'lg-trainings', ttl: 24 * 3600e3 });
 const lgTags = (await luoguGet('/_lfe/tags', { name: 'lg-tags', ttl: 24 * 3600e3 })).__json || {};
-log(`  通过 ${lgPractice.data.passed.length} 题 / 未通过 ${lgPractice.data.submitted.length} 题 / 题单 ${lgTrainings.data.trainings.result.length} 个`);
+let lgContestRaw = [];
+try {
+  const lgContestList = await luoguGet('/contest/list', { name: 'lg-contest-list', ttl: 3600e3 });
+  lgContestRaw = lgContestList?.data?.contests?.result || [];
+} catch (e) {
+  console.warn('  洛谷比赛列表抓取失败，降级为空：', e.message);
+}
+log(`  通过 ${lgPractice.data.passed.length} 题 / 未通过 ${lgPractice.data.submitted.length} 题 / 题单 ${lgTrainings.data.trainings.result.length} 个 / 比赛列表 ${lgContestRaw.length} 场`);
 
 // 标签字典：/ _lfe/tags 可能是 {tl, ...} 或数组
 const tagName = new Map();
@@ -426,6 +433,29 @@ const lgUnsolved = lgPractice.data.submitted
   }))
   .sort((a, b) => a.difficulty - b.difficulty);
 
+// 洛谷即将开始的比赛（startTime > 现在，取最近 6 场）
+const lgUpcoming = lgContestRaw
+  .filter((c) => c.startTime > nowSec)
+  .sort((a, b) => a.startTime - b.startTime)
+  .slice(0, 6)
+  .map((c) => ({
+    id: c.id,
+    name: c.name,
+    startTime: c.startTime,
+    endTime: c.endTime,
+    host: c.host?.name || '',
+    problemCount: c.problemCount ?? null,
+    rated: !!c.rated,
+    url: `https://www.luogu.com.cn/contest/${c.id}`,
+  }));
+
+// 洛谷已通过题目按难度 1~7 统计
+const lgDiffCount = new Map();
+for (const p of lgPractice.data.passed) {
+  if (p.difficulty >= 1 && p.difficulty <= 7) lgDiffCount.set(p.difficulty, (lgDiffCount.get(p.difficulty) || 0) + 1);
+}
+const lgByDifficulty = [1, 2, 3, 4, 5, 6, 7].map((d) => ({ d, count: lgDiffCount.get(d) || 0 }));
+
 // ---------------------------------------------------------------- 输出
 const today = new Date();
 const iso = (sec) => (sec ? new Date(sec * 1000).toISOString() : null);
@@ -505,6 +535,8 @@ const luogu = {
   })),
   unsolved: lgUnsolved,
   trainings: lgTrainingDetails,
+  contests: { upcoming: lgUpcoming },
+  stats: { byDifficulty: lgByDifficulty },
   elo: (lgProfile.data.elo || []).map((e) => ({ contest: e.contest?.name, rating: e.rating, time: iso(e.time) })),
 };
 

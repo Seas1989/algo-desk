@@ -2,6 +2,7 @@
  * ui.js — 极简 DOM 助手 + 格式化 + 公共组件
  * 不引入框架，保证产物轻、加载快、可长期维护。
  */
+import { tagCN, verdictCN, verdictFull } from './i18n.js';
 
 /** 创建元素：h('div', { class: 'x', onClick: fn }, child...) */
 export function h(tag, props, ...kids) {
@@ -143,52 +144,54 @@ export function sectionHead(title, desc, extra) {
   );
 }
 
+/** 最近点过的题（给 AI 上下文用，不拦截跳转） */
+let lastProb = null;
+export const getProb = () => lastProb;
+
 /**
  * 题目行 —— 整行可点，直接进入可提交页面
  * cf:   题干页 / 右侧提交按钮到 /contest/{id}/submit
  * luogu: 题目页自带提交框
  */
-export function probRow(p, { showContest = true, href } = {}) {
+export function probRow(p, { showContest = true } = {}) {
   const isLG = !!p.pid;
   const url = p.url;
   const submitUrl = isLG
-    ? `https://www.luogu.com.cn/problem/${p.pid}`
-    : `https://codeforces.com/contest/${p.contestId}/submit`;
+    ? url // 洛谷题目页自带提交框
+    : `https://codeforces.com/${p.contestId >= 100000 ? 'gym' : 'contest'}/${p.contestId}/submit`;
   const statusDot =
     p.status === 'ok' ? 'ok' : p.status === 'tried' ? 'tried' : isLG && p.passed ? 'ok' : 'todo';
   const showVerdict = p.lastVerdict && p.lastVerdict !== '跳过' && p.status !== 'ok';
 
+  // 行与「提交」是兄弟节点（不用嵌套 <a>）：整行进题面，按钮进提交，中键/Ctrl 各自能开新标签
   return h(
-    'a',
-    { class: 'prob', href: url, target: '_blank', rel: 'noreferrer', title: `在 ${isLG ? '洛谷' : 'Codeforces'} 打开` },
-    h('span', { class: `dot ${statusDot}` }),
-    h('span', { class: 'prob-id' }, isLG ? p.pid : `${p.contestId ?? ''}${p.index ?? ''}`),
-    h('span', { class: 'prob-name' }, p.name),
-    isLG ? lgBadge(p.difficulty) : ratingBadge(p.rating),
+    'div',
+    { class: 'prob-row' },
     h(
-      'span',
-      { class: 'prob-tags' },
-      (p.tags || []).slice(0, 2).map((t) => chip(t, 'ghost')),
-      (p.tags || []).length > 2 ? chip(`+${p.tags.length - 2}`, 'ghost') : null,
-    ),
-    h('span', { class: 'prob-src' }, showContest && p.contestName ? p.contestName.replace(/^Codeforces (Round|Educational)/, '$1') : ''),
-    h('span', { class: 'prob-tries' }, p.tries > 1 ? `${p.tries} 次` : ''),
-    h('span', { class: 'prob-verdict' }, showVerdict ? chip(p.lastVerdict, 'bad') : ''),
-    h(
-      'span',
-      { class: 'prob-actions' },
+      'a',
+      { class: 'prob', href: url, target: '_blank', rel: 'noreferrer', title: `在 ${isLG ? '洛谷' : 'Codeforces'} 打开`, onClick: () => (lastProb = p) },
+      h('span', { class: `dot ${statusDot}` }),
+      h('span', { class: 'prob-id' }, isLG ? p.pid : `${p.contestId ?? ''}${p.index ?? ''}`),
+      h('span', { class: 'prob-name' }, p.name),
+      isLG ? lgBadge(p.difficulty) : ratingBadge(p.rating),
       h(
-        'a',
-        {
-          class: 'mini-btn',
-          href: submitUrl,
-          target: '_blank',
-          rel: 'noreferrer',
-          onClick: (e) => e.stopPropagation(),
-          title: '直接进入提交页',
-        },
-        '提交',
+        'span',
+        { class: 'prob-tags' },
+        (p.tags || []).slice(0, 2).map((t) => chip(tagCN(t), 'ghost')),
+        (p.tags || []).length > 2 ? chip(`+${p.tags.length - 2}`, 'ghost') : null,
       ),
+      h('span', { class: 'prob-src' }, showContest && p.contestName ? p.contestName.replace(/^Codeforces (Round|Educational)/, '$1') : ''),
+      h('span', { class: 'prob-tries' }, p.tries > 1 ? `${p.tries} 次` : ''),
+      h(
+        'span',
+        { class: 'prob-verdict' },
+        showVerdict ? h('span', { class: 'chip bad', title: verdictFull(p.lastVerdict) }, verdictCN(p.lastVerdict)) : '',
+      ),
+    ),
+    h(
+      'a',
+      { class: 'mini-btn', href: submitUrl, target: '_blank', rel: 'noreferrer', title: '直接进入提交页' },
+      '提交',
     ),
   );
 }

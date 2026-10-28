@@ -2165,7 +2165,7 @@
    "id": 101,
    "name": "【入门2】分支结构",
    "problemCount": 18,
-   "markCount": 14870,
+   "markCount": 14871,
    "desc": "人们在人生中需要做出许多选择，小到考虑晚上吃什么，大到决定高考志愿填报的学校。只有一次次选择后才能带来无限可能，我们要根据自己掌握的情况，做出最佳的选择。\n\n程序的执行也不是一成不变的，往往会要求程序能够在不同的场合下有不同的动作。这时就需要在代码中使用条件语句来做出不同的选择。比如说，登录洛谷网时，网站后台会将你提交的用户名和密码在后台数据库中看看是否匹配，如果能够匹配就登陆成功，否则就登陆失败",
    "done": 16,
    "problems": [
@@ -5470,6 +5470,72 @@
    }
   }
  ],
+ "contests": {
+  "upcoming": [
+   {
+    "id": 366008,
+    "name": "[ICPC2019 Nanchang R] ICPC 2019 区域赛南昌站重现赛",
+    "startTime": 1793250000,
+    "endTime": 1793268000,
+    "host": "洛谷官方团队",
+    "problemCount": 13,
+    "rated": true,
+    "url": "https://www.luogu.com.cn/contest/366008"
+   },
+   {
+    "id": 367488,
+    "name": "2026 年上海市临港五校程序设计邀请赛（重现赛）",
+    "startTime": 1793509200,
+    "endTime": 1793523600,
+    "host": "洛谷官方团队",
+    "problemCount": 0,
+    "rated": true,
+    "url": "https://www.luogu.com.cn/contest/367488"
+   },
+   {
+    "id": 329950,
+    "name": "【LGR-313-Div.2】洛谷 11 月月赛 I &『LBA-OI』Round 6",
+    "startTime": 1794031200,
+    "endTime": 1794045600,
+    "host": "洛谷官方团队",
+    "problemCount": 4,
+    "rated": true,
+    "url": "https://www.luogu.com.cn/contest/329950"
+   }
+  ]
+ },
+ "stats": {
+  "byDifficulty": [
+   {
+    "d": 1,
+    "count": 50
+   },
+   {
+    "d": 2,
+    "count": 70
+   },
+   {
+    "d": 3,
+    "count": 30
+   },
+   {
+    "d": 4,
+    "count": 9
+   },
+   {
+    "d": 5,
+    "count": 1
+   },
+   {
+    "d": 6,
+    "count": 0
+   },
+   {
+    "d": 7,
+    "count": 0
+   }
+  ]
+ },
  "elo": [
   {
    "contest": "【LGR-276-Div.3】洛谷蓝桥杯省赛模拟赛 2026",

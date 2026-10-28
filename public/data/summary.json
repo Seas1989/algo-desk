@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-28T02:27:24.993Z",
+ "generatedAt": "2026-10-28T03:09:30.975Z",
  "cf": {
   "handle": "Seas1989",
   "avatar": "https://userpic.codeforces.org/5552061/title/baf609fdf21ea41e.jpg",
@@ -445,7 +445,7 @@
   "cf": [
    {
     "index": "A",
-    "name": "Riptide",
+    "name": "Прилив",
     "rating": 800,
     "tags": [
      "implementation",
@@ -462,7 +462,7 @@
    },
    {
     "index": "B",
-    "name": "Evanescent",
+    "name": "Сокращение",
     "rating": 900,
     "tags": [
      "implementation",
@@ -480,7 +480,7 @@
    },
    {
     "index": "C1",
-    "name": "Marenol (easy version)",
+    "name": "Marenol (простая версия)",
     "rating": 1000,
     "tags": [
      "greedy"
@@ -498,7 +498,7 @@
   "cfNew": [
    {
     "index": "C",
-    "name": "Red-Black Pairs",
+    "name": "Красно-чёрные пары",
     "rating": 1100,
     "tags": [
      "dp",
@@ -515,7 +515,7 @@
    },
    {
     "index": "E",
-    "name": "Prime Destruction",
+    "name": "Разрушение простых",
     "rating": 1400,
     "tags": [
      "brute force",
@@ -534,7 +534,7 @@
    },
    {
     "index": "C2",
-    "name": "We Be Flipping (Hard Version)",
+    "name": "Время переворотов (сложная версия)",
     "rating": 1400,
     "tags": [
      "constructive algorithms",

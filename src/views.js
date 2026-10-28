@@ -1,7 +1,8 @@
 /**
- * views.js — 五个页面的渲染函数
+ * views.js — 页面的渲染函数（计划页实现在 plan.js，这里统一导出）
  * 入参统一为 { summary, cf, luogu }
  */
+import { tagCN, rankCN } from './i18n.js';
 import {
   h,
   fmtDate,
@@ -17,7 +18,13 @@ import {
   lineChart,
   ratingClass,
   avatarEl,
+  LG_DIFF,
 } from './ui.js';
+import { planView } from './plan.js';
+
+export function plan(data) {
+  return planView(data);
+}
 
 const fmtDelta = (d) => (d == null ? '—' : `${d > 0 ? '+' : ''}${d}`);
 
@@ -66,7 +73,7 @@ export function home({ summary: s, cf, luogu }) {
     h(
       'div',
       { class: 'grid-4' },
-      statCard('CF 当前 Rating', String(s.cf.rating), `最高 ${s.cf.maxRating} · ${s.cf.rank}`, 'accent'),
+      statCard('CF 当前 Rating', String(s.cf.rating), `最高 ${s.cf.maxRating} · ${rankCN(s.cf.rank)}`, 'accent'),
       statCard('CF 已过题', String(s.cf.solved), `${s.cf.submissions} 次提交 · ${s.cf.halfDone} 场半途而废`),
       statCard('欠的题', String(totalUnsolved), `比赛未完成 ${s.cf.unfinished} · 洛谷 ${s.luogu.submitted}`, 'warn'),
       statCard('近 7 天提交', String(last7), '按 CF 提交统计', last7 ? 'ok' : 'muted'),
@@ -166,7 +173,7 @@ export function home({ summary: s, cf, luogu }) {
             return h(
               'div',
               { class: 'bar-row' },
-              h('span', { class: 'bar-label' }, t.tag),
+              h('span', { class: 'bar-label' }, tagCN(t.tag)),
               h('span', { class: 'bar-track' }, h('i', { style: { width: (t.missing / max) * 100 + '%' } })),
               h('span', { class: 'bar-num mono' }, `${t.missing}`),
               h('span', { class: 'bar-sub' }, `已过 ${t.solved}`),
@@ -192,7 +199,50 @@ export function home({ summary: s, cf, luogu }) {
         ),
       ),
     ),
+    lgDiffCard(luogu),
   );
+}
+
+function lgDiffCard(luogu) {
+  const rows = luogu?.stats?.byDifficulty || [];
+  const max = Math.max(1, ...rows.map((x) => x.count));
+  const total = rows.reduce((a, x) => a + x.count, 0);
+  return h(
+    'div',
+    { class: 'grid-2' },
+    h(
+      'section',
+      { class: 'card' },
+      sectionHead('洛谷难度分布', `已通过 ${total} 题在各难度档的数量`),
+      h(
+        'div',
+        { class: 'bars' },
+        rows.map((x) =>
+          h(
+            'div',
+            { class: 'bar-row' },
+            h('span', { class: 'bar-label' }, LG_DIFF[x.d]?.label || `${x.d} 级`),
+            h('span', { class: 'bar-track' }, h('i', { class: 'lg', style: { width: (x.count / max) * 100 + '%' } })),
+            h('span', { class: 'bar-num mono' }, String(x.count)),
+            h('span', { class: 'bar-sub' }, x.count ? `${Math.round((x.count / total) * 100)}%` : ''),
+          ),
+        ),
+      ),
+    ),
+    h(
+      'section',
+      { class: 'card' },
+      sectionHead('洛谷比赛记录', eloDesc(luogu)),
+      luogu?.elo?.length
+        ? h('div', { class: 'list-compact' }, luogu.elo.slice(0, 5).map(lgEloRow))
+        : h('div', { class: 'empty' }, '还没有洛谷比赛记录'),
+    ),
+  );
+}
+
+function eloDesc(luogu) {
+  const n = luogu?.elo?.length || 0;
+  return n ? `最近 ${n} 场的 rating（最多显 5 场）` : '还没有洛谷比赛记录';
 }
 
 function profileCard(platform, name, avatar, big, sub, kind, chips, url) {
@@ -222,7 +272,7 @@ function adviceCard(title, badge, desc, children) {
 }
 
 /* ------------------------------------------------------------------ 比赛 */
-export function contests({ cf, summary: s }) {
+export function contests({ cf, luogu, summary: s }) {
   const participated = cf.contests;
   const halfDone = participated.filter((c) => c.halfDone);
   const rated = participated.filter((c) => c.rated).slice(0, 6);
@@ -231,7 +281,7 @@ export function contests({ cf, summary: s }) {
   const avgSolved = rated.length ? (rated.reduce((a, c) => a + c.solved, 0) / rated.length).toFixed(1) : '0';
   const best = [...rated].sort((a, b) => (b.delta || 0) - (a.delta || 0))[0];
   const worst = [...rated].sort((a, b) => (a.delta || 0) - (b.delta || 0))[0];
-  const weak = s.weakTags.slice(0, 3).map((t) => t.tag).join('、');
+  const weak = s.weakTags.slice(0, 3).map((t) => tagCN(t.tag)).join('、');
 
   return h(
     'div',
@@ -257,6 +307,11 @@ export function contests({ cf, summary: s }) {
         ),
       ),
     ),
+
+    sectionHead('洛谷 · 即将开始', luogu?.contests?.upcoming?.length ? `共 ${luogu.contests.upcoming.length} 场，报名在洛谷站内完成（本站只跳转）` : '近期没有公开的洛谷比赛'),
+    luogu?.contests?.upcoming?.length
+      ? h('div', { class: 'upcoming-grid' }, luogu.contests.upcoming.map(lgUpcomingCard))
+      : null,
 
     sectionHead('最近比赛速览', '近 6 场计入 rating 的比赛，一句话看完状态', null),
     h(
@@ -285,6 +340,36 @@ export function contests({ cf, summary: s }) {
       { class: 'stack-sm' },
       participated.map(contestCard),
     ),
+
+    sectionHead('我的洛谷比赛', luogu?.elo?.length ? `共 ${luogu.elo.length} 场，来自洛谷 rating 记录` : '还没有洛谷比赛记录'),
+    luogu?.elo?.length ? h('div', { class: 'stack-sm' }, luogu.elo.map(lgEloRow)) : null,
+  );
+}
+
+function lgUpcomingCard(c) {
+  return h(
+    'a',
+    { class: 'card upcoming', href: c.url, target: '_blank', rel: 'noreferrer' },
+    h(
+      'div',
+      { class: 'up-top' },
+      h('span', { class: 'up-type' }, '洛谷'),
+      chip(c.problemCount ? `${c.problemCount} 题` : '—', 'ghost'),
+    ),
+    h('div', { class: 'up-name' }, c.name),
+    h('div', { class: 'up-time mono' }, fmtDate(c.startTime)),
+    h('div', { class: 'up-count', dataset: { countdown: c.startTime } }, '…'),
+    h('div', { class: 'up-cta' }, '去比赛 ↗'),
+  );
+}
+
+function lgEloRow(e) {
+  return h(
+    'div',
+    { class: 'card lg-elo' },
+    h('span', { class: 'lg-elo-name' }, e.contest || '洛谷比赛'),
+    h('span', { class: 'mono lg-elo-rating' }, e.rating == null ? '—' : String(e.rating)),
+    h('span', { class: 'muted mono lg-elo-time' }, e.time ? fmtDate(Date.parse(e.time) / 1000) : '—'),
   );
 }
 
@@ -329,10 +414,16 @@ function contestCard(c) {
         known ? h('span', { class: 'mono cs-score' }, `${c.solved}/${c.total}`) : null,
         known ? progress(c.solved, c.total, statusCls) : null,
       ),
+      h(
+        'a',
+        { class: 'btn ghost cs-go', href: c.url, target: '_blank', rel: 'noreferrer', onClick: (e) => e.stopPropagation() },
+        '去比赛 ↗',
+      ),
     ),
     h(
       'div',
       { class: 'contest-body' },
+      h('div', { class: 'contest-hint muted' }, '点题目进题面，点「提交」直达提交表单'),
       h(
         'div',
         { class: 'prob-grid' },
@@ -462,7 +553,7 @@ export function unsolved({ cf, luogu, summary: s }) {
                 renderList();
               },
             },
-            tagOptions.map((t) => h('option', { value: t, selected: tag === t }, t === 'all' ? '全部算法' : t)),
+            tagOptions.map((t) => h('option', { value: t, selected: tag === t }, t === 'all' ? '全部算法' : tagCN(t))),
           )
         : null,
     );
@@ -560,7 +651,7 @@ export function lists({ cf, luogu }) {
                   render();
                 },
               },
-              t.tag,
+              tagCN(t.tag),
               h('span', { class: 'tag-count' }, t.count),
             ),
           ),
@@ -568,7 +659,7 @@ export function lists({ cf, luogu }) {
         h(
           'section',
           { class: 'card' },
-          sectionHead(`${cur.tag}`, `${cur.count} 题，按难度升序`),
+          sectionHead(`${tagCN(cur.tag)}`, `${cur.count} 题，按难度升序`),
           cur.problems.map((p) => probRow(p)),
         ),
       );

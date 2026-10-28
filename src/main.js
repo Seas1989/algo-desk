@@ -6,14 +6,104 @@ const NAV = [
   { id: 'home', label: '总览' },
   { id: 'contests', label: '比赛' },
   { id: 'unsolved', label: '未完成题' },
+  { id: 'plan', label: '做题计划' },
   { id: 'lists', label: '题单' },
   { id: 'about', label: '关于' },
 ];
 
 const dataBase = new URL('data/', location.href.replace(/[#?].*$/, ''));
 
+/* 主题：深色 / 浅色 / 跟随系统，写 localStorage 并打 data-theme */
+const THEME_KEY = 'algodesk.theme';
+const THEME_LABEL = { dark: '深色', light: '浅色', auto: '跟随系统' };
+const getThemePref = () => {
+  try {
+    return localStorage.getItem(THEME_KEY) || 'auto';
+  } catch {
+    return 'auto';
+  }
+};
+const applyTheme = (pref) => {
+  const eff =
+    pref === 'auto' && window.matchMedia
+      ? (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      : pref === 'auto'
+        ? 'dark'
+        : pref;
+  document.documentElement.setAttribute('data-theme', eff);
+};
+applyTheme(getThemePref());
+if (window.matchMedia) {
+  matchMedia('(prefers-color-scheme: light)').addEventListener?.('change', () => {
+    if (getThemePref() === 'auto') applyTheme('auto');
+  });
+}
+function themeButton() {
+  let pref = getThemePref();
+  const btn = h('button', { class: 'btn ghost theme-btn', type: 'button', title: '切换主题' }, `◐ ${THEME_LABEL[pref]}`);
+  btn.addEventListener('click', () => {
+    const order = ['dark', 'light', 'auto'];
+    pref = order[(order.indexOf(pref) + 1) % order.length];
+    try {
+      localStorage.setItem(THEME_KEY, pref);
+    } catch {
+      /* 隐私模式下降级：只切当前会话 */
+    }
+    applyTheme(pref);
+    btn.textContent = `◐ ${THEME_LABEL[pref]}`;
+  });
+  return btn;
+}
+
 let data = null;
 let loadError = null;
+
+/* 实时查 CF handle（仅 Codeforces，洛谷无开放接口） */
+let liveHandle = null;
+let liveError = null;
+let liveLoading = false;
+let liveBannerFn = null;
+
+async function doQuery(handle) {
+  handle = (handle || '').trim();
+  const url = new URL(location.href);
+  if (handle) url.searchParams.set('cf', handle);
+  else url.searchParams.delete('cf');
+  history.replaceState(null, '', url);
+  if (!handle) {
+    liveHandle = null;
+    liveError = null;
+    data = await loadData();
+    render();
+    return;
+  }
+  liveLoading = true;
+  liveError = null;
+  render();
+  try {
+    const mod = await import('./live.js'); // 按需加载，不进主包
+    liveBannerFn = mod.liveBanner;
+    await mod.applyLive(handle, data);
+    liveHandle = handle;
+  } catch (e) {
+    liveError = e.message || String(e);
+    liveHandle = null;
+  } finally {
+    liveLoading = false;
+    render();
+  }
+}
+
+function handleSearchBar() {
+  const input = h('input', { class: 'input handle-input', type: 'text', placeholder: 'CF handle', value: liveHandle || '' });
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') doQuery(input.value);
+  });
+  const btn = h('button', { class: 'btn ghost', type: 'button' }, liveLoading ? '查询中…' : '查询');
+  btn.disabled = liveLoading;
+  btn.addEventListener('click', () => doQuery(input.value));
+  return h('div', { class: 'handle-search' }, input, btn);
+}
 
 async function loadData() {
   const get = async (f) => {
@@ -62,6 +152,8 @@ function navBar() {
         'div',
         { class: 'topbar-right' },
         data ? h('span', { class: 'updated mono' }, `更新 ${fmtDate(Date.parse(data.summary.generatedAt) / 1000)}`) : null,
+        handleSearchBar(),
+        themeButton(),
         h('a', { class: 'btn ghost', href: 'https://codeforces.com', target: '_blank', rel: 'noreferrer' }, 'Codeforces ↗'),
       ),
     ),
@@ -100,16 +192,47 @@ function render() {
   }
 
   const el = views[route](data);
-  const main = h('main', { class: 'wrap' }, el);
+  const main = h('main', { class: 'wrap' }, liveBanner(), el);
   shell(main);
   mountCountdowns(main);
   window.scrollTo({ top: 0, behavior: 'instant' });
 }
 
+function liveBanner() {
+  if (liveBannerFn) return liveBannerFn({ handle: liveHandle, error: liveError });
+  // live.js 尚未加载时（连按需块都拉不下来）的短兜底
+  if (liveError) return h('div', { class: 'card error' }, h('p', {}, '实时查询失败，请稍后重试'));
+  return null;
+}
+
 window.addEventListener('hashchange', render);
+
+/* AI 教练：点击时才拉 ai.js，不占主包 */
+let aiReady = false;
+function aiFab() {
+  const btn = h('button', { class: 'ai-fab', type: 'button', title: 'AI 教练' }, 'AI');
+  btn.addEventListener('click', async () => {
+    if (!aiReady) {
+      btn.disabled = true;
+      try {
+        const m = await import('./ai.js');
+        m.openAI(() => data);
+        aiReady = true;
+      } catch {
+        render();
+      } finally {
+        btn.disabled = false;
+      }
+    } else {
+      import('./ai.js').then((m) => m.toggle());
+    }
+  });
+  return btn;
+}
 
 (async function boot() {
   if (!document.getElementById('root')) document.body.append(h('div', { id: 'root' }));
+  document.body.append(aiFab());
   render();
   try {
     data = await loadData();
@@ -117,4 +240,6 @@ window.addEventListener('hashchange', render);
     loadError = e;
   }
   render();
+  const cfParam = new URLSearchParams(location.search).get('cf');
+  if (cfParam && !loadError) doQuery(cfParam);
 })();
