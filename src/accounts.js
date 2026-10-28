@@ -22,9 +22,16 @@ export function normalizeCf(handle) {
 }
 
 export function normalizeLuogu(uid) {
-  const v = String(uid || '').trim();
-  if (!v) return { ok: true, value: '' }; // 洛谷可选
-  if (!UID_RE.test(v)) return { ok: false, error: '洛谷 UID 是一串数字，比如 1864907' };
+  const raw = String(uid || '').trim();
+  if (!raw) return { ok: true, value: '' }; // 洛谷可选
+
+  // 允许直接粘个人主页链接：https://www.luogu.com.cn/user/1864907
+  const fromUrl = /luogu\.com(?:\.cn)?\/user\/(\d{1,9})/i.exec(raw);
+  const v = fromUrl ? fromUrl[1] : raw;
+
+  if (!UID_RE.test(v)) {
+    return { ok: false, error: '洛谷 UID 是个人主页地址里 /user/ 后面那串数字，比如 1864907' };
+  }
   return { ok: true, value: v };
 }
 
