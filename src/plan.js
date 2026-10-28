@@ -9,6 +9,9 @@ import { parseLuoguBoxText, luoguBoxCard, loadBox } from './lgbox.js';
 import { generatePlan, aiReady } from './ai-plan.js';
 
 const KEY = 'algodesk.plan.v1';
+const AI_REQ_KEY = 'algodesk.plan.aiReq.v1';
+/* 上一次生成的结果提示：redraw 会把卡片拆了重建，所以放外面存着 */
+let lastAiMsg = '';
 const PER_DAY = 3;
 const DAYS = 7;
 const WD = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
@@ -29,6 +32,24 @@ function load() {
     return p && Array.isArray(p.days) && p.days.length ? p : null;
   } catch {
     return null;
+  }
+}
+
+/** 上次写给 AI 的要求：排完不清空，下次直接在上面改 */
+function loadAiReq() {
+  try {
+    const r = JSON.parse(localStorage.getItem(AI_REQ_KEY) || '{}');
+    return { requirement: typeof r.requirement === 'string' ? r.requirement : '', days: r.days || DAYS, perDay: r.perDay || PER_DAY };
+  } catch {
+    return { requirement: '', days: DAYS, perDay: PER_DAY };
+  }
+}
+
+function saveAiReq(v) {
+  try {
+    localStorage.setItem(AI_REQ_KEY, JSON.stringify({ ...v, at: Date.now() }));
+  } catch {
+    /* 隐私模式下本次会话有效 */
   }
 }
 function save(plan) {
@@ -324,15 +345,27 @@ export function planView(data) {
   }
 
   function aiPlanCard() {
+    /* 上次写的要求留着：排完一次不要清空，下次在这上面改就行 */
+    const req = loadAiReq();
     const ta = h('textarea', {
       class: 'input plan-ta',
       rows: 3,
       placeholder: '比如：这周只练动态规划和二分，每天 2 题，难度别超过 1600，卡过的题优先',
+      value: req.requirement || '',
     });
-    const dayIn = h('input', { class: 'input plan-num', type: 'number', min: 1, max: 30, value: 7 });
-    const perIn = h('input', { class: 'input plan-num', type: 'number', min: 1, max: 6, value: 3 });
+    const dayIn = h('input', { class: 'input plan-num', type: 'number', min: 1, max: 30, value: req.days || 7 });
+    const perIn = h('input', { class: 'input plan-num', type: 'number', min: 1, max: 6, value: req.perDay || 3 });
     const btn = h('button', { class: 'btn primary', type: 'button' }, '让 AI 排');
-    const msg = h('div', { class: 'plan-err' });
+    // redraw 会把整张卡拆了重建，所以上一次的提示要存在卡片外面
+    const msg = h('div', { class: 'plan-err' }, lastAiMsg);
+
+    const remember = () =>
+      saveAiReq({ requirement: ta.value, days: Number(dayIn.value) || 7, perDay: Number(perIn.value) || 3 });
+
+    // 边改边存，就算没点「让 AI 排」，下次打开也还在
+    ta.addEventListener('input', remember);
+    dayIn.addEventListener('change', remember);
+    perIn.addEventListener('change', remember);
 
     btn.addEventListener('click', async () => {
       msg.textContent = '';
@@ -353,10 +386,12 @@ export function planView(data) {
         });
         plan = { createdAt: Date.now(), days: r.days, by: 'ai' };
         save(plan);
+        remember(); // 要求存下来，redraw 之后能原样填回输入框
+        lastAiMsg = `排好了：${r.days.length} 天，从 ${r.total} 道候选里选。${r.dropped ? `丢弃了 ${r.dropped} 个对不上的题号。` : ''}`;
         redraw();
-        msg.textContent = `排好了：${r.days.length} 天，从 ${r.total} 道候选里选。${r.dropped ? `丢弃了 ${r.dropped} 个对不上的题号。` : ''}`;
       } catch (e) {
-        msg.textContent = e.message || '生成失败，换个说法再试。';
+        lastAiMsg = e.message || '生成失败，换个说法再试。';
+        msg.textContent = lastAiMsg;
       } finally {
         btn.disabled = false;
         btn.textContent = old;
