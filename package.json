@@ -9,7 +9,9 @@
     "build": "vite build",
     "preview": "vite preview",
     "fetch": "node scripts/fetch-data.mjs",
-    "fetch:refresh": "node scripts/fetch-data.mjs --refresh"
+    "fetch:refresh": "node scripts/fetch-data.mjs --refresh",
+    "fetch:users": "node scripts/fetch-luogu-extra.mjs",
+    "fetch:all": "node scripts/fetch-data.mjs && node scripts/fetch-luogu-extra.mjs"
   },
   "devDependencies": {
     "prettier": "^3.9.5",

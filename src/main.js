@@ -1,7 +1,10 @@
 import './styles.css';
+import './account.css';
 import { h, mountCountdowns, fmtDate, initTips } from './ui.js';
 import { TAG_CN } from './i18n.js';
 import * as views from './views.js';
+import { activeAccount, addAccount } from './accounts.js';
+import { accountButton, openLogin } from './login.js';
 
 const NAV = [
   { id: 'home', label: '总览' },
@@ -59,12 +62,65 @@ function themeButton() {
 let data = null;
 let loadError = null;
 
-/* 实时查 CF handle（仅 Codeforces，洛谷无开放接口） */
-let liveHandle = null;
+/* 站主快照：永远留一份，切换账号时当兜底 base，退出账号时回到它 */
+let staticData = null;
+
+/* 当前账号（null = 访客视图，看站主数据） */
+let account = null;
 let liveError = null;
 let liveLoading = false;
 let liveBannerFn = null;
+let luoguMissing = false;
 let lastQueryText = '';
+
+/**
+ * 应用一个账号：CF 走实时接口，洛谷读构建期快照。
+ * 传 null 回到访客视图。不写 localStorage —— 保存账号是账号面板的事。
+ */
+async function applyAccount(acc) {
+  account = acc || null;
+
+  const url = new URL(location.href);
+  if (account?.cf) url.searchParams.set('cf', account.cf);
+  else url.searchParams.delete('cf');
+  if (account?.luogu) url.searchParams.set('lg', account.luogu);
+  else url.searchParams.delete('lg');
+  history.replaceState(null, '', url);
+
+  liveError = null;
+  luoguMissing = false;
+
+  if (!account) {
+    liveBannerFn = null;
+    data = staticData || (await loadData());
+    render();
+    return;
+  }
+
+  liveLoading = true;
+  render();
+  try {
+    const mod = await import('./live.js'); // 按需加载，不进主包
+    liveBannerFn = mod.accountBanner;
+    const base = staticData || (await loadData());
+    const next = await mod.loadAccount(account, base);
+    data = next;
+    luoguMissing = !!next.luoguMissing;
+  } catch (e) {
+    liveError = e.message || String(e);
+    data = staticData || data;
+  } finally {
+    liveLoading = false;
+    render();
+  }
+}
+
+/* 搜索框里输入 handle = 快速看一眼（临时账号，不写进账号列表） */
+async function doQuery(handle) {
+  const v = (handle || '').trim();
+  if (!v) return applyAccount(null);
+  return applyAccount({ id: 'adhoc', cf: v, luogu: '', label: v, adhoc: true });
+}
 
 /* 中文标签名 / 英文标签 → 数据里真实存在的 CF 标签 */
 const CN2TAG = new Map(Object.entries(TAG_CN).map(([en, cn]) => [cn, en]));
@@ -95,43 +151,13 @@ function doSearch(raw) {
   goHash(`#/unsolved?q=${encodeURIComponent(text)}`);
 }
 
-async function doQuery(handle) {
-  handle = (handle || '').trim();
-  const url = new URL(location.href);
-  if (handle) url.searchParams.set('cf', handle);
-  else url.searchParams.delete('cf');
-  history.replaceState(null, '', url);
-  if (!handle) {
-    liveHandle = null;
-    liveError = null;
-    data = await loadData();
-    render();
-    return;
-  }
-  liveLoading = true;
-  liveError = null;
-  render();
-  try {
-    const mod = await import('./live.js'); // 按需加载，不进主包
-    liveBannerFn = mod.liveBanner;
-    await mod.applyLive(handle, data);
-    liveHandle = handle;
-  } catch (e) {
-    liveError = e.message || String(e);
-    liveHandle = null;
-  } finally {
-    liveLoading = false;
-    render();
-  }
-}
-
 function handleSearchBar() {
   const input = h('input', {
     class: 'input handle-input',
     type: 'text',
     placeholder: 'CF handle 或标签',
     title: '输入算法标签（如：贪心）筛选欠账；输入 CF handle 实时查询',
-    value: liveHandle || lastQueryText || '',
+    value: account?.cf || lastQueryText || '',
   });
   input.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') doSearch(input.value);
@@ -190,9 +216,10 @@ function navBar() {
         { class: 'topbar-right' },
         data ? h('span', { class: 'updated mono' }, `更新 ${fmtDate(Date.parse(data.summary.generatedAt) / 1000)}`) : null,
         handleSearchBar(),
+        accountButton({ onChange: () => applyAccount(activeAccount()) }),
         themeButton(),
-        h('a', { class: 'btn ghost', href: 'https://www.luogu.com.cn', target: '_blank', rel: 'noreferrer' }, '洛谷 ↗'),
-        h('a', { class: 'btn ghost', href: 'https://codeforces.com', target: '_blank', rel: 'noreferrer' }, 'Codeforces ↗'),
+        h('a', { class: 'btn ghost ext-link', href: 'https://www.luogu.com.cn', target: '_blank', rel: 'noreferrer' }, '洛谷 ↗'),
+        h('a', { class: 'btn ghost ext-link', href: 'https://codeforces.com', target: '_blank', rel: 'noreferrer' }, 'Codeforces ↗'),
       ),
     ),
   );
@@ -237,9 +264,9 @@ function render() {
 }
 
 function liveBanner() {
-  if (liveBannerFn) return liveBannerFn({ handle: liveHandle, error: liveError });
+  if (liveBannerFn) return liveBannerFn({ account, error: liveError, luoguMissing });
   // live.js 尚未加载时（连按需块都拉不下来）的短兜底
-  if (liveError) return h('div', { class: 'card error' }, h('p', {}, '实时查询失败，请稍后重试'));
+  if (liveError) return h('div', { class: 'card error' }, h('p', {}, '拉取数据失败，请稍后重试'));
   return null;
 }
 
@@ -274,11 +301,25 @@ function aiFab() {
   document.body.append(aiFab());
   render();
   try {
-    data = await loadData();
+    staticData = await loadData();
+    data = staticData;
   } catch (e) {
     loadError = e;
   }
   render();
-  const cfParam = new URLSearchParams(location.search).get('cf');
-  if (cfParam && !loadError) doQuery(cfParam);
+  if (loadError) return;
+
+  // 地址栏里的账号优先（可分享链接），其次读本机保存的账号
+  const sp = new URLSearchParams(location.search);
+  const cfParam = sp.get('cf');
+  const lgParam = sp.get('lg') || '';
+  if (cfParam) {
+    applyAccount({ id: 'adhoc', cf: cfParam, luogu: lgParam, label: cfParam, adhoc: true });
+  } else {
+    const saved = activeAccount();
+    if (saved) applyAccount(saved);
+  }
+
+  // ?login=1 —— 分享一个「加账号」的链接，也方便第一次来的人直接落到登录框
+  if (sp.get('login')) openLogin({ onChange: () => applyAccount(activeAccount()) });
 })();

@@ -103,8 +103,11 @@ export async function fetchCfLive(handle) {
       rated: !!rh,
       subs: problems.reduce((a, x) => a + x.tries, 0),
       solved,
-      total: problems.length,
-      unfinished: problems.length - solved,
+      // 实时模式拿不到「这场一共几题」：user.status 只包含用户碰过的题。
+      // 所以 total 留 null，让界面显示「已过 N 题」而不是编一个分母出来
+      // （之前 total = 碰过的题数，导致每场都显示「全部完成」，是假的）。
+      total: null,
+      unfinished: null,
       halfDone: solved > 0 && solved < problems.length,
       untouched: solved === 0,
       problems,
@@ -121,7 +124,7 @@ export async function fetchCfLive(handle) {
   const practiceUnsolved = [];
   for (const pr of byProb.values()) {
     if (pr.solved) continue;
-    const item = { ...pr, url: problemUrl(pr.contestId, pr.index) };
+    const item = { ...pr, url: problemUrl(pr.contestId, pr.index), status: 'tried' };
     const c = contests.find((x) => x.id === pr.contestId);
     if (c) unsolved.push({ ...item, contestName: c.name, contestTime: c.startTime, source: 'cf' });
     else practiceUnsolved.push({ ...item, source: 'cf-practice' });
@@ -186,7 +189,16 @@ export async function fetchCfLive(handle) {
     halfDone: contests.filter((c) => c.halfDone).length,
     practiceUnsolved: practiceUnsolved.length,
   };
-  const weakTags = byTag.map((t) => ({ tag: t.tag, missing: t.count, solved: 0 })).sort((a, b) => b.missing - a.missing).slice(0, 10);
+  // 已过题按标签计数：首页「薄弱知识点」要显示「未过 / 已过」，写死 0 会让人以为一题没做过
+  const solvedTag = new Map();
+  for (const pr of byProb.values()) {
+    if (!pr.solved) continue;
+    for (const t of pr.tags || []) solvedTag.set(t, (solvedTag.get(t) || 0) + 1);
+  }
+  const weakTags = byTag
+    .map((t) => ({ tag: t.tag, missing: t.count, solved: solvedTag.get(t.tag) || 0 }))
+    .sort((a, b) => b.missing - a.missing || a.solved - b.solved)
+    .slice(0, 10);
   const nextUp = {
     cf: unsolved.filter((p) => p.status === 'tried').slice(0, 3),
     cfNew: unsolved.filter((p) => p.status === 'todo').slice(0, 3),
@@ -196,21 +208,106 @@ export async function fetchCfLive(handle) {
   return { cf, summaryCf, heat, weakTags, nextUp };
 }
 
-// 把实时 CF 数据写回 data；洛谷置空（无开放接口）。整体放在按需块里，不占主包体积。
-export async function applyLive(handle, data) {
-  const r = await fetchCfLive(handle);
-  data.summary.cf = r.summaryCf;
-  data.summary.heat = r.heat;
-  data.summary.weakTags = r.weakTags;
-  data.summary.nextUp = r.nextUp;
-  data.summary.luogu = { uid: '', name: '—', avatar: null, rating: null, ranking: null, passed: 0, submitted: 0, trainings: 0 };
-  data.cf = r.cf;
-  data.luogu = { uid: '', profile: {}, passed: [], unsolved: [], trainings: [], contests: { upcoming: [] }, stats: { byDifficulty: [] }, elo: [] };
+const SNAPSHOT_BASE = new URL('data/', location.href.replace(/[#?].*$/, ''));
+
+const emptyLuogu = (uid) => ({
+  uid: uid || '',
+  profile: {
+    uid: uid || '',
+    name: uid ? `洛谷 ${uid}` : '—',
+    avatar: null,
+    rating: null,
+    ranking: null,
+    passed: 0,
+    submitted: 0,
+    trainings: 0,
+  },
+  passed: [],
+  unsolved: [],
+  trainings: [],
+  contests: { upcoming: [] },
+  stats: { byDifficulty: [] },
+  elo: [],
+});
+
+/**
+ * 洛谷没有开放接口，也没有 CORS，静态站点只能读「构建时预生成」的快照。
+ * 约定：额外用户是 data/luogu-<uid>.json；站主本人是 data/luogu.json。
+ */
+async function loadLuoguSnapshot(uid, primaryUid) {
+  const tryLoad = async (file) => {
+    try {
+      const res = await fetch(new URL(file, SNAPSHOT_BASE), { cache: 'no-cache' });
+      if (!res.ok) return null;
+      const j = await res.json();
+      return j && j.profile ? j : null;
+    } catch {
+      return null;
+    }
+  };
+  const own = await tryLoad(`luogu-${uid}.json`);
+  if (own) return own;
+  if (String(uid) === String(primaryUid || '')) return tryLoad('luogu.json');
+  return null;
 }
 
-// 实时视图顶栏提示；文案放这里，主包只留一个短兜底。
-export function liveBanner({ handle, error }) {
-  if (error) return h('div', { class: 'card error' }, h('p', {}, `实时查询失败：${error}`), h('p', { class: 'muted' }, '已保留默认数据，稍后重试或检查 handle 拼写。'));
-  if (handle) return h('div', { class: 'card live-note' }, `正在实时查看 Codeforces 用户 ${handle} 的公开数据。实时查询仅支持 CF；洛谷无开放接口，本视图下洛谷部分为空。`);
-  return null;
+/**
+ * 按账号组装一份完整 data：
+ *   CF —— 浏览器直连公开 API 实时拉
+ *   洛谷 —— 有快照就用，没有就留空并标记 luoguMissing（提示条解释原因）
+ * base 只用来兜底 summary 里与账号无关的字段。
+ */
+export async function loadAccount(account, base) {
+  const r = await fetchCfLive(account.cf);
+  const summary = {
+    ...base.summary,
+    cf: r.summaryCf,
+    heat: r.heat,
+    weakTags: r.weakTags,
+    nextUp: r.nextUp,
+  };
+
+  let luogu = emptyLuogu('');
+  let luoguMissing = false;
+  if (account.luogu) {
+    const primaryUid = base?.summary?.luogu?.uid || base?.luogu?.uid || '';
+    const snap = await loadLuoguSnapshot(account.luogu, primaryUid);
+    if (snap) {
+      luogu = snap;
+      summary.luogu = snap.profile;
+    } else {
+      luoguMissing = true;
+      luogu = emptyLuogu(account.luogu);
+      summary.luogu = luogu.profile;
+    }
+  } else {
+    summary.luogu = emptyLuogu('').profile;
+  }
+
+  return { summary, cf: r.cf, luogu, luoguMissing };
+}
+
+// 账号视图的顶栏提示；主包只留一个短兜底。
+export function accountBanner({ account, error, luoguMissing }) {
+  if (error) {
+    return h(
+      'div',
+      { class: 'card error' },
+      h('p', {}, `拉取 ${account?.cf || ''} 的数据失败：${error}`),
+      h('p', { class: 'muted' }, '检查 handle 拼写，或稍后重试（Codeforces 接口偶发限流）。'),
+    );
+  }
+  if (!account) return null;
+  if (luoguMissing) {
+    return h(
+      'div',
+      { class: 'card live-note' },
+      `正在看 Codeforces 用户 ${account.cf} 的实时数据。洛谷 ${account.luogu} 还没收录——洛谷没有开放接口，需要把它加进 config.json 的 users 再重新生成快照。`,
+    );
+  }
+  return h(
+    'div',
+    { class: 'card live-note' },
+    `正在看 ${account.cf} 的实时数据${account.luogu ? '，洛谷数据来自构建时的快照' : '；没绑洛谷账号，洛谷部分为空'}。`,
+  );
 }

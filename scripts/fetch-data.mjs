@@ -22,8 +22,18 @@ const args = process.argv.slice(2);
 const REFRESH = args.includes('--refresh');
 const argOf = (k, d) => (args.find((a) => a.startsWith(`--${k}=`)) || '').split('=')[1] || d;
 
-const CF_HANDLE = argOf('cf', 'Seas1989');
-const LUOGU_UID = argOf('luogu', '1864907');
+/** config.json 是「这个站归谁」的配置；命令行参数优先于它，它优先于内置默认值 */
+const CONFIG_PATH = path.join(ROOT, 'config.json');
+const config = (() => {
+  try {
+    return JSON.parse(fs.readFileSync(CONFIG_PATH, 'utf8'));
+  } catch {
+    return {};
+  }
+})();
+
+const CF_HANDLE = argOf('cf', config.cf || 'Seas1989');
+const LUOGU_UID = String(argOf('luogu', config.luogu || '1864907'));
 
 const UA =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0 Safari/537.36';
