@@ -198,7 +198,11 @@ export function planView(data) {
   const pool = buildCandidates(data);
   const poolMap = new Map(pool.map((c) => [c.key, c]));
   let plan = load();
-  if (!plan || plan.days.every((d) => d.date < today())) {
+  /* AI 排的计划不要因为「日期都过去了」就被悄悄重排：只要还有没做完的题就留着，
+     否则用户会觉得「排好的计划一离开就没了」。 */
+  const stale = plan && plan.days.every((d) => d.date < today());
+  const stillHasWork = plan && plan.days.some((d) => d.items.some((i) => !i.done && !i.skipped));
+  if (!plan || (stale && (plan.by !== 'ai' || !stillHasWork))) {
     plan = regenerate(data, plan);
     save(plan);
   }

@@ -18,6 +18,17 @@ const dayStr = (offset) => {
   return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
 };
 
+/**
+ * 计划页会把「所有日期都早于今天」的计划判定为过期并整份重排。
+ * 模型经常吐出训练数据里的旧日期（2024 之类），那样排完就已经算过期，
+ * 一离开页面再回来就被自动重排覆盖掉。所以只认今天及以后的日期，其余按顺序补。
+ */
+const todayStr = () => dayStr(0);
+const usableDate = (s, i) => {
+  const v = String(s || '');
+  return /^\d{4}-\d{2}-\d{2}$/.test(v) && v >= todayStr() ? v : dayStr(i);
+};
+
 export function aiReady() {
   try {
     const c = JSON.parse(localStorage.getItem(CFG_KEY) || '{}');
@@ -127,7 +138,7 @@ export async function generatePlan({ data, box, requirement, days = 7, perDay = 
     const uniq = items.filter((p) => (seen.has(p.key) ? false : seen.add(p.key)));
     if (!uniq.length) continue;
     outDays.push({
-      date: /^\d{4}-\d{2}-\d{2}$/.test(d.date || '') ? d.date : dayStr(i),
+      date: usableDate(d.date, i),
       items: uniq.map((p) => ({
         key: p.key,
         name: p.name,
