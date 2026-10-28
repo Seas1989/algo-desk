@@ -462,10 +462,12 @@ export function unsolved({ cf, luogu, summary: s }) {
 
   const listBox = h('div', { class: 'stack-sm' });
   const filterBar = h('div', { class: 'filters' });
+  // 支持 #/unsolved?tag=greedy / ?q=xxx 直达（顶栏搜标签会跳到这里）
+  const hp = new URLSearchParams(location.hash.split('?')[1] || '');
   let active = 'contest';
-  let query = '';
+  let query = hp.get('q') || '';
   let rating = 'all';
-  let tag = 'all';
+  let tag = hp.get('tag') || 'all';
 
   function items() {
     const base = sources.find((x) => x.id === active).items;

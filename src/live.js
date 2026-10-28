@@ -15,7 +15,13 @@ async function get(method, params) {
   } catch {
     throw new Error('Codeforces 接口返回异常');
   }
-  if (j.status !== 'OK') throw new Error(j.comment || `Codeforces ${method} 失败`);
+  if (j.status !== 'OK') {
+    const c = j.comment || '';
+    const who = params.handle || params.handles || '';
+    if (/between 3 and 24/i.test(c)) throw new Error(`handle「${who}」长度需为 3–24 个字符`);
+    if (/not found/i.test(c)) throw new Error(`找不到用户「${who}」`);
+    throw new Error(c || `Codeforces ${method} 失败`);
+  }
   return j.result;
 }
 

@@ -1,5 +1,6 @@
 import './styles.css';
 import { h, mountCountdowns, fmtDate, initTips } from './ui.js';
+import { TAG_CN } from './i18n.js';
 import * as views from './views.js';
 
 const NAV = [
@@ -63,6 +64,36 @@ let liveHandle = null;
 let liveError = null;
 let liveLoading = false;
 let liveBannerFn = null;
+let lastQueryText = '';
+
+/* 中文标签名 / 英文标签 → 数据里真实存在的 CF 标签 */
+const CN2TAG = new Map(Object.entries(TAG_CN).map(([en, cn]) => [cn, en]));
+const EN2TAG = new Map(Object.entries(TAG_CN).map(([en]) => [en.toLowerCase(), en]));
+function matchTag(text) {
+  const en = CN2TAG.get(text) || EN2TAG.get(text.toLowerCase());
+  if (!en) return null;
+  const avail = new Set((data?.cf?.byTag || []).map((t) => t.tag));
+  return avail.has(en) ? en : null;
+}
+
+function goHash(hash) {
+  if (location.hash === hash) render();
+  else location.hash = hash;
+}
+
+/* 搜索分发：算法标签→筛选欠账；合法 handle→实时查；其余→题名关键字 */
+function doSearch(raw) {
+  const text = (raw || '').trim();
+  lastQueryText = text;
+  if (!text) {
+    lastQueryText = '';
+    return doQuery('');
+  }
+  const tagEn = matchTag(text);
+  if (tagEn) return goHash(`#/unsolved?tag=${encodeURIComponent(tagEn)}`);
+  if (/^[A-Za-z0-9_.-]{3,24}$/.test(text)) return doQuery(text);
+  goHash(`#/unsolved?q=${encodeURIComponent(text)}`);
+}
 
 async function doQuery(handle) {
   handle = (handle || '').trim();
@@ -95,13 +126,19 @@ async function doQuery(handle) {
 }
 
 function handleSearchBar() {
-  const input = h('input', { class: 'input handle-input', type: 'text', placeholder: 'CF handle', value: liveHandle || '' });
+  const input = h('input', {
+    class: 'input handle-input',
+    type: 'text',
+    placeholder: 'CF handle 或标签',
+    title: '输入算法标签（如：贪心）筛选欠账；输入 CF handle 实时查询',
+    value: liveHandle || lastQueryText || '',
+  });
   input.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') doQuery(input.value);
+    if (e.key === 'Enter') doSearch(input.value);
   });
   const btn = h('button', { class: 'btn ghost', type: 'button' }, liveLoading ? '查询中…' : '查询');
   btn.disabled = liveLoading;
-  btn.addEventListener('click', () => doQuery(input.value));
+  btn.addEventListener('click', () => doSearch(input.value));
   return h('div', { class: 'handle-search' }, input, btn);
 }
 
