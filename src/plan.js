@@ -5,6 +5,8 @@
  */
 import { h, chip, ratingBadge, lgBadge, progress } from './ui.js';
 import { tagCN } from './i18n.js';
+import { parseLuoguBoxText, luoguBoxCard, loadBox } from './lgbox.js';
+import { generatePlan, aiReady } from './ai-plan.js';
 
 const KEY = 'algodesk.plan.v1';
 const PER_DAY = 3;
@@ -67,35 +69,6 @@ export function buildCandidates(data) {
 
 const toRef = (c) => ({ key: c.key, name: c.name, url: c.url, done: false });
 
-/* 洛谷题号有 P / B / CF 三种前缀，别的平台镜像题还会有 AT、UVA，先只认这三种 */
-const LG_PID_RE = /\b(P\d{4,7}|B\d{4,7}|CF\d{1,4}[A-Z][0-9]?)\b/i;
-
-/**
- * 解析洛谷首页右侧「任务计划」侧栏复制出来的文本。
- * 一行一题，打勾的（✓）算已完成：
- *   ✓P1449 后缀表达式
- *   P2947 [USACO09MAR]Look Up S
- * 首页有 JS 反爬，脚本抓不到，所以让用户把这段直接复制过来。
- */
-export function parseLuoguPlanText(text) {
-  const out = [];
-  const seen = new Set();
-  for (const raw of String(text || '').split(/\r?\n/)) {
-    const line = raw.trim();
-    if (!line) continue;
-    const m = LG_PID_RE.exec(line);
-    if (!m) continue;
-    const pid = m[0].toUpperCase();
-    if (seen.has(pid)) continue;
-    seen.add(pid);
-    out.push({
-      pid,
-      name: line.slice(m.index + m[0].length).replace(/^[\s\-–—:：]+/, '').trim() || pid,
-      done: /[✓√✔☑]|已完成/.test(line),
-    });
-  }
-  return out;
-}
 
 /** 把抓好的洛谷计划转成本地 plan 结构：有日期按日期分组，没有的今天起每天 3 题；已完成状态按题号保留 */
 function fromLuoguPlan(prev, lg) {
@@ -292,6 +265,8 @@ export function planView(data) {
 
       luoguPlanCard(data),
 
+      aiPlanCard(),
+
       importCard(),
 
       h(
@@ -348,6 +323,62 @@ export function planView(data) {
     );
   }
 
+  function aiPlanCard() {
+    const ta = h('textarea', {
+      class: 'input plan-ta',
+      rows: 3,
+      placeholder: '比如：这周只练动态规划和二分，每天 2 题，难度别超过 1600，卡过的题优先',
+    });
+    const dayIn = h('input', { class: 'input plan-num', type: 'number', min: 1, max: 30, value: 7 });
+    const perIn = h('input', { class: 'input plan-num', type: 'number', min: 1, max: 6, value: 3 });
+    const btn = h('button', { class: 'btn primary', type: 'button' }, '让 AI 排');
+    const msg = h('div', { class: 'plan-err' });
+
+    btn.addEventListener('click', async () => {
+      msg.textContent = '';
+      if (!aiReady()) {
+        msg.textContent = '还没配 AI：点右下角「AI」按钮 → 设置，填 API 地址、Key、模型。';
+        return;
+      }
+      btn.disabled = true;
+      const old = btn.textContent;
+      btn.textContent = '正在排…';
+      try {
+        const r = await generatePlan({
+          data,
+          box: loadBox(),
+          requirement: ta.value.trim(),
+          days: Number(dayIn.value) || 7,
+          perDay: Number(perIn.value) || 3,
+        });
+        plan = { createdAt: Date.now(), days: r.days, by: 'ai' };
+        save(plan);
+        redraw();
+        msg.textContent = `排好了：${r.days.length} 天，从 ${r.total} 道候选里选。${r.dropped ? `丢弃了 ${r.dropped} 个对不上的题号。` : ''}`;
+      } catch (e) {
+        msg.textContent = e.message || '生成失败，换个说法再试。';
+      } finally {
+        btn.disabled = false;
+        btn.textContent = old;
+      }
+    });
+
+    return h(
+      'section',
+      { class: 'card plan-ai' },
+      sectionHeadLite('让 AI 排', '写清你要练什么、每天几题、难度上限；AI 只能从你的欠账和洛谷任务计划里挑题。'),
+      ta,
+      h(
+        'div',
+        { class: 'plan-ai-row' },
+        h('label', { class: 'plan-ai-field' }, '天数', dayIn),
+        h('label', { class: 'plan-ai-field' }, '每天', perIn, h('span', { class: 'muted' }, '题')),
+        btn,
+        msg,
+      ),
+    );
+  }
+
   function importCard() {
     const ta = h('textarea', {
       class: 'input plan-ta',
@@ -399,7 +430,7 @@ export function planView(data) {
       }
 
       // 其余按洛谷「任务计划」文本解析
-      const items = parseLuoguPlanText(text);
+      const items = parseLuoguBoxText(text);
       if (!items.length) {
         err.textContent = '没认出题号。粘贴的内容里要能看到 P1165、B3666、CF5E 这样的编号。';
         return;

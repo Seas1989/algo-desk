@@ -109,7 +109,13 @@ async function applyAccount(acc) {
     luoguMissing = !!next.luoguMissing;
   } catch (e) {
     liveError = e.message || String(e);
-    data = staticData || data;
+    // 实时接口挂了（限流 / 网络 / 超时）不能让整页空白：退回构建时快照，顶部提示失败原因
+    try {
+      data = staticData || (await loadData());
+    } catch (e2) {
+      data = null;
+      loadError = e2;
+    }
   } finally {
     liveLoading = false;
     render();

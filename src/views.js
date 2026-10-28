@@ -3,6 +3,7 @@
  * 入参统一为 { summary, cf, luogu }
  */
 import { tagCN, rankCN } from './i18n.js';
+import { luoguBoxCard } from './lgbox.js';
 import {
   h,
   fmtDate,
@@ -200,6 +201,7 @@ export function home({ summary: s, cf, luogu }) {
       ),
     ),
     lgDiffCard(luogu),
+    luoguBoxCard(),
   );
 }
 
