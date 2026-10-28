@@ -173,7 +173,9 @@ export async function fetchCfLive(handle) {
   }
 
   const solvedCount = [...byProb.values()].filter((x) => x.solved).length;
-  const cf = { handle: u.handle, upcoming, contests, unsolved, practiceUnsolved, byDifficulty, byTag, ratingHistory };
+  // touched：碰过的全部题号（含已通过），AI 排计划时用来排除「其实做过」的题
+  const touched = [...byProb.keys()];
+  const cf = { handle: u.handle, upcoming, contests, unsolved, practiceUnsolved, byDifficulty, byTag, ratingHistory, touched, rating: u.rating };
   const summaryCf = {
     handle: u.handle,
     avatar: u.titlePhoto || u.avatar,

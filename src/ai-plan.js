@@ -90,6 +90,59 @@ function applyConstraints(pool, { tags, maxRating }) {
   });
 }
 
+/* 题库结果缓存：一次会话内反复排计划不该重复拉 2MB */
+let psCache = null;
+const psCacheByTag = new Map();
+
+/**
+ * 从 Codeforces 题库里捞「没碰过」的题。
+ * 有标签约束时走 ?tags=dp，响应很小；没约束才拉全量（约 2MB，只拉一次）。
+ * 难度带取「自己 rating ±300」，再被用户写的上限压住。
+ */
+async function fetchFresh(data, cons, { cap = 40 } = {}) {
+  const touched = new Set((data?.cf?.touched || []).map(String));
+  const mine = Number(data?.summary?.cf?.rating || data?.cf?.rating || 1200);
+  const lo = Math.max(800, mine - 300);
+  const hi = cons.maxRating ? Math.min(cons.maxRating, mine + 300) : mine + 300;
+
+  const tagKey = cons.tags.join(';');
+  let probs = tagKey ? psCacheByTag.get(tagKey) : psCache;
+  if (!probs) {
+    try {
+      const url = `https://codeforces.com/api/problemset.problems${tagKey ? `?tags=${encodeURIComponent(tagKey)}` : ''}`;
+      const res = await fetch(url);
+      const j = await res.json();
+      probs = j?.result?.problems || [];
+    } catch {
+      probs = [];
+    }
+    if (tagKey) psCacheByTag.set(tagKey, probs);
+    else psCache = probs;
+  }
+
+  const seen = new Set();
+  const out = [];
+  for (const p of probs) {
+    if (!p.rating || p.rating < lo || p.rating > hi) continue;
+    const key = `cf:${p.contestId}${p.index}`;
+    if (touched.has(`${p.contestId}${p.index}`) || seen.has(key)) continue;
+    seen.add(key);
+    out.push({
+      key,
+      source: 'new',
+      pid: `${p.contestId}${p.index}`,
+      name: p.name,
+      rating: p.rating,
+      tags: p.tags || [],
+      status: 'new',
+      isLG: false,
+      url: `https://codeforces.com/${p.contestId >= 100000 ? 'gym' : 'contest'}/${p.contestId}/problem/${p.index}`,
+    });
+    if (out.length >= cap) break;
+  }
+  return out;
+}
+
 /**
  * @returns {{days: Array<{date:string, items:Array}>, dropped:number, used:number, total:number}}
  */
@@ -107,7 +160,11 @@ export async function generatePlan({ data, box, requirement, days = 7, perDay = 
   const want = daysN * perDayN;
 
   const cons = parseConstraints(requirement, all);
-  const pool = cons.hasConstraint ? applyConstraints(all, cons) : all;
+  const filtered = cons.hasConstraint ? applyConstraints(all, cons) : all;
+
+  // 没碰过的新题：CF 题库公开接口能按标签过滤；洛谷题库有反爬，拿不到
+  const fresh = await fetchFresh(data, cons);
+  const pool = fresh.length ? [...fresh, ...filtered] : filtered;
 
   if (!pool.length) {
     const why = [cons.tags.length ? `标签 ${cons.tags.map((t) => tagCN(t)).join('/')}` : '', cons.maxRating ? `难度 ≤ ${cons.maxRating}` : '']
