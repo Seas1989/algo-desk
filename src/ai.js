@@ -18,6 +18,34 @@ const SYSTEM =
   '你是算法竞赛教练。只依据下面给出的数据回答，数据里没有的题目不要编造。给建议要具体到题号和做法方向，不要泛泛而谈。不确定就直说信息不足。中文回答，控制在 200 字以内。';
 const QUICK = ['解释这道题', '给我今天的计划', '我卡在哪', '推荐 3 道同类型'];
 
+/**
+ * 把接口的错误说人话。只回一句「HTTP 400」等于没说：
+ * 400 大多数时候是模型名写错（比如 deepseek 而不是 deepseek-chat），
+ * 服务商返回的 error.message 里其实写得很清楚。
+ */
+async function apiError(res, cfg) {
+  let detail = '';
+  try {
+    const t = await res.text();
+    try {
+      const j = JSON.parse(t);
+      detail = j?.error?.message || j?.message || j?.error || '';
+    } catch {
+      detail = t.slice(0, 160);
+    }
+  } catch {
+    /* 读不出响应体就算了 */
+  }
+  const head = `请求失败（HTTP ${res.status}${cfg?.model ? `，模型 ${cfg.model}` : ''}）`;
+  const hint =
+    res.status === 400
+      ? '常见原因：模型名不对（DeepSeek 用 deepseek-chat）、API 地址多了 /chat/completions。'
+      : res.status === 404
+        ? '地址可能不对：填到域名或 /v1 为止，不要带 /chat/completions。'
+        : '';
+  return [head, detail, hint].filter(Boolean).join('\n');
+}
+
 const loadCfg = () => {
   try {
     return JSON.parse(localStorage.getItem(KEY)) || {};
@@ -51,7 +79,11 @@ export function openAI(getData) {
   const baseIn = h('input', { class: 'input', type: 'text', placeholder: 'https://…/v1', value: cfg.baseURL || '' });
   const keyIn = h('input', { class: 'input', type: 'password', placeholder: 'sk-…', value: cfg.apiKey || '' });
   const modelIn = h('input', { class: 'input', type: 'text', placeholder: '模型名', value: cfg.model || '' });
-  const curName = cfg.baseURL ? Object.keys(PRESETS).find((k) => PRESETS[k].baseURL === cfg.baseURL) || '自定义' : 'DeepSeek';
+  // 地址带不带结尾斜杠、带不带 /v1 都应该认出是哪家，否则下拉会退化成「自定义」
+  const normUrl = (u) => String(u || '').trim().replace(/\/+$/, '').replace(/\/v1$/i, '').toLowerCase();
+  const curName = cfg.baseURL
+    ? Object.keys(PRESETS).find((k) => normUrl(PRESETS[k].baseURL) === normUrl(cfg.baseURL)) || '自定义'
+    : 'DeepSeek';
   const presetSel = h(
     'select',
     { class: 'input' },
@@ -132,7 +164,7 @@ export function openAI(getData) {
       });
       if (res.status === 401 || res.status === 403) throw new Error('Key 无效，检查 API Key 是否正确。');
       if (res.status === 429) throw new Error('触发限流，稍等一会儿再试。');
-      if (!res.ok) throw new Error(`请求失败（HTTP ${res.status}）`);
+      if (!res.ok) throw new Error(await apiError(res, c));
       const j = await res.json();
       const txt = j.choices?.[0]?.message?.content || '没有返回内容。';
       history.push({ role: 'assistant', content: txt });

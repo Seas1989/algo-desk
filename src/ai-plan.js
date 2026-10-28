@@ -92,7 +92,26 @@ export async function generatePlan({ data, box, requirement, days = 7, perDay = 
 
   if (res.status === 401 || res.status === 403) throw new Error('API Key 无效。');
   if (res.status === 429) throw new Error('AI 接口限流了，等一会儿再试。');
-  if (!res.ok) throw new Error(`AI 请求失败（HTTP ${res.status}）`);
+  if (!res.ok) {
+    // 把服务商的原话带出来，否则「HTTP 400」没法排查（多半是模型名写错）
+    let detail = '';
+    try {
+      const t = await res.text();
+      try {
+        const j = JSON.parse(t);
+        detail = j?.error?.message || j?.message || '';
+      } catch {
+        detail = t.slice(0, 140);
+      }
+    } catch {
+      /* 忽略 */
+    }
+    throw new Error(
+      `AI 请求失败（HTTP ${res.status}，模型 ${cfg.model}）${detail ? `：${detail}` : ''}${
+        res.status === 400 ? '。检查模型名，DeepSeek 用 deepseek-chat。' : ''
+      }`,
+    );
+  }
 
   const json = await res.json();
   const text = json.choices?.[0]?.message?.content || '';
