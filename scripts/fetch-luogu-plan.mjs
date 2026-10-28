@@ -106,12 +106,13 @@ async function login({ username, password }) {
   } catch {
     /* 非 JSON：可能是风控页 */
   }
-  if (!jar.has('lt')) {
-    const why = j?.error || j?.message || txt.slice(0, 120);
+  if (!jar.has('lt') && !jar.has('__client_id')) {
+    const why = (j?.error || j?.message || txt.slice(0, 120)).replace(/\s+/g, ' ');
     throw new Error(
-      `登录失败：${why}\n` +
-        '如果提示验证码/设备保护，改为在浏览器登录洛谷后按 F12 → Application → Cookies 复制 lt 的值，跑：node scripts/fetch-luogu-plan.mjs --cookie=' +
-        'lt=<你的lt值>',
+      `密码登录失败：${why}\n` +
+        '洛谷当前版本没有对外的密码登录接口，请改用登录态 cookie：浏览器登录后 F12 → 应用 → Cookies →\n' +
+        '复制 __client_id 和 _uid 两个值，然后跑：\n' +
+        '  node scripts/fetch-luogu-plan.mjs --cookie="__client_id=<值>; _uid=<你的UID>"',
     );
   }
   log('  ✔ 登录成功（lt cookie 已拿到，只存在本进程内存里）');
@@ -153,15 +154,23 @@ const cookieArg = argOf('cookie', '');
 
 log('▶ 洛谷做题计划');
 if (cookieArg) {
-  for (const part of cookieArg.split(/;\s*/)) {
-    const [k, ...v] = part.split('=');
-    if (k) jar.set(k, v.join('='));
+  // 支持两种粘贴：整段 cookie（含 = 号），或只给一个裸令牌
+  if (cookieArg.includes('=')) {
+    for (const part of cookieArg.split(/;\s*/)) {
+      const [k, ...v] = part.split('=');
+      if (k) jar.set(k.trim(), v.join('='));
+    }
+  } else {
+    jar.set('lt', cookieArg.trim());
   }
-  if (!jar.has('lt')) jar.set('lt', cookieArg); // 允许只粘 lt 的值
   log('  使用提供的 cookie，跳过密码登录');
 } else {
   await login(cred);
 }
+
+/* 当前洛谷的登录态靠 __client_id（配合 _uid），早期的版本用 lt。
+ * 两个都认，免得明明登录了却被判成游客。 */
+const isAuthed = () => jar.has('__client_id') || jar.has('lt');
 
 // 确认登录态，顺便拿自己的 UID
 let uid = cred.uid;
@@ -169,7 +178,7 @@ let uid = cred.uid;
   const me = parseBody(await (await req('/_lfe/runtime')).text()) || {};
   const u = me?.data?.user || me?.user;
   if (u?.uid) uid = uid || String(u.uid);
-  if (!jar.has('lt') || u?.user === null) log('  ⚠ 可能未登录：拿到的是游客视角，私有计划会是空');
+  if (!isAuthed() || u?.user === null) log('  ⚠ 可能未登录：拿到的是游客视角，私有计划会是空');
 }
 
 // 候选位置逐个试：登录态个人主页（计划卡片内嵌其中）为主，其余兜底
