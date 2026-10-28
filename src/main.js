@@ -1,5 +1,5 @@
 import './styles.css';
-import { h, mountCountdowns, fmtDate } from './ui.js';
+import { h, mountCountdowns, fmtDate, initTips } from './ui.js';
 import * as views from './views.js';
 
 const NAV = [
@@ -192,7 +192,7 @@ function render() {
   }
 
   const el = views[route](data);
-  const main = h('main', { class: 'wrap' }, liveBanner(), el);
+  const main = h('main', { class: 'wrap page-in' }, liveBanner(), el);
   shell(main);
   mountCountdowns(main);
   window.scrollTo({ top: 0, behavior: 'instant' });
@@ -232,6 +232,7 @@ function aiFab() {
 
 (async function boot() {
   if (!document.getElementById('root')) document.body.append(h('div', { id: 'root' }));
+  initTips();
   document.body.append(aiFab());
   render();
   try {

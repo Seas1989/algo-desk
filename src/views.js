@@ -88,7 +88,7 @@ export function home({ summary: s, cf, luogu }) {
         { class: 'card' },
         sectionHead('Rating 曲线', `${cf.ratingHistory.length} 场计入 rating 的比赛`),
         lineChart(
-          cf.ratingHistory.map((r) => ({ v: r.now, label: `${r.name} (${fmtFull(Date.parse(r.time) / 1000)})` })),
+          cf.ratingHistory.map((r) => ({ v: r.now, old: r.old, label: `${r.name} (${fmtFull(Date.parse(r.time) / 1000)})` })),
         ),
         h(
           'div',
@@ -96,7 +96,7 @@ export function home({ summary: s, cf, luogu }) {
           cf.ratingHistory.slice(-5).reverse().map((r) =>
             h(
               'span',
-              { class: 'delta-item' },
+              { class: 'delta-item', 'data-tip': `${r.name}：${r.old} → ${r.now}（${rankCN(r.rank)}）` },
               chip(r.name.replace(/^Codeforces /, ''), 'ghost'),
               h('b', { class: r.now >= r.old ? 'up' : 'down' }, fmtDelta(r.now - r.old)),
             ),
@@ -112,7 +112,7 @@ export function home({ summary: s, cf, luogu }) {
           { class: 'heat' },
           s.heat.map((d) => {
             const lv = d.count === 0 ? 0 : Math.min(4, Math.ceil((d.count / heatMax) * 4));
-            return h('i', { class: `heat-cell lv${lv}`, title: `${d.date}：${d.count} 次` });
+            return h('i', { class: `heat-cell lv${lv}`, 'data-tip': `${d.date} · ${d.count} 次提交` });
           }),
         ),
         h(

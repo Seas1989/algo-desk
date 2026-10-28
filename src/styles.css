@@ -1546,3 +1546,90 @@ details[open] > summary::after {
     width: 100%;
   }
 }
+
+/* ------------------------------------------------------- 悬停提示 + 入场动画 */
+.tip {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 90;
+  max-width: 300px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: var(--panel2);
+  border: 1px solid var(--line2);
+  color: var(--text);
+  font-size: 12px;
+  line-height: 1.5;
+  white-space: pre-line;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(4px);
+  transition:
+    opacity 0.14s ease,
+    transform 0.14s ease;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.4);
+}
+.tip.on {
+  opacity: 1;
+  transform: none;
+}
+[data-theme='light'] .tip {
+  box-shadow: 0 10px 26px rgba(30, 45, 70, 0.18);
+}
+
+.page-in {
+  animation: page-in 0.26s ease;
+}
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+/* 曲线入场：pathLength=1 配 dasharray，从无到右描一遍 */
+.chart-line {
+  stroke-dasharray: 1;
+  animation: chart-draw 0.7s ease;
+}
+@keyframes chart-draw {
+  from {
+    stroke-dashoffset: 1;
+  }
+}
+.chart-hit {
+  fill: transparent;
+  pointer-events: all;
+}
+.chart-dot {
+  pointer-events: none;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.12s ease;
+}
+.chart-hit:hover + .chart-dot {
+  transform: scale(1.9);
+}
+
+.heat-cell {
+  transition:
+    transform 0.12s ease,
+    background-color 0.2s ease;
+}
+.heat-cell:hover {
+  transform: scale(1.8);
+  outline: 1px solid var(--line2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-in,
+  .chart-line {
+    animation: none;
+  }
+  .tip,
+  .chart-dot,
+  .heat-cell {
+    transition: none;
+  }
+}

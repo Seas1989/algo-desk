@@ -209,6 +209,47 @@ export function mountCountdowns(root = document) {
   mountCountdowns._t = setInterval(tick, 1000);
 }
 
+/** 字符串拼进 SVG 前转义 */
+const esc = (s) =>
+  String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+/**
+ * 全局悬停提示：任何元素加 data-tip="…" 即显示跟随鼠标的气泡（含 SVG）。
+ * 用事件委托，动态重渲染的元素无需重新绑定。
+ */
+export function initTips() {
+  const tip = h('div', { class: 'tip' });
+  document.body.append(tip);
+  let cur = null;
+  const place = (e) => {
+    const gap = 12;
+    const r = tip.getBoundingClientRect();
+    let x = e.clientX + gap;
+    let y = e.clientY + gap;
+    if (x + r.width > window.innerWidth - 6) x = e.clientX - r.width - gap;
+    if (y + r.height > window.innerHeight - 6) y = e.clientY - r.height - gap;
+    tip.style.left = `${x}px`;
+    tip.style.top = `${y}px`;
+  };
+  document.addEventListener('pointerover', (e) => {
+    const t = e.target && e.target.closest ? e.target.closest('[data-tip]') : null;
+    if (!t || t === cur) return;
+    cur = t;
+    tip.textContent = t.getAttribute('data-tip');
+    tip.classList.add('on');
+    place(e);
+  });
+  document.addEventListener('pointermove', (e) => {
+    if (cur) place(e);
+  });
+  document.addEventListener('pointerout', (e) => {
+    if (cur && !(e.relatedTarget && cur.contains(e.relatedTarget))) {
+      cur = null;
+      tip.classList.remove('on');
+    }
+  });
+}
+
 /** 折线图（rating 曲线） */
 export function lineChart(points, { width = 640, height = 160, pad = 24 } = {}) {
   if (!points.length) return h('div', { class: 'empty' }, '暂无数据');
@@ -219,11 +260,14 @@ export function lineChart(points, { width = 640, height = 160, pad = 24 } = {}) 
   const y = (v) => height - pad - ((v - min) / Math.max(1, max - min)) * (height - pad * 2);
   const line = points.map((p, i) => `${i ? 'L' : 'M'}${x(i).toFixed(1)},${y(p.v).toFixed(1)}`).join(' ');
   const area = `${line} L${x(points.length - 1).toFixed(1)},${height - pad} L${pad},${height - pad} Z`;
+  // 每题两层：大的透明命中圈带 data-tip，小实心点只做展示并在悬停时放大
   const dots = points
-    .map(
-      (p, i) =>
-        `<circle cx="${x(i).toFixed(1)}" cy="${y(p.v).toFixed(1)}" r="3" class="chart-dot"><title>${p.label}: ${p.v}</title></circle>`,
-    )
+    .map((p, i) => {
+      const cx = x(i).toFixed(1);
+      const cy = y(p.v).toFixed(1);
+      const tipAttr = `data-tip="${esc(`${p.label}：${p.old == null ? p.v : `${p.old} → ${p.v}`}`)}"`;
+      return `<circle cx="${cx}" cy="${cy}" r="9" class="chart-hit" ${tipAttr}/><circle cx="${cx}" cy="${cy}" r="3" class="chart-dot"/>`;
+    })
     .join('');
   const last = points[points.length - 1];
   return h('div', { class: 'chart', html: `
@@ -233,7 +277,7 @@ export function lineChart(points, { width = 640, height = 160, pad = 24 } = {}) 
         <stop offset="100%" stop-color="#4ea1ff" stop-opacity="0"/>
       </linearGradient></defs>
       <path d="${area}" fill="url(#g1)"/>
-      <path d="${line}" fill="none" stroke="#4ea1ff" stroke-width="2" stroke-linejoin="round"/>
+      <path d="${line}" class="chart-line" pathLength="1" fill="none" stroke="#4ea1ff" stroke-width="2" stroke-linejoin="round"/>
       ${dots}
       <text x="${pad}" y="14" class="chart-label">${max}</text>
       <text x="${pad}" y="${height - 4}" class="chart-label">${min}</text>
