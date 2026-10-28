@@ -1,0 +1,5480 @@
+{
+ "uid": "1864907",
+ "profile": {
+  "uid": "1864907",
+  "name": "Seas1989",
+  "avatar": "https://cdn.luogu.com.cn/upload/usericon/1864907.png",
+  "rating": 130,
+  "ranking": 34740,
+  "passed": 160,
+  "submitted": 9,
+  "trainings": 18,
+  "registerTime": "2025-09-14T10:14:19.000Z"
+ },
+ "passed": [
+  {
+   "pid": "P1001",
+   "name": "A+B Problem",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P1001"
+  },
+  {
+   "pid": "P1004",
+   "name": "[NOIP 2000 提高组] 方格取数",
+   "difficulty": 4,
+   "diffLabel": "普及+/提高",
+   "url": "https://www.luogu.com.cn/problem/P1004"
+  },
+  {
+   "pid": "P1019",
+   "name": "[NOIP 2000 提高组] 单词接龙（疑似错题）",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P1019"
+  },
+  {
+   "pid": "P1020",
+   "name": "[NOIP 1999 提高组] 导弹拦截",
+   "difficulty": 4,
+   "diffLabel": "普及+/提高",
+   "url": "https://www.luogu.com.cn/problem/P1020"
+  },
+  {
+   "pid": "P1024",
+   "name": "[NOIP 2001 提高组] 一元三次方程求解",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1024"
+  },
+  {
+   "pid": "P1035",
+   "name": "[NOIP 2002 普及组] 级数求和",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P1035"
+  },
+  {
+   "pid": "P1036",
+   "name": "[NOIP 2002 普及组] 选数",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1036"
+  },
+  {
+   "pid": "P1046",
+   "name": "[NOIP 2005 普及组] 陶陶摘苹果",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P1046"
+  },
+  {
+   "pid": "P1048",
+   "name": "[NOIP 2005 普及组] 采药",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1048"
+  },
+  {
+   "pid": "P1049",
+   "name": "[NOIP 2001 普及组] 装箱问题",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1049"
+  },
+  {
+   "pid": "P1055",
+   "name": "[NOIP 2008 普及组] ISBN 号码",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1055"
+  },
+  {
+   "pid": "P1060",
+   "name": "[NOIP 2006 普及组] 开心的金明",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1060"
+  },
+  {
+   "pid": "P1064",
+   "name": "[NOIP 2006 提高组] 金明的预算方案",
+   "difficulty": 4,
+   "diffLabel": "普及+/提高",
+   "url": "https://www.luogu.com.cn/problem/P1064"
+  },
+  {
+   "pid": "P1075",
+   "name": "[NOIP 2012 普及组] 质因数分解",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1075"
+  },
+  {
+   "pid": "P1090",
+   "name": "[NOIP 2004 提高组] 合并果子",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P1090"
+  },
+  {
+   "pid": "P1091",
+   "name": "[NOIP 2004 提高组] 合唱队形",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1091"
+  },
+  {
+   "pid": "P1094",
+   "name": "[NOIP 2007 普及组] 纪念品分组",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1094"
+  },
+  {
+   "pid": "P1102",
+   "name": "A-B 数对",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1102"
+  },
+  {
+   "pid": "P1106",
+   "name": "删数问题",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P1106"
+  },
+  {
+   "pid": "P1111",
+   "name": "修复公路",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P1111"
+  },
+  {
+   "pid": "P1113",
+   "name": "[USACO02FEB] 杂务",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P1113"
+  },
+  {
+   "pid": "P1115",
+   "name": "最大子段和",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1115"
+  },
+  {
+   "pid": "P1125",
+   "name": "[NOIP 2008 提高组] 笨小猴",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1125"
+  },
+  {
+   "pid": "P1135",
+   "name": "奇怪的电梯",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P1135"
+  },
+  {
+   "pid": "P1143",
+   "name": "进制转换",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1143"
+  },
+  {
+   "pid": "P1160",
+   "name": "队列安排",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P1160"
+  },
+  {
+   "pid": "P1162",
+   "name": "填涂颜色",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1162"
+  },
+  {
+   "pid": "P1164",
+   "name": "小 A 点菜",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1164"
+  },
+  {
+   "pid": "P1168",
+   "name": "中位数",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P1168"
+  },
+  {
+   "pid": "P1177",
+   "name": "【模板】排序",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1177"
+  },
+  {
+   "pid": "P1216",
+   "name": "[IOI 1994 / USACO1.5] Number Triangles",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1216"
+  },
+  {
+   "pid": "P1217",
+   "name": "[USACO1.5] Prime Palindromes",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1217"
+  },
+  {
+   "pid": "P1219",
+   "name": "[USACO1.5] 八皇后 Checker Challenge",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P1219"
+  },
+  {
+   "pid": "P1223",
+   "name": "排队接水",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1223"
+  },
+  {
+   "pid": "P1241",
+   "name": "括号序列",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1241"
+  },
+  {
+   "pid": "P1303",
+   "name": "A*B Problem",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1303"
+  },
+  {
+   "pid": "P1307",
+   "name": "[NOIP 2011 普及组] 数字反转",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P1307"
+  },
+  {
+   "pid": "P1364",
+   "name": "医院设置",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P1364"
+  },
+  {
+   "pid": "P1376",
+   "name": "[USACO05MAR] Yogurt factory 机器工厂",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1376"
+  },
+  {
+   "pid": "P1420",
+   "name": "最长连号",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P1420"
+  },
+  {
+   "pid": "P1421",
+   "name": "小玉买文具",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P1421"
+  },
+  {
+   "pid": "P1422",
+   "name": "小玉家的电费",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P1422"
+  },
+  {
+   "pid": "P1423",
+   "name": "小玉在游泳",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P1423"
+  },
+  {
+   "pid": "P1424",
+   "name": "小鱼的航程（改进版）",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P1424"
+  },
+  {
+   "pid": "P1425",
+   "name": "小鱼的游泳时间",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P1425"
+  },
+  {
+   "pid": "P1443",
+   "name": "马的遍历",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1443"
+  },
+  {
+   "pid": "P1449",
+   "name": "后缀表达式",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1449"
+  },
+  {
+   "pid": "P1451",
+   "name": "求细胞数量",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1451"
+  },
+  {
+   "pid": "P1469",
+   "name": "找筷子",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1469"
+  },
+  {
+   "pid": "P1506",
+   "name": "拯救 oibh 总部",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1506"
+  },
+  {
+   "pid": "P1510",
+   "name": "精卫填海",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1510"
+  },
+  {
+   "pid": "P1540",
+   "name": "[NOIP 2010 提高组] 机器翻译",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1540"
+  },
+  {
+   "pid": "P1563",
+   "name": "[NOIP 2016 提高组] 玩具谜题",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1563"
+  },
+  {
+   "pid": "P1591",
+   "name": "阶乘数码",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1591"
+  },
+  {
+   "pid": "P1605",
+   "name": "迷宫",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1605"
+  },
+  {
+   "pid": "P1706",
+   "name": "全排列问题",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1706"
+  },
+  {
+   "pid": "P1720",
+   "name": "月落乌啼算钱（斐波那契数列）",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P1720"
+  },
+  {
+   "pid": "P1739",
+   "name": "表达式括号匹配",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P1739"
+  },
+  {
+   "pid": "P1802",
+   "name": "5 倍经验日",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1802"
+  },
+  {
+   "pid": "P1803",
+   "name": "凌乱的yyy / 线段覆盖",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1803"
+  },
+  {
+   "pid": "P1807",
+   "name": "最长路",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P1807"
+  },
+  {
+   "pid": "P1827",
+   "name": "[USACO3.4] 美国血统 American Heritage",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1827"
+  },
+  {
+   "pid": "P1843",
+   "name": "奶牛晒衣服",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P1843"
+  },
+  {
+   "pid": "P1873",
+   "name": "[COCI 2011/2012 #5] EKO / 砍树",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1873"
+  },
+  {
+   "pid": "P1884",
+   "name": "[USACO12FEB] Overplanting S",
+   "difficulty": 4,
+   "diffLabel": "普及+/提高",
+   "url": "https://www.luogu.com.cn/problem/P1884"
+  },
+  {
+   "pid": "P1886",
+   "name": "【模板】单调队列 / 滑动窗口",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P1886"
+  },
+  {
+   "pid": "P1888",
+   "name": "三角函数",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P1888"
+  },
+  {
+   "pid": "P1896",
+   "name": "[SCOI2005] 互不侵犯",
+   "difficulty": 5,
+   "diffLabel": "提高+/省选-",
+   "url": "https://www.luogu.com.cn/problem/P1896"
+  },
+  {
+   "pid": "P1909",
+   "name": "[NOIP 2016 普及组] 买铅笔",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P1909"
+  },
+  {
+   "pid": "P1955",
+   "name": "[NOI2015] 程序自动分析",
+   "difficulty": 4,
+   "diffLabel": "普及+/提高",
+   "url": "https://www.luogu.com.cn/problem/P1955"
+  },
+  {
+   "pid": "P1980",
+   "name": "[NOIP 2013 普及组] 计数问题",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P1980"
+  },
+  {
+   "pid": "P1996",
+   "name": "约瑟夫问题",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1996"
+  },
+  {
+   "pid": "P2016",
+   "name": "[SEERC 2000] 战略游戏",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P2016"
+  },
+  {
+   "pid": "P2181",
+   "name": "对角线",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P2181"
+  },
+  {
+   "pid": "P2234",
+   "name": "[HNOI2002] 营业额统计",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P2234"
+  },
+  {
+   "pid": "P2367",
+   "name": "语文成绩",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P2367"
+  },
+  {
+   "pid": "P2285",
+   "name": "[HNOI2004] 打鼹鼠",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P2285"
+  },
+  {
+   "pid": "P2661",
+   "name": "[NOIP 2015 提高组] 信息传递",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P2661"
+  },
+  {
+   "pid": "P3954",
+   "name": "[NOIP 2017 普及组] 成绩",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P3954"
+  },
+  {
+   "pid": "P2639",
+   "name": "[USACO09OCT] Bessie's Weight Problem G",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P2639"
+  },
+  {
+   "pid": "P2669",
+   "name": "[NOIP 2015 普及组] 金币",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P2669"
+  },
+  {
+   "pid": "P2678",
+   "name": "[NOIP 2015 提高组] 跳石头",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P2678"
+  },
+  {
+   "pid": "P3366",
+   "name": "【模板】最小生成树",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P3366"
+  },
+  {
+   "pid": "P3372",
+   "name": "【模板】线段树 1",
+   "difficulty": 4,
+   "diffLabel": "普及+/提高",
+   "url": "https://www.luogu.com.cn/problem/P3372"
+  },
+  {
+   "pid": "P3374",
+   "name": "【模板】树状数组 1",
+   "difficulty": 4,
+   "diffLabel": "普及+/提高",
+   "url": "https://www.luogu.com.cn/problem/P3374"
+  },
+  {
+   "pid": "P2789",
+   "name": "直线交点数",
+   "difficulty": 4,
+   "diffLabel": "普及+/提高",
+   "url": "https://www.luogu.com.cn/problem/P2789"
+  },
+  {
+   "pid": "P2871",
+   "name": "[USACO07DEC] Charm Bracelet S",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P2871"
+  },
+  {
+   "pid": "P2925",
+   "name": "[USACO08DEC] Hay For Sale S",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P2925"
+  },
+  {
+   "pid": "P3197",
+   "name": "[HNOI2008] 越狱",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P3197"
+  },
+  {
+   "pid": "P3397",
+   "name": "地毯",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P3397"
+  },
+  {
+   "pid": "P2580",
+   "name": "于是他错误的点名开始了",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P2580"
+  },
+  {
+   "pid": "P3853",
+   "name": "[TJOI2007] 路标设置",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P3853"
+  },
+  {
+   "pid": "P3916",
+   "name": "图的遍历",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P3916"
+  },
+  {
+   "pid": "P4017",
+   "name": "最大食物链计数",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P4017"
+  },
+  {
+   "pid": "P4414",
+   "name": "[COCI 2006/2007 #2] ABC",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P4414"
+  },
+  {
+   "pid": "P4623",
+   "name": "[COCI 2012/2013 #6] BUREK",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P4623"
+  },
+  {
+   "pid": "P4779",
+   "name": "【模板】单源最短路径（标准版）",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P4779"
+  },
+  {
+   "pid": "P5015",
+   "name": "[NOIP 2018 普及组] 标题统计",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P5015"
+  },
+  {
+   "pid": "P5461",
+   "name": "赦免战俘",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P5461"
+  },
+  {
+   "pid": "P5788",
+   "name": "【模板】单调栈",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P5788"
+  },
+  {
+   "pid": "P5657",
+   "name": "[CSP-S 2019] 格雷码",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P5657"
+  },
+  {
+   "pid": "P5703",
+   "name": "【深基2.例5】苹果采购",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P5703"
+  },
+  {
+   "pid": "P5704",
+   "name": "【深基2.例6】字母转换",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P5704"
+  },
+  {
+   "pid": "P5705",
+   "name": "【深基2.例7】数字反转",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P5705"
+  },
+  {
+   "pid": "P5706",
+   "name": "【深基2.例8】再分肥宅水",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P5706"
+  },
+  {
+   "pid": "P5708",
+   "name": "【深基2.习2】三角形面积",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P5708"
+  },
+  {
+   "pid": "P5709",
+   "name": "【深基2.习6】Apples Prologue / 苹果和虫子",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P5709"
+  },
+  {
+   "pid": "P5710",
+   "name": "【深基3.例2】数的性质",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P5710"
+  },
+  {
+   "pid": "P5711",
+   "name": "【深基3.例3】闰年判断",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P5711"
+  },
+  {
+   "pid": "P5712",
+   "name": "【深基3.例4】Apples",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P5712"
+  },
+  {
+   "pid": "P5713",
+   "name": "【深基3.例5】洛谷团队系统",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P5713"
+  },
+  {
+   "pid": "P5714",
+   "name": "【深基3.例7】肥胖问题",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P5714"
+  },
+  {
+   "pid": "P5715",
+   "name": "【深基3.例8】三位数排序",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P5715"
+  },
+  {
+   "pid": "P5716",
+   "name": "【深基3.例9】月份天数",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P5716"
+  },
+  {
+   "pid": "P5717",
+   "name": "【深基3.习8】三角形分类",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P5717"
+  },
+  {
+   "pid": "P5718",
+   "name": "【深基4.例2】找最小值",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P5718"
+  },
+  {
+   "pid": "P5719",
+   "name": "【深基4.例3】分类平均",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P5719"
+  },
+  {
+   "pid": "P5720",
+   "name": "【深基4.例4】一尺之棰",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P5720"
+  },
+  {
+   "pid": "P5721",
+   "name": "【深基4.例6】数字直角三角形",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P5721"
+  },
+  {
+   "pid": "P5722",
+   "name": "【深基4.例11】数列求和",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P5722"
+  },
+  {
+   "pid": "P5723",
+   "name": "【深基4.例13】质数口袋",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P5723"
+  },
+  {
+   "pid": "P5724",
+   "name": "【深基4.习5】求极差 / 最大跨度值 / 最大值和最小值的差",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P5724"
+  },
+  {
+   "pid": "P5733",
+   "name": "【深基6.例1】自动修正",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P5733"
+  },
+  {
+   "pid": "P5739",
+   "name": "【深基7.例7】计算阶乘",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P5739"
+  },
+  {
+   "pid": "P5740",
+   "name": "【深基7.例9】最厉害的学生",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P5740"
+  },
+  {
+   "pid": "P2240",
+   "name": "【深基12.例1】部分背包问题",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P2240"
+  },
+  {
+   "pid": "P2249",
+   "name": "【深基13.例1】查找",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P2249"
+  },
+  {
+   "pid": "P4387",
+   "name": "【深基15.习9】验证栈序列",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P4387"
+  },
+  {
+   "pid": "P4913",
+   "name": "【深基16.例3】二叉树深度",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P4913"
+  },
+  {
+   "pid": "P5318",
+   "name": "【深基18.例3】查找文献",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P5318"
+  },
+  {
+   "pid": "B2005",
+   "name": "字符三角形",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/B2005"
+  },
+  {
+   "pid": "B2029",
+   "name": "大象喝水",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/B2029"
+  },
+  {
+   "pid": "B2089",
+   "name": "数组逆序重存放",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/B2089"
+  },
+  {
+   "pid": "B2091",
+   "name": "向量点积计算",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/B2091"
+  },
+  {
+   "pid": "B2092",
+   "name": "开关灯",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/B2092"
+  },
+  {
+   "pid": "B2093",
+   "name": "查找特定的值",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/B2093"
+  },
+  {
+   "pid": "B2098",
+   "name": "整数去重",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/B2098"
+  },
+  {
+   "pid": "B2099",
+   "name": "矩阵交换行",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/B2099"
+  },
+  {
+   "pid": "B3612",
+   "name": "【深进1.例1】求区间和",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/B3612"
+  },
+  {
+   "pid": "B3623",
+   "name": "枚举排列（递归实现排列型枚举）",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/B3623"
+  },
+  {
+   "pid": "B3625",
+   "name": "迷宫寻路",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/B3625"
+  },
+  {
+   "pid": "B3626",
+   "name": "跳跃机器人",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/B3626"
+  },
+  {
+   "pid": "P8742",
+   "name": "[蓝桥杯 2021 省 AB] 砝码称重",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P8742"
+  },
+  {
+   "pid": "P2842",
+   "name": "纸币问题 1",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P2842"
+  },
+  {
+   "pid": "P2840",
+   "name": "纸币问题 2",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P2840"
+  },
+  {
+   "pid": "P2834",
+   "name": "纸币问题 3",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P2834"
+  },
+  {
+   "pid": "P9241",
+   "name": "[蓝桥杯 2023 省 B] 飞机降落",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P9241"
+  },
+  {
+   "pid": "B3928",
+   "name": "[GESP202312 四级] 田忌赛马",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/B3928"
+  },
+  {
+   "pid": "P10423",
+   "name": "[蓝桥杯 2024 省 B] 填空问题",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P10423"
+  },
+  {
+   "pid": "P10424",
+   "name": "[蓝桥杯 2024 省 B] 好数",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P10424"
+  },
+  {
+   "pid": "P12130",
+   "name": "[蓝桥杯 2025 省 B] 移动距离",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P12130"
+  },
+  {
+   "pid": "P12131",
+   "name": "[蓝桥杯 2025 省 B] 客流量上限",
+   "difficulty": 4,
+   "diffLabel": "普及+/提高",
+   "url": "https://www.luogu.com.cn/problem/P12131"
+  },
+  {
+   "pid": "P12132",
+   "name": "[蓝桥杯 2025 省 B] 可分解的正整数",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P12132"
+  },
+  {
+   "pid": "P12133",
+   "name": "[蓝桥杯 2025 省 B] 产值调整",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P12133"
+  },
+  {
+   "pid": "P12134",
+   "name": "[蓝桥杯 2025 省 B] 画展布置",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P12134"
+  },
+  {
+   "pid": "P12337",
+   "name": "[蓝桥杯 2025 省 AB/Python B 第二场] 密密摆放",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P12337"
+  },
+  {
+   "pid": "P12338",
+   "name": "[蓝桥杯 2025 省 B/Python B 第二场] 脉冲强度之和",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P12338"
+  },
+  {
+   "pid": "P12339",
+   "name": "[蓝桥杯 2025 省 B/Python B 第二场] 25 之和",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P12339"
+  },
+  {
+   "pid": "P12340",
+   "name": "[蓝桥杯 2025 省 AB/Python B 第二场] 旗帜",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P12340"
+  },
+  {
+   "pid": "P12342",
+   "name": "[蓝桥杯 2025 省 B/Python B 第二场] 数列差分",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P12342"
+  }
+ ],
+ "unsolved": [
+  {
+   "pid": "P1085",
+   "name": "[NOIP 2004 普及组] 不高兴的津津",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P1085"
+  },
+  {
+   "pid": "P5707",
+   "name": "【深基2.例12】上学迟到",
+   "difficulty": 1,
+   "diffLabel": "入门",
+   "url": "https://www.luogu.com.cn/problem/P5707"
+  },
+  {
+   "pid": "P1009",
+   "name": "[NOIP 1998 普及组] 阶乘之和",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1009"
+  },
+  {
+   "pid": "P1308",
+   "name": "[NOIP 2011 普及组] 统计单词数",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P1308"
+  },
+  {
+   "pid": "P12343",
+   "name": "[蓝桥杯 2025 省 AB/Python B 第二场] 树上寻宝",
+   "difficulty": 2,
+   "diffLabel": "普及-",
+   "url": "https://www.luogu.com.cn/problem/P12343"
+  },
+  {
+   "pid": "P1908",
+   "name": "逆序对",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P1908"
+  },
+  {
+   "pid": "P5194",
+   "name": "[USACO05DEC] Scales S",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P5194"
+  },
+  {
+   "pid": "P10425",
+   "name": "[蓝桥杯 2024 省 B] R 格式",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P10425"
+  },
+  {
+   "pid": "P15966",
+   "name": "合成西瓜",
+   "difficulty": 3,
+   "diffLabel": "普及/提高-",
+   "url": "https://www.luogu.com.cn/problem/P15966"
+  }
+ ],
+ "trainings": [
+  {
+   "id": 117,
+   "name": "【数学1】基础数学问题",
+   "problemCount": 24,
+   "markCount": 2086,
+   "desc": "根据计算机的物理构造，数字信号由 0（低电位）和 1（高电位）组成。因此所有类型的数据，包括数字、文字、图片、音频等都在计算机中以 0 和 1 进行储存和运算。这就是需要了解二进制和其他进制原理的原因。\n\n![](https://cdn.luogu.com.cn/upload/image_hosting/mlxwitr3.png)\n\n-----\n\n这个世界纷繁复杂，有无数的选择与决策，带来了各种各",
+   "done": 3,
+   "problems": [
+    {
+     "pid": "P1143",
+     "name": "进制转换",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "数学",
+      "进制"
+     ],
+     "passed": true,
+     "order": 1,
+     "url": "https://www.luogu.com.cn/problem/P1143"
+    },
+    {
+     "pid": "P1469",
+     "name": "找筷子",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "数学",
+      "O2优化",
+      "位运算"
+     ],
+     "passed": true,
+     "order": 2,
+     "url": "https://www.luogu.com.cn/problem/P1469"
+    },
+    {
+     "pid": "P1100",
+     "name": "高低位交换",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "字符串",
+      "数学",
+      "进制",
+      "位运算"
+     ],
+     "passed": false,
+     "order": 3,
+     "url": "https://www.luogu.com.cn/problem/P1100"
+    },
+    {
+     "pid": "P1017",
+     "name": "[NOIP 2000 提高组] 进制转换",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "数学",
+      "2000",
+      "NOIP 提高组",
+      "进制"
+     ],
+     "passed": false,
+     "order": 4,
+     "url": "https://www.luogu.com.cn/problem/P1017"
+    },
+    {
+     "pid": "P1866",
+     "name": "编号",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "数学",
+      "递推",
+      "NOI 导刊",
+      "排序"
+     ],
+     "passed": false,
+     "order": 5,
+     "url": "https://www.luogu.com.cn/problem/P1866"
+    },
+    {
+     "pid": "P2822",
+     "name": "[NOIP 2016 提高组] 组合数问题",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "数学",
+      "2016",
+      "NOIP 提高组",
+      "组合数学",
+      "前缀和"
+     ],
+     "passed": false,
+     "order": 6,
+     "url": "https://www.luogu.com.cn/problem/P2822"
+    },
+    {
+     "pid": "P2789",
+     "name": "直线交点数",
+     "difficulty": 4,
+     "diffLabel": "普及+/提高",
+     "tags": [
+      "模拟",
+      "动态规划 DP",
+      "数学",
+      "递归"
+     ],
+     "passed": true,
+     "order": 7,
+     "url": "https://www.luogu.com.cn/problem/P2789"
+    },
+    {
+     "pid": "P3913",
+     "name": "车的攻击",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "数学",
+      "排序"
+     ],
+     "passed": false,
+     "order": 8,
+     "url": "https://www.luogu.com.cn/problem/P3913"
+    },
+    {
+     "pid": "P2638",
+     "name": "安全系统",
+     "difficulty": 4,
+     "diffLabel": "普及+/提高",
+     "tags": [
+      "动态规划 DP",
+      "数学",
+      "组合数学",
+      "排列组合"
+     ],
+     "passed": false,
+     "order": 9,
+     "url": "https://www.luogu.com.cn/problem/P2638"
+    },
+    {
+     "pid": "P1246",
+     "name": "[ECNA 1995] 编码",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "数学",
+      "递推",
+      "递归",
+      "线性递推",
+      "ICPC"
+     ],
+     "passed": false,
+     "order": 10,
+     "url": "https://www.luogu.com.cn/problem/P1246"
+    },
+    {
+     "pid": "P2926",
+     "name": "[USACO08DEC] Patting Heads S",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "数学",
+      "2008",
+      "USACO",
+      "素数判断"
+     ],
+     "passed": false,
+     "order": 11,
+     "url": "https://www.luogu.com.cn/problem/P2926"
+    },
+    {
+     "pid": "P3383",
+     "name": "【模板】线性筛素数",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "数学",
+      "数论",
+      "O2优化",
+      "素数判断",
+      "线性筛法",
+      "模板题"
+     ],
+     "passed": false,
+     "order": 12,
+     "url": "https://www.luogu.com.cn/problem/P3383"
+    },
+    {
+     "pid": "P1835",
+     "name": "素数密度",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "数学",
+      "NOI 导刊",
+      "枚举",
+      "素数判断"
+     ],
+     "passed": false,
+     "order": 13,
+     "url": "https://www.luogu.com.cn/problem/P1835"
+    },
+    {
+     "pid": "P1029",
+     "name": "[NOIP 2001 普及组] 最大公约数和最小公倍数问题",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "数学",
+      "2001",
+      "NOIP 普及组",
+      "枚举",
+      "最大公约数 gcd"
+     ],
+     "passed": false,
+     "order": 14,
+     "url": "https://www.luogu.com.cn/problem/P1029"
+    },
+    {
+     "pid": "P1072",
+     "name": "[NOIP 2009 提高组] Hankson 的趣味题",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "数学",
+      "2009",
+      "NOIP 提高组",
+      "枚举",
+      "最大公约数 gcd"
+     ],
+     "passed": false,
+     "order": 15,
+     "url": "https://www.luogu.com.cn/problem/P1072"
+    },
+    {
+     "pid": "P1069",
+     "name": "[NOIP 2009 普及组] 细胞分裂",
+     "difficulty": 4,
+     "diffLabel": "普及+/提高",
+     "tags": [
+      "数学",
+      "2009",
+      "NOIP 普及组",
+      "素数判断"
+     ],
+     "passed": false,
+     "order": 16,
+     "url": "https://www.luogu.com.cn/problem/P1069"
+    },
+    {
+     "pid": "P1572",
+     "name": "计算分数",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "字符串",
+      "洛谷原创"
+     ],
+     "passed": false,
+     "order": 17,
+     "url": "https://www.luogu.com.cn/problem/P1572"
+    },
+    {
+     "pid": "P4057",
+     "name": "[Code+#1] 晨跑",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "数学",
+      "O2优化",
+      "最大公约数 gcd",
+      "Code+"
+     ],
+     "passed": false,
+     "order": 18,
+     "url": "https://www.luogu.com.cn/problem/P4057"
+    },
+    {
+     "pid": "P1414",
+     "name": "又是毕业季II",
+     "difficulty": 4,
+     "diffLabel": "普及+/提高",
+     "tags": [
+      "数学",
+      "洛谷原创",
+      "枚举",
+      "最大公约数 gcd",
+      "调和级数"
+     ],
+     "passed": false,
+     "order": 19,
+     "url": "https://www.luogu.com.cn/problem/P1414"
+    },
+    {
+     "pid": "P2651",
+     "name": "添加括号III",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "数学",
+      "高精度",
+      "2015",
+      "洛谷原创",
+      "最大公约数 gcd",
+      "进制",
+      "洛谷月赛"
+     ],
+     "passed": false,
+     "order": 20,
+     "url": "https://www.luogu.com.cn/problem/P2651"
+    },
+    {
+     "pid": "P2660",
+     "name": "zzc 种田",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "数学",
+      "贪心",
+      "递归",
+      "洛谷原创"
+     ],
+     "passed": false,
+     "order": 21,
+     "url": "https://www.luogu.com.cn/problem/P2660"
+    },
+    {
+     "pid": "P3601",
+     "name": "签到题",
+     "difficulty": 5,
+     "diffLabel": "提高+/省选-",
+     "tags": [
+      "数学",
+      "洛谷原创",
+      "O2优化",
+      "洛谷月赛",
+      "欧拉函数"
+     ],
+     "passed": false,
+     "order": 22,
+     "url": "https://www.luogu.com.cn/problem/P3601"
+    },
+    {
+     "pid": "P1403",
+     "name": "[AHOI2005] 约数研究",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "数学",
+      "2005",
+      "各省省选",
+      "福建省历届夏令营",
+      "安徽",
+      "枚举",
+      "整除分块"
+     ],
+     "passed": false,
+     "order": 23,
+     "url": "https://www.luogu.com.cn/problem/P1403"
+    },
+    {
+     "pid": "P1593",
+     "name": "因子和",
+     "difficulty": 4,
+     "diffLabel": "普及+/提高",
+     "tags": [
+      "数学",
+      "分治",
+      "逆元"
+     ],
+     "passed": false,
+     "order": 24,
+     "url": "https://www.luogu.com.cn/problem/P1593"
+    }
+   ],
+   "next": {
+    "pid": "P1100",
+    "name": "高低位交换",
+    "difficulty": 2,
+    "diffLabel": "普及-",
+    "tags": [
+     "字符串",
+     "数学",
+     "进制",
+     "位运算"
+    ],
+    "passed": false,
+    "order": 3,
+    "url": "https://www.luogu.com.cn/problem/P1100"
+   }
+  },
+  {
+   "id": 102,
+   "name": "【入门3】循环结构",
+   "problemCount": 21,
+   "markCount": 12682,
+   "desc": "虽然计算机可以在短时间批量处理成千上万条指令，但是不少问题中有许多规律性的重复操作，比如说计算几百个学生的平均分，或者对上万人的名单进行排序。仅使用顺序或者分支结构，对每一步操作都写出对应的语句是不可能的；但可以使用循环语句让计算机反复执行类似的任务。\n\n本章将会介绍循环结构程序设计，同时前面的内容也会进一步的巩固。学完这一章，读者可以初步感受到计算机高效解决问题的能力。\n\n![](bilibil",
+   "done": 16,
+   "problems": [
+    {
+     "pid": "P5718",
+     "name": "【深基4.例2】找最小值",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": true,
+     "order": 1,
+     "url": "https://www.luogu.com.cn/problem/P5718"
+    },
+    {
+     "pid": "P5719",
+     "name": "【深基4.例3】分类平均",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": true,
+     "order": 2,
+     "url": "https://www.luogu.com.cn/problem/P5719"
+    },
+    {
+     "pid": "P5720",
+     "name": "【深基4.例4】一尺之棰",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": true,
+     "order": 3,
+     "url": "https://www.luogu.com.cn/problem/P5720"
+    },
+    {
+     "pid": "P5721",
+     "name": "【深基4.例6】数字直角三角形",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": true,
+     "order": 4,
+     "url": "https://www.luogu.com.cn/problem/P5721"
+    },
+    {
+     "pid": "P1009",
+     "name": "[NOIP 1998 普及组] 阶乘之和",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "数学",
+      "高精度",
+      "1998",
+      "NOIP 普及组"
+     ],
+     "passed": false,
+     "order": 5,
+     "url": "https://www.luogu.com.cn/problem/P1009"
+    },
+    {
+     "pid": "P1980",
+     "name": "[NOIP 2013 普及组] 计数问题",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟",
+      "字符串",
+      "2013",
+      "NOIP 普及组"
+     ],
+     "passed": true,
+     "order": 6,
+     "url": "https://www.luogu.com.cn/problem/P1980"
+    },
+    {
+     "pid": "P1035",
+     "name": "[NOIP 2002 普及组] 级数求和",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟",
+      "数学",
+      "2002",
+      "NOIP 普及组"
+     ],
+     "passed": true,
+     "order": 7,
+     "url": "https://www.luogu.com.cn/problem/P1035"
+    },
+    {
+     "pid": "P2669",
+     "name": "[NOIP 2015 普及组] 金币",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟",
+      "数学",
+      "2015",
+      "NOIP 普及组"
+     ],
+     "passed": true,
+     "order": 8,
+     "url": "https://www.luogu.com.cn/problem/P2669"
+    },
+    {
+     "pid": "P5722",
+     "name": "【深基4.例11】数列求和",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": true,
+     "order": 9,
+     "url": "https://www.luogu.com.cn/problem/P5722"
+    },
+    {
+     "pid": "P5723",
+     "name": "【深基4.例13】质数口袋",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "枚举",
+      "素数判断"
+     ],
+     "passed": true,
+     "order": 10,
+     "url": "https://www.luogu.com.cn/problem/P5723"
+    },
+    {
+     "pid": "P1217",
+     "name": "[USACO1.5] 回文质数 Prime Palindromes",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "USACO",
+      "枚举",
+      "素数判断"
+     ],
+     "passed": true,
+     "order": 11,
+     "url": "https://www.luogu.com.cn/problem/P1217"
+    },
+    {
+     "pid": "P1423",
+     "name": "小玉在游泳",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": true,
+     "order": 12,
+     "url": "https://www.luogu.com.cn/problem/P1423"
+    },
+    {
+     "pid": "P1307",
+     "name": "[NOIP 2011 普及组] 数字反转",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟",
+      "字符串",
+      "2011",
+      "NOIP 普及组"
+     ],
+     "passed": true,
+     "order": 13,
+     "url": "https://www.luogu.com.cn/problem/P1307"
+    },
+    {
+     "pid": "P1720",
+     "name": "月落乌啼算钱（斐波那契数列）",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟",
+      "数学",
+      "递推",
+      "洛谷原创",
+      "Fibonacci 数列"
+     ],
+     "passed": true,
+     "order": 14,
+     "url": "https://www.luogu.com.cn/problem/P1720"
+    },
+    {
+     "pid": "P5724",
+     "name": "【深基4.习5】求极差 / 最大跨度值 / 最大值和最小值的差",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": true,
+     "order": 15,
+     "url": "https://www.luogu.com.cn/problem/P5724"
+    },
+    {
+     "pid": "P1420",
+     "name": "最长连号",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟"
+     ],
+     "passed": true,
+     "order": 16,
+     "url": "https://www.luogu.com.cn/problem/P1420"
+    },
+    {
+     "pid": "P1075",
+     "name": "[NOIP 2012 普及组] 质因数分解",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "数学",
+      "2012",
+      "NOIP 普及组",
+      "素数判断"
+     ],
+     "passed": true,
+     "order": 17,
+     "url": "https://www.luogu.com.cn/problem/P1075"
+    },
+    {
+     "pid": "P5725",
+     "name": "【深基4.习8】求三角形",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": false,
+     "order": 18,
+     "url": "https://www.luogu.com.cn/problem/P5725"
+    },
+    {
+     "pid": "P5726",
+     "name": "【深基4.习9】打分",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [],
+     "passed": false,
+     "order": 19,
+     "url": "https://www.luogu.com.cn/problem/P5726"
+    },
+    {
+     "pid": "P4956",
+     "name": "[COCI 2017/2018 #6] Davor",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "2017",
+      "不定方程",
+      "COCI（克罗地亚）"
+     ],
+     "passed": false,
+     "order": 20,
+     "url": "https://www.luogu.com.cn/problem/P4956"
+    },
+    {
+     "pid": "P1089",
+     "name": "[NOIP 2004 提高组] 津津的储蓄计划",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟",
+      "2004",
+      "NOIP 提高组",
+      "枚举"
+     ],
+     "passed": false,
+     "order": 21,
+     "url": "https://www.luogu.com.cn/problem/P1089"
+    }
+   ],
+   "next": {
+    "pid": "P1009",
+    "name": "[NOIP 1998 普及组] 阶乘之和",
+    "difficulty": 2,
+    "diffLabel": "普及-",
+    "tags": [
+     "数学",
+     "高精度",
+     "1998",
+     "NOIP 普及组"
+    ],
+    "passed": false,
+    "order": 5,
+    "url": "https://www.luogu.com.cn/problem/P1009"
+   }
+  },
+  {
+   "id": 103,
+   "name": "【入门4】数组",
+   "problemCount": 20,
+   "markCount": 10612,
+   "desc": "计算机运算速度很快，一秒钟可以处理成千上万的数据。之前的例子都是读取一个数据后立刻对这些数据进行处理，然后再也不需要用到这些数据了；有时候，我们读入数据后还需要将这些数据保存下来，便于以后再次使用。如果保存个别几个数据，可以设立几个变量存储；但是如果要存储成千上万个数据，总不能定义成千上万个变量吧。\n\n既然可以通过循环语句来重复执行结构类似的语句，也有办法一次定义一组成千上万个的相同类型的变量——",
+   "done": 0,
+   "problems": [
+    {
+     "pid": "P1428",
+     "name": "小鱼比可爱",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟"
+     ],
+     "passed": false,
+     "order": 1,
+     "url": "https://www.luogu.com.cn/problem/P1428"
+    },
+    {
+     "pid": "P1427",
+     "name": "小鱼的数字游戏",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "栈"
+     ],
+     "passed": false,
+     "order": 2,
+     "url": "https://www.luogu.com.cn/problem/P1427"
+    },
+    {
+     "pid": "P5727",
+     "name": "【深基5.例3】冰雹猜想",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": false,
+     "order": 3,
+     "url": "https://www.luogu.com.cn/problem/P5727"
+    },
+    {
+     "pid": "P1047",
+     "name": "[NOIP 2005 普及组] 校门外的树",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟",
+      "2005",
+      "NOIP 普及组"
+     ],
+     "passed": false,
+     "order": 4,
+     "url": "https://www.luogu.com.cn/problem/P1047"
+    },
+    {
+     "pid": "P5728",
+     "name": "【深基5.例5】旗鼓相当的对手",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": false,
+     "order": 5,
+     "url": "https://www.luogu.com.cn/problem/P5728"
+    },
+    {
+     "pid": "P5729",
+     "name": "【深基5.例7】工艺品制作",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": false,
+     "order": 6,
+     "url": "https://www.luogu.com.cn/problem/P5729"
+    },
+    {
+     "pid": "P2550",
+     "name": "[AHOI2001] 彩票摇奖",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟",
+      "2001",
+      "各省省选",
+      "安徽"
+     ],
+     "passed": false,
+     "order": 7,
+     "url": "https://www.luogu.com.cn/problem/P2550"
+    },
+    {
+     "pid": "P2615",
+     "name": "[NOIP 2015 提高组] 神奇的幻方",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "2015",
+      "NOIP 提高组",
+      "枚举"
+     ],
+     "passed": false,
+     "order": 8,
+     "url": "https://www.luogu.com.cn/problem/P2615"
+    },
+    {
+     "pid": "P5730",
+     "name": "【深基5.例10】显示屏",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [],
+     "passed": false,
+     "order": 9,
+     "url": "https://www.luogu.com.cn/problem/P5730"
+    },
+    {
+     "pid": "P1554",
+     "name": "[USACO06DEC] 梦中的统计 Dream Counting B",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟",
+      "字符串",
+      "数学",
+      "2006",
+      "USACO"
+     ],
+     "passed": false,
+     "order": 10,
+     "url": "https://www.luogu.com.cn/problem/P1554"
+    },
+    {
+     "pid": "P2141",
+     "name": "[NOIP 2014 普及组] 珠心算测验",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "2014",
+      "NOIP 普及组",
+      "枚举"
+     ],
+     "passed": false,
+     "order": 11,
+     "url": "https://www.luogu.com.cn/problem/P2141"
+    },
+    {
+     "pid": "P1614",
+     "name": "爱与愁的心痛",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟",
+      "贪心",
+      "洛谷原创",
+      "枚举",
+      "前缀和"
+     ],
+     "passed": false,
+     "order": 12,
+     "url": "https://www.luogu.com.cn/problem/P1614"
+    },
+    {
+     "pid": "P2911",
+     "name": "[USACO08OCT] Bovine Bones G",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "2008",
+      "USACO",
+      "枚举",
+      "期望"
+     ],
+     "passed": false,
+     "order": 13,
+     "url": "https://www.luogu.com.cn/problem/P2911"
+    },
+    {
+     "pid": "P1161",
+     "name": "开灯",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟",
+      "进制"
+     ],
+     "passed": false,
+     "order": 14,
+     "url": "https://www.luogu.com.cn/problem/P1161"
+    },
+    {
+     "pid": "P5731",
+     "name": "【深基5.习6】蛇形方阵",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": false,
+     "order": 15,
+     "url": "https://www.luogu.com.cn/problem/P5731"
+    },
+    {
+     "pid": "P5732",
+     "name": "【深基5.习7】杨辉三角",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": false,
+     "order": 16,
+     "url": "https://www.luogu.com.cn/problem/P5732"
+    },
+    {
+     "pid": "P1789",
+     "name": "【Mc生存】插火把",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "洛谷原创"
+     ],
+     "passed": false,
+     "order": 17,
+     "url": "https://www.luogu.com.cn/problem/P1789"
+    },
+    {
+     "pid": "P1319",
+     "name": "压缩技术",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟",
+      "字符串",
+      "洛谷原创"
+     ],
+     "passed": false,
+     "order": 18,
+     "url": "https://www.luogu.com.cn/problem/P1319"
+    },
+    {
+     "pid": "P1320",
+     "name": "压缩技术（续集版）",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟",
+      "字符串",
+      "洛谷原创"
+     ],
+     "passed": false,
+     "order": 19,
+     "url": "https://www.luogu.com.cn/problem/P1320"
+    },
+    {
+     "pid": "P1205",
+     "name": "[USACO1.2] 方块转换 Transformations",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "模拟",
+      "搜索",
+      "USACO"
+     ],
+     "passed": false,
+     "order": 20,
+     "url": "https://www.luogu.com.cn/problem/P1205"
+    }
+   ],
+   "next": {
+    "pid": "P1428",
+    "name": "小鱼比可爱",
+    "difficulty": 1,
+    "diffLabel": "入门",
+    "tags": [
+     "模拟"
+    ],
+    "passed": false,
+    "order": 1,
+    "url": "https://www.luogu.com.cn/problem/P1428"
+   }
+  },
+  {
+   "id": 101,
+   "name": "【入门2】分支结构",
+   "problemCount": 18,
+   "markCount": 14870,
+   "desc": "人们在人生中需要做出许多选择，小到考虑晚上吃什么，大到决定高考志愿填报的学校。只有一次次选择后才能带来无限可能，我们要根据自己掌握的情况，做出最佳的选择。\n\n程序的执行也不是一成不变的，往往会要求程序能够在不同的场合下有不同的动作。这时就需要在代码中使用条件语句来做出不同的选择。比如说，登录洛谷网时，网站后台会将你提交的用户名和密码在后台数据库中看看是否匹配，如果能够匹配就登陆成功，否则就登陆失败",
+   "done": 16,
+   "problems": [
+    {
+     "pid": "P2433",
+     "name": "【深基1-2】小学数学 N 合一",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "数学",
+      "提交答案"
+     ],
+     "passed": false,
+     "order": 1,
+     "url": "https://www.luogu.com.cn/problem/P2433"
+    },
+    {
+     "pid": "P5709",
+     "name": "【深基2.习6】Apples Prologue / 苹果和虫子",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "数学"
+     ],
+     "passed": true,
+     "order": 2,
+     "url": "https://www.luogu.com.cn/problem/P5709"
+    },
+    {
+     "pid": "P5710",
+     "name": "【深基3.例2】数的性质",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟"
+     ],
+     "passed": true,
+     "order": 3,
+     "url": "https://www.luogu.com.cn/problem/P5710"
+    },
+    {
+     "pid": "P5711",
+     "name": "【深基3.例3】闰年判断",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": true,
+     "order": 4,
+     "url": "https://www.luogu.com.cn/problem/P5711"
+    },
+    {
+     "pid": "P5712",
+     "name": "【深基3.例4】Apples",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": true,
+     "order": 5,
+     "url": "https://www.luogu.com.cn/problem/P5712"
+    },
+    {
+     "pid": "P5713",
+     "name": "【深基3.例5】洛谷团队系统",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": true,
+     "order": 6,
+     "url": "https://www.luogu.com.cn/problem/P5713"
+    },
+    {
+     "pid": "P5714",
+     "name": "【深基3.例7】肥胖问题",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": true,
+     "order": 7,
+     "url": "https://www.luogu.com.cn/problem/P5714"
+    },
+    {
+     "pid": "P5715",
+     "name": "【深基3.例8】三位数排序",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": true,
+     "order": 8,
+     "url": "https://www.luogu.com.cn/problem/P5715"
+    },
+    {
+     "pid": "P5716",
+     "name": "【深基3.例9】月份天数",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": true,
+     "order": 9,
+     "url": "https://www.luogu.com.cn/problem/P5716"
+    },
+    {
+     "pid": "P1085",
+     "name": "[NOIP 2004 普及组] 不高兴的津津",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "2004",
+      "NOIP 普及组",
+      "枚举"
+     ],
+     "passed": false,
+     "order": 10,
+     "url": "https://www.luogu.com.cn/problem/P1085"
+    },
+    {
+     "pid": "P1909",
+     "name": "[NOIP 2016 普及组] 买铅笔",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟",
+      "2016",
+      "NOIP 普及组"
+     ],
+     "passed": true,
+     "order": 11,
+     "url": "https://www.luogu.com.cn/problem/P1909"
+    },
+    {
+     "pid": "P5717",
+     "name": "【深基3.习8】三角形分类",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "数学"
+     ],
+     "passed": true,
+     "order": 12,
+     "url": "https://www.luogu.com.cn/problem/P5717"
+    },
+    {
+     "pid": "P1422",
+     "name": "小玉家的电费",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "分支结构"
+     ],
+     "passed": true,
+     "order": 13,
+     "url": "https://www.luogu.com.cn/problem/P1422"
+    },
+    {
+     "pid": "P1424",
+     "name": "小鱼的航程（改进版）",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": true,
+     "order": 14,
+     "url": "https://www.luogu.com.cn/problem/P1424"
+    },
+    {
+     "pid": "P1888",
+     "name": "三角函数",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "数学",
+      "排序",
+      "最大公约数 gcd"
+     ],
+     "passed": true,
+     "order": 15,
+     "url": "https://www.luogu.com.cn/problem/P1888"
+    },
+    {
+     "pid": "P1046",
+     "name": "[NOIP 2005 普及组] 陶陶摘苹果",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟",
+      "2005",
+      "NOIP 普及组"
+     ],
+     "passed": true,
+     "order": 16,
+     "url": "https://www.luogu.com.cn/problem/P1046"
+    },
+    {
+     "pid": "P4414",
+     "name": "[COCI 2006/2007 #2] ABC",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟",
+      "2006",
+      "排序",
+      "COCI（克罗地亚）"
+     ],
+     "passed": true,
+     "order": 17,
+     "url": "https://www.luogu.com.cn/problem/P4414"
+    },
+    {
+     "pid": "P1055",
+     "name": "[NOIP 2008 普及组] ISBN 号码",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "字符串",
+      "2008",
+      "NOIP 普及组"
+     ],
+     "passed": true,
+     "order": 18,
+     "url": "https://www.luogu.com.cn/problem/P1055"
+    }
+   ],
+   "next": {
+    "pid": "P2433",
+    "name": "【深基1-2】小学数学 N 合一",
+    "difficulty": 2,
+    "diffLabel": "普及-",
+    "tags": [
+     "模拟",
+     "数学",
+     "提交答案"
+    ],
+    "passed": false,
+    "order": 1,
+    "url": "https://www.luogu.com.cn/problem/P2433"
+   }
+  },
+  {
+   "id": 106,
+   "name": "【算法1-1】模拟与高精度",
+   "problemCount": 16,
+   "markCount": 8119,
+   "desc": "恭喜大家完成了第一部分语言入门，相信大家已经可以使用 C++ 写出一些简单程序了。\n\n各位读者有听说过“建模”一词吗？所谓“建模”，就是把事物进行抽象，根据实际问题来建立对应的数学模型。“抽象”并不意味着晦涩难懂；相反，它提供了大量的便利。计算机很难直接去解决实际问题，但是如果把实际问题建模成数学问题，就会大大地方便计算机来“理解”和“解决”。\n\n举个生活中常见的例子：我们拿到了某次数学考试的成绩",
+   "done": 3,
+   "problems": [
+    {
+     "pid": "P1042",
+     "name": "[NOIP 2003 普及组] 乒乓球",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "字符串",
+      "2003",
+      "NOIP 普及组"
+     ],
+     "passed": false,
+     "order": 1,
+     "url": "https://www.luogu.com.cn/problem/P1042"
+    },
+    {
+     "pid": "P2670",
+     "name": "[NOIP 2015 普及组] 扫雷游戏",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "字符串",
+      "搜索",
+      "2015",
+      "NOIP 普及组",
+      "枚举"
+     ],
+     "passed": false,
+     "order": 2,
+     "url": "https://www.luogu.com.cn/problem/P2670"
+    },
+    {
+     "pid": "P1563",
+     "name": "[NOIP 2016 提高组] 玩具谜题",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "2016",
+      "NOIP 提高组"
+     ],
+     "passed": true,
+     "order": 3,
+     "url": "https://www.luogu.com.cn/problem/P1563"
+    },
+    {
+     "pid": "P1601",
+     "name": "高精度加法",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "高精度"
+     ],
+     "passed": false,
+     "order": 4,
+     "url": "https://www.luogu.com.cn/problem/P1601"
+    },
+    {
+     "pid": "P1303",
+     "name": "A*B Problem",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "高精度"
+     ],
+     "passed": true,
+     "order": 5,
+     "url": "https://www.luogu.com.cn/problem/P1303"
+    },
+    {
+     "pid": "P1009",
+     "name": "[NOIP 1998 普及组] 阶乘之和",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "数学",
+      "高精度",
+      "1998",
+      "NOIP 普及组"
+     ],
+     "passed": false,
+     "order": 6,
+     "url": "https://www.luogu.com.cn/problem/P1009"
+    },
+    {
+     "pid": "P4924",
+     "name": "[1007] 魔法少女小Scarlet",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "递归",
+      "枚举",
+      "洛谷月赛"
+     ],
+     "passed": false,
+     "order": 7,
+     "url": "https://www.luogu.com.cn/problem/P4924"
+    },
+    {
+     "pid": "P1328",
+     "name": "[NOIP 2014 提高组] 生活大爆炸版石头剪刀布",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "2014",
+      "NOIP 提高组"
+     ],
+     "passed": false,
+     "order": 8,
+     "url": "https://www.luogu.com.cn/problem/P1328"
+    },
+    {
+     "pid": "P1518",
+     "name": "[USACO2.4] 两只塔姆沃斯牛 The Tamworth Two",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "模拟",
+      "USACO"
+     ],
+     "passed": false,
+     "order": 9,
+     "url": "https://www.luogu.com.cn/problem/P1518"
+    },
+    {
+     "pid": "P1067",
+     "name": "[NOIP 2009 普及组] 多项式输出",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "字符串",
+      "数学",
+      "2009",
+      "NOIP 普及组"
+     ],
+     "passed": false,
+     "order": 10,
+     "url": "https://www.luogu.com.cn/problem/P1067"
+    },
+    {
+     "pid": "P1098",
+     "name": "[NOIP 2007 提高组] 字符串的展开",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "字符串",
+      "2007",
+      "NOIP 提高组"
+     ],
+     "passed": false,
+     "order": 11,
+     "url": "https://www.luogu.com.cn/problem/P1098"
+    },
+    {
+     "pid": "P1065",
+     "name": "[NOIP 2006 提高组] 作业调度方案",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "模拟",
+      "2006",
+      "NOIP 提高组"
+     ],
+     "passed": false,
+     "order": 12,
+     "url": "https://www.luogu.com.cn/problem/P1065"
+    },
+    {
+     "pid": "P1786",
+     "name": "帮贡排序",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "模拟",
+      "排序"
+     ],
+     "passed": false,
+     "order": 13,
+     "url": "https://www.luogu.com.cn/problem/P1786"
+    },
+    {
+     "pid": "P1591",
+     "name": "阶乘数码",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "数学",
+      "高精度"
+     ],
+     "passed": true,
+     "order": 14,
+     "url": "https://www.luogu.com.cn/problem/P1591"
+    },
+    {
+     "pid": "P1249",
+     "name": "最大乘积",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "贪心",
+      "高精度"
+     ],
+     "passed": false,
+     "order": 15,
+     "url": "https://www.luogu.com.cn/problem/P1249"
+    },
+    {
+     "pid": "P1045",
+     "name": "[NOIP 2003 普及组] 麦森数",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "数学",
+      "高精度",
+      "2003",
+      "NOIP 普及组"
+     ],
+     "passed": false,
+     "order": 16,
+     "url": "https://www.luogu.com.cn/problem/P1045"
+    }
+   ],
+   "next": {
+    "pid": "P1042",
+    "name": "[NOIP 2003 普及组] 乒乓球",
+    "difficulty": 2,
+    "diffLabel": "普及-",
+    "tags": [
+     "模拟",
+     "字符串",
+     "2003",
+     "NOIP 普及组"
+    ],
+    "passed": false,
+    "order": 1,
+    "url": "https://www.luogu.com.cn/problem/P1042"
+   }
+  },
+  {
+   "id": 112,
+   "name": "【算法1-7】搜索",
+   "problemCount": 16,
+   "markCount": 6534,
+   "desc": "我们在之前的章节介绍了暴力枚举策略，将所有可能的情况都枚举一遍以获得最优解，但是枚举全部元素的效率如同愚公移山，无法应付数据范围稍大的情形。本章在暴力枚举的基础上介绍了搜索算法，包括深度优先搜索和广度优先搜索，从起点开始，逐渐扩大寻找范围，直到找到需要的答案为止。\n\n严格来说，搜索算法也算是一种暴力枚举策略，但是其算法特性决定了效率比直接的枚举所有答案要高，因为搜索可以跳过一些无效状态，降低问题规",
+   "done": 7,
+   "problems": [
+    {
+     "pid": "P1219",
+     "name": "[USACO1.5] 八皇后 Checker Challenge",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "搜索",
+      "USACO",
+      "深度优先搜索 DFS"
+     ],
+     "passed": true,
+     "order": 1,
+     "url": "https://www.luogu.com.cn/problem/P1219"
+    },
+    {
+     "pid": "P2392",
+     "name": "kkksc03 考前临时抱佛脚",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "动态规划 DP",
+      "搜索",
+      "2015",
+      "递归",
+      "洛谷原创",
+      "背包 DP",
+      "洛谷月赛"
+     ],
+     "passed": false,
+     "order": 2,
+     "url": "https://www.luogu.com.cn/problem/P2392"
+    },
+    {
+     "pid": "P1443",
+     "name": "马的遍历",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "搜索",
+      "Special Judge",
+      "广度优先搜索 BFS",
+      "队列"
+     ],
+     "passed": true,
+     "order": 3,
+     "url": "https://www.luogu.com.cn/problem/P1443"
+    },
+    {
+     "pid": "P1135",
+     "name": "奇怪的电梯",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "模拟",
+      "广度优先搜索 BFS",
+      "深度优先搜索 DFS",
+      "最短路"
+     ],
+     "passed": true,
+     "order": 4,
+     "url": "https://www.luogu.com.cn/problem/P1135"
+    },
+    {
+     "pid": "P2895",
+     "name": "[USACO08FEB] Meteor Shower S",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "搜索",
+      "2008",
+      "USACO",
+      "广度优先搜索 BFS"
+     ],
+     "passed": false,
+     "order": 5,
+     "url": "https://www.luogu.com.cn/problem/P2895"
+    },
+    {
+     "pid": "P1036",
+     "name": "[NOIP 2002 普及组] 选数",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "搜索",
+      "2002",
+      "NOIP 普及组",
+      "枚举",
+      "深度优先搜索 DFS",
+      "剪枝",
+      "素数判断",
+      "状压 DP"
+     ],
+     "passed": true,
+     "order": 6,
+     "url": "https://www.luogu.com.cn/problem/P1036"
+    },
+    {
+     "pid": "P2036",
+     "name": "[COCI 2008/2009 #2] PERKET",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "搜索",
+      "2008",
+      "COCI（克罗地亚）"
+     ],
+     "passed": false,
+     "order": 7,
+     "url": "https://www.luogu.com.cn/problem/P2036"
+    },
+    {
+     "pid": "P1433",
+     "name": "吃奶酪",
+     "difficulty": 4,
+     "diffLabel": "普及+/提高",
+     "tags": [
+      "动态规划 DP",
+      "搜索",
+      "深度优先搜索 DFS",
+      "剪枝",
+      "模拟退火",
+      "状压 DP"
+     ],
+     "passed": false,
+     "order": 8,
+     "url": "https://www.luogu.com.cn/problem/P1433"
+    },
+    {
+     "pid": "P1605",
+     "name": "迷宫",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "搜索",
+      "递推",
+      "USACO",
+      "枚举"
+     ],
+     "passed": true,
+     "order": 9,
+     "url": "https://www.luogu.com.cn/problem/P1605"
+    },
+    {
+     "pid": "P1019",
+     "name": "[NOIP 2000 提高组] 单词接龙（疑似错题）",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "字符串",
+      "动态规划 DP",
+      "搜索",
+      "递推",
+      "2000",
+      "NOIP 提高组",
+      "状压 DP"
+     ],
+     "passed": true,
+     "order": 10,
+     "url": "https://www.luogu.com.cn/problem/P1019"
+    },
+    {
+     "pid": "P1101",
+     "name": "单词方阵",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "字符串",
+      "搜索",
+      "枚举"
+     ],
+     "passed": false,
+     "order": 11,
+     "url": "https://www.luogu.com.cn/problem/P1101"
+    },
+    {
+     "pid": "P2404",
+     "name": "自然数的拆分问题",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "搜索"
+     ],
+     "passed": false,
+     "order": 12,
+     "url": "https://www.luogu.com.cn/problem/P2404"
+    },
+    {
+     "pid": "P1596",
+     "name": "[USACO10OCT] Lake Counting S",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "搜索",
+      "图论",
+      "2010",
+      "USACO",
+      "广度优先搜索 BFS",
+      "深度优先搜索 DFS",
+      "连通块"
+     ],
+     "passed": false,
+     "order": 13,
+     "url": "https://www.luogu.com.cn/problem/P1596"
+    },
+    {
+     "pid": "P1162",
+     "name": "填涂颜色",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "搜索",
+      "洛谷原创",
+      "广度优先搜索 BFS",
+      "深度优先搜索 DFS",
+      "连通块",
+      "队列"
+     ],
+     "passed": true,
+     "order": 14,
+     "url": "https://www.luogu.com.cn/problem/P1162"
+    },
+    {
+     "pid": "P1032",
+     "name": "[NOIP 2002 提高组] 字串变换（疑似错题）",
+     "difficulty": 4,
+     "diffLabel": "普及+/提高",
+     "tags": [
+      "字符串",
+      "搜索",
+      "2002",
+      "NOIP 提高组",
+      "广度优先搜索 BFS",
+      "剪枝",
+      "折半搜索 meet in the middle"
+     ],
+     "passed": false,
+     "order": 15,
+     "url": "https://www.luogu.com.cn/problem/P1032"
+    },
+    {
+     "pid": "P1825",
+     "name": "[USACO11OPEN] Corn Maze S",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "模拟",
+      "搜索",
+      "2011",
+      "USACO",
+      "广度优先搜索 BFS",
+      "最短路"
+     ],
+     "passed": false,
+     "order": 16,
+     "url": "https://www.luogu.com.cn/problem/P1825"
+    }
+   ],
+   "next": {
+    "pid": "P2392",
+    "name": "kkksc03 考前临时抱佛脚",
+    "difficulty": 2,
+    "diffLabel": "普及-",
+    "tags": [
+     "动态规划 DP",
+     "搜索",
+     "2015",
+     "递归",
+     "洛谷原创",
+     "背包 DP",
+     "洛谷月赛"
+    ],
+    "passed": false,
+    "order": 2,
+    "url": "https://www.luogu.com.cn/problem/P2392"
+   }
+  },
+  {
+   "id": 100,
+   "name": "【入门1】顺序结构",
+   "problemCount": 15,
+   "markCount": 39261,
+   "desc": "千里之行，始于足下。程序设计虽然花样繁多，但还是要从最简单的地方开始学习，由浅入深，直至掌握。毕竟任何复杂的工程代码都是由一行行简单的代码组成的。\n\n![](bilibili:BV1bv411p7U5?page=1)\n\n我们编写计算机程序，将一个任务分解成一条一条的语句，计算机会按照顺序一条一条的执行这些语句，这就是顺序结构程序设计。\n\n![](bilibili:BV1bv411p7U5?page",
+   "done": 11,
+   "problems": [
+    {
+     "pid": "B2002",
+     "name": "Hello,World!",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "顺序结构"
+     ],
+     "passed": false,
+     "order": 1,
+     "url": "https://www.luogu.com.cn/problem/B2002"
+    },
+    {
+     "pid": "B2025",
+     "name": "输出字符菱形",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "顺序结构"
+     ],
+     "passed": false,
+     "order": 2,
+     "url": "https://www.luogu.com.cn/problem/B2025"
+    },
+    {
+     "pid": "P1000",
+     "name": "超级玛丽游戏",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "字符串",
+      "O2优化"
+     ],
+     "passed": false,
+     "order": 3,
+     "url": "https://www.luogu.com.cn/problem/P1000"
+    },
+    {
+     "pid": "P1001",
+     "name": "A+B Problem",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟"
+     ],
+     "passed": true,
+     "order": 4,
+     "url": "https://www.luogu.com.cn/problem/P1001"
+    },
+    {
+     "pid": "B2005",
+     "name": "字符三角形",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "顺序结构"
+     ],
+     "passed": true,
+     "order": 5,
+     "url": "https://www.luogu.com.cn/problem/B2005"
+    },
+    {
+     "pid": "P5703",
+     "name": "【深基2.例5】苹果采购",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "数学"
+     ],
+     "passed": true,
+     "order": 6,
+     "url": "https://www.luogu.com.cn/problem/P5703"
+    },
+    {
+     "pid": "P5704",
+     "name": "【深基2.例6】字母转换",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": true,
+     "order": 7,
+     "url": "https://www.luogu.com.cn/problem/P5704"
+    },
+    {
+     "pid": "P5705",
+     "name": "【深基2.例7】数字反转",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": true,
+     "order": 8,
+     "url": "https://www.luogu.com.cn/problem/P5705"
+    },
+    {
+     "pid": "P5706",
+     "name": "【深基2.例8】再分肥宅水",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": true,
+     "order": 9,
+     "url": "https://www.luogu.com.cn/problem/P5706"
+    },
+    {
+     "pid": "P5708",
+     "name": "【深基2.习2】三角形面积",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "Special Judge"
+     ],
+     "passed": true,
+     "order": 10,
+     "url": "https://www.luogu.com.cn/problem/P5708"
+    },
+    {
+     "pid": "P5707",
+     "name": "【深基2.例12】上学迟到",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "数学"
+     ],
+     "passed": false,
+     "order": 11,
+     "url": "https://www.luogu.com.cn/problem/P5707"
+    },
+    {
+     "pid": "B2029",
+     "name": "大象喝水",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "顺序结构"
+     ],
+     "passed": true,
+     "order": 12,
+     "url": "https://www.luogu.com.cn/problem/B2029"
+    },
+    {
+     "pid": "P1425",
+     "name": "小鱼的游泳时间",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "数学",
+      "枚举"
+     ],
+     "passed": true,
+     "order": 13,
+     "url": "https://www.luogu.com.cn/problem/P1425"
+    },
+    {
+     "pid": "P1421",
+     "name": "小玉买文具",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟"
+     ],
+     "passed": true,
+     "order": 14,
+     "url": "https://www.luogu.com.cn/problem/P1421"
+    },
+    {
+     "pid": "P3954",
+     "name": "[NOIP 2017 普及组] 成绩",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "2017",
+      "NOIP 普及组"
+     ],
+     "passed": true,
+     "order": 15,
+     "url": "https://www.luogu.com.cn/problem/P3954"
+    }
+   ],
+   "next": {
+    "pid": "B2002",
+    "name": "Hello,World!",
+    "difficulty": 1,
+    "diffLabel": "入门",
+    "tags": [
+     "顺序结构"
+    ],
+    "passed": false,
+    "order": 1,
+    "url": "https://www.luogu.com.cn/problem/B2002"
+   }
+  },
+  {
+   "id": 104,
+   "name": "【入门5】字符串",
+   "problemCount": 15,
+   "markCount": 8259,
+   "desc": "计算机并不仅仅能够处理数学问题，还可以用来处理文字，比如写文章、处理代码、记录信息等等……如果需要将各种语句记录在计算机中，就要用到字符串或者字符数组。\n\n我们已经在最开始的地方尝试输出过\"I love Luogu\" 的字符串，也介绍过单个字符和数字对应的 ASCII 编码。在这一章会介绍字符串的存储和处理的方法。同时也初步接触了 STL，这使得可以“站在前人的肩膀上”完成程序，简化编程的难度。\n",
+   "done": 3,
+   "problems": [
+    {
+     "pid": "P5733",
+     "name": "【深基6.例1】自动修正",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": true,
+     "order": 1,
+     "url": "https://www.luogu.com.cn/problem/P5733"
+    },
+    {
+     "pid": "P1914",
+     "name": "小书童——凯撒密码",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟",
+      "字符串"
+     ],
+     "passed": false,
+     "order": 2,
+     "url": "https://www.luogu.com.cn/problem/P1914"
+    },
+    {
+     "pid": "P1125",
+     "name": "[NOIP 2008 提高组] 笨小猴",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "字符串",
+      "2008",
+      "NOIP 提高组",
+      "素数判断"
+     ],
+     "passed": true,
+     "order": 3,
+     "url": "https://www.luogu.com.cn/problem/P1125"
+    },
+    {
+     "pid": "P1957",
+     "name": "口算练习题",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "字符串"
+     ],
+     "passed": false,
+     "order": 4,
+     "url": "https://www.luogu.com.cn/problem/P1957"
+    },
+    {
+     "pid": "P5015",
+     "name": "[NOIP 2018 普及组] 标题统计",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟",
+      "字符串",
+      "2018",
+      "NOIP 普及组"
+     ],
+     "passed": true,
+     "order": 5,
+     "url": "https://www.luogu.com.cn/problem/P5015"
+    },
+    {
+     "pid": "P5734",
+     "name": "【深基6.例6】文字处理软件",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "字符串"
+     ],
+     "passed": false,
+     "order": 6,
+     "url": "https://www.luogu.com.cn/problem/P5734"
+    },
+    {
+     "pid": "P1308",
+     "name": "[NOIP 2011 普及组] 统计单词数",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "字符串",
+      "2011",
+      "NOIP 普及组"
+     ],
+     "passed": false,
+     "order": 7,
+     "url": "https://www.luogu.com.cn/problem/P1308"
+    },
+    {
+     "pid": "P1765",
+     "name": "手机",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟",
+      "字符串",
+      "NOI 导刊",
+      "枚举"
+     ],
+     "passed": false,
+     "order": 8,
+     "url": "https://www.luogu.com.cn/problem/P1765"
+    },
+    {
+     "pid": "P3741",
+     "name": "小果的键盘",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟",
+      "字符串",
+      "搜索"
+     ],
+     "passed": false,
+     "order": 9,
+     "url": "https://www.luogu.com.cn/problem/P3741"
+    },
+    {
+     "pid": "P1321",
+     "name": "单词覆盖还原",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟",
+      "字符串",
+      "洛谷原创"
+     ],
+     "passed": false,
+     "order": 10,
+     "url": "https://www.luogu.com.cn/problem/P1321"
+    },
+    {
+     "pid": "P1553",
+     "name": "数字反转（升级版）",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "字符串",
+      "洛谷原创"
+     ],
+     "passed": false,
+     "order": 11,
+     "url": "https://www.luogu.com.cn/problem/P1553"
+    },
+    {
+     "pid": "P1603",
+     "name": "斯诺登的密码",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "字符串",
+      "贪心",
+      "洛谷原创",
+      "排序"
+     ],
+     "passed": false,
+     "order": 12,
+     "url": "https://www.luogu.com.cn/problem/P1603"
+    },
+    {
+     "pid": "P1200",
+     "name": "[USACO1.1] 你的飞碟在这儿 Your Ride Is Here",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "字符串",
+      "数学",
+      "USACO"
+     ],
+     "passed": false,
+     "order": 13,
+     "url": "https://www.luogu.com.cn/problem/P1200"
+    },
+    {
+     "pid": "P1597",
+     "name": "语句解析",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟",
+      "字符串"
+     ],
+     "passed": false,
+     "order": 14,
+     "url": "https://www.luogu.com.cn/problem/P1597"
+    },
+    {
+     "pid": "P1598",
+     "name": "[USACO03FEB] 垂直柱状图 Vertical Histogram",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "字符串",
+      "2003",
+      "USACO"
+     ],
+     "passed": false,
+     "order": 15,
+     "url": "https://www.luogu.com.cn/problem/P1598"
+    }
+   ],
+   "next": {
+    "pid": "P1914",
+    "name": "小书童——凯撒密码",
+    "difficulty": 1,
+    "diffLabel": "入门",
+    "tags": [
+     "模拟",
+     "字符串"
+    ],
+    "passed": false,
+    "order": 2,
+    "url": "https://www.luogu.com.cn/problem/P1914"
+   }
+  },
+  {
+   "id": 105,
+   "name": "【入门6】函数与结构体",
+   "problemCount": 15,
+   "markCount": 7201,
+   "desc": "有时程序中会使用多次相同的语句，而且无法通过循环来减少重复编程。对于这样的功能，如果能像使用 sqrt()、max() 这样变成一个函数，那该多好啊！其实每个程序都用到了主函数——main()。除此之外，还可以自己定义其他函数，并将参数喂给这些函数，使其能够根据这些参数完成要求的任务。不过这方面还有更复杂的一些知识点，比如参数传递与变量的作用域，接下来也需要学习。函数内还能调用自己，也就是递归函数",
+   "done": 5,
+   "problems": [
+    {
+     "pid": "P5735",
+     "name": "【深基7.例1】距离函数",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": false,
+     "order": 1,
+     "url": "https://www.luogu.com.cn/problem/P5735"
+    },
+    {
+     "pid": "P5736",
+     "name": "【深基7.例2】质数筛",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "素数判断"
+     ],
+     "passed": false,
+     "order": 2,
+     "url": "https://www.luogu.com.cn/problem/P5736"
+    },
+    {
+     "pid": "P5737",
+     "name": "【深基7.例3】闰年展示",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": false,
+     "order": 3,
+     "url": "https://www.luogu.com.cn/problem/P5737"
+    },
+    {
+     "pid": "P5738",
+     "name": "【深基7.例4】歌唱比赛",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [],
+     "passed": false,
+     "order": 4,
+     "url": "https://www.luogu.com.cn/problem/P5738"
+    },
+    {
+     "pid": "P5739",
+     "name": "【深基7.例7】计算阶乘",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": true,
+     "order": 5,
+     "url": "https://www.luogu.com.cn/problem/P5739"
+    },
+    {
+     "pid": "P5461",
+     "name": "赦免战俘",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "递归",
+      "分治",
+      "洛谷月赛"
+     ],
+     "passed": true,
+     "order": 6,
+     "url": "https://www.luogu.com.cn/problem/P5461"
+    },
+    {
+     "pid": "P5740",
+     "name": "【深基7.例9】最厉害的学生",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [],
+     "passed": true,
+     "order": 7,
+     "url": "https://www.luogu.com.cn/problem/P5740"
+    },
+    {
+     "pid": "P5741",
+     "name": "【深基7.例10】旗鼓相当的对手 - 加强版",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [],
+     "passed": false,
+     "order": 8,
+     "url": "https://www.luogu.com.cn/problem/P5741"
+    },
+    {
+     "pid": "P5742",
+     "name": "【深基7.例11】评等级",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [],
+     "passed": false,
+     "order": 9,
+     "url": "https://www.luogu.com.cn/problem/P5742"
+    },
+    {
+     "pid": "P1075",
+     "name": "[NOIP 2012 普及组] 质因数分解",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "数学",
+      "2012",
+      "NOIP 普及组",
+      "素数判断"
+     ],
+     "passed": true,
+     "order": 10,
+     "url": "https://www.luogu.com.cn/problem/P1075"
+    },
+    {
+     "pid": "P1304",
+     "name": "哥德巴赫猜想",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "搜索",
+      "数学",
+      "素数判断"
+     ],
+     "passed": false,
+     "order": 11,
+     "url": "https://www.luogu.com.cn/problem/P1304"
+    },
+    {
+     "pid": "P1217",
+     "name": "[USACO1.5] 回文质数 Prime Palindromes",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "USACO",
+      "枚举",
+      "素数判断"
+     ],
+     "passed": true,
+     "order": 12,
+     "url": "https://www.luogu.com.cn/problem/P1217"
+    },
+    {
+     "pid": "P2415",
+     "name": "集合求和",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "数学",
+      "2015",
+      "洛谷原创",
+      "排列组合",
+      "洛谷月赛"
+     ],
+     "passed": false,
+     "order": 13,
+     "url": "https://www.luogu.com.cn/problem/P2415"
+    },
+    {
+     "pid": "P5743",
+     "name": "【深基7.习8】猴子吃桃",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": false,
+     "order": 14,
+     "url": "https://www.luogu.com.cn/problem/P5743"
+    },
+    {
+     "pid": "P5744",
+     "name": "【深基7.习9】培训",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": false,
+     "order": 15,
+     "url": "https://www.luogu.com.cn/problem/P5744"
+    }
+   ],
+   "next": {
+    "pid": "P5735",
+    "name": "【深基7.例1】距离函数",
+    "difficulty": 1,
+    "diffLabel": "入门",
+    "tags": [],
+    "passed": false,
+    "order": 1,
+    "url": "https://www.luogu.com.cn/problem/P5735"
+   }
+  },
+  {
+   "id": 109,
+   "name": "【算法1-4】递推与递归",
+   "problemCount": 15,
+   "markCount": 6174,
+   "desc": "有些目标是宏大的，比如要在 IOI 赛场中得到满分（俗称 AK IOI）。如果你现在还是一个普通的学生，那么想达成这个目标太难了。但把这样宏大的目标分解为很多个子任务，就没觉得那么复杂了。\n\n要想 AK IOI，只需要入选国家队，参加 IOI 即可。那怎么成为入选国家队呢？参加中国队选拔赛并通过面试答辩即可。使用同样的思路往前倒推，直到最后只剩下最基础的任务（比如认真的读完这章内容并完成练习），做",
+   "done": 2,
+   "problems": [
+    {
+     "pid": "P1255",
+     "name": "数楼梯",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "高精度",
+      "递推",
+      "Fibonacci 数列"
+     ],
+     "passed": false,
+     "order": 1,
+     "url": "https://www.luogu.com.cn/problem/P1255"
+    },
+    {
+     "pid": "P1002",
+     "name": "[NOIP 2002 普及组] 过河卒",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "动态规划 DP",
+      "递推",
+      "2002",
+      "NOIP 普及组",
+      "记忆化搜索"
+     ],
+     "passed": false,
+     "order": 2,
+     "url": "https://www.luogu.com.cn/problem/P1002"
+    },
+    {
+     "pid": "P1044",
+     "name": "[NOIP 2003 普及组] 栈",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "动态规划 DP",
+      "数学",
+      "递推",
+      "2003",
+      "NOIP 普及组",
+      "Catalan 数",
+      "栈"
+     ],
+     "passed": false,
+     "order": 3,
+     "url": "https://www.luogu.com.cn/problem/P1044"
+    },
+    {
+     "pid": "P1028",
+     "name": "[NOIP 2001 普及组] 数的计算",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "动态规划 DP",
+      "递推",
+      "2001",
+      "递归",
+      "NOIP 普及组"
+     ],
+     "passed": false,
+     "order": 4,
+     "url": "https://www.luogu.com.cn/problem/P1028"
+    },
+    {
+     "pid": "P1464",
+     "name": "[PacNW 1999] Function",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "搜索",
+      "1999",
+      "递归",
+      "记忆化搜索",
+      "ICPC"
+     ],
+     "passed": false,
+     "order": 5,
+     "url": "https://www.luogu.com.cn/problem/P1464"
+    },
+    {
+     "pid": "P1928",
+     "name": "外星密码",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "模拟",
+      "字符串",
+      "递归",
+      "分治"
+     ],
+     "passed": false,
+     "order": 6,
+     "url": "https://www.luogu.com.cn/problem/P1928"
+    },
+    {
+     "pid": "P2437",
+     "name": "蜜蜂路线",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "高精度",
+      "递推",
+      "Fibonacci 数列"
+     ],
+     "passed": false,
+     "order": 7,
+     "url": "https://www.luogu.com.cn/problem/P2437"
+    },
+    {
+     "pid": "P1164",
+     "name": "小 A 点菜",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "动态规划 DP",
+      "洛谷原创",
+      "记忆化搜索",
+      "背包 DP"
+     ],
+     "passed": true,
+     "order": 8,
+     "url": "https://www.luogu.com.cn/problem/P1164"
+    },
+    {
+     "pid": "P1036",
+     "name": "[NOIP 2002 普及组] 选数",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "搜索",
+      "2002",
+      "NOIP 普及组",
+      "枚举",
+      "深度优先搜索 DFS",
+      "剪枝",
+      "素数判断",
+      "状压 DP"
+     ],
+     "passed": true,
+     "order": 9,
+     "url": "https://www.luogu.com.cn/problem/P1036"
+    },
+    {
+     "pid": "P1990",
+     "name": "覆盖墙壁",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "递推"
+     ],
+     "passed": false,
+     "order": 10,
+     "url": "https://www.luogu.com.cn/problem/P1990"
+    },
+    {
+     "pid": "P3612",
+     "name": "[USACO17JAN] Secret Cow Code S",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "字符串",
+      "2017",
+      "USACO",
+      "递归",
+      "分治",
+      "栈"
+     ],
+     "passed": false,
+     "order": 11,
+     "url": "https://www.luogu.com.cn/problem/P3612"
+    },
+    {
+     "pid": "P1259",
+     "name": "黑白棋子的移动",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "递归",
+      "Special Judge"
+     ],
+     "passed": false,
+     "order": 12,
+     "url": "https://www.luogu.com.cn/problem/P1259"
+    },
+    {
+     "pid": "P1010",
+     "name": "[NOIP 1998 普及组] 幂次方",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "数学",
+      "1998",
+      "递归",
+      "NOIP 普及组",
+      "分治"
+     ],
+     "passed": false,
+     "order": 13,
+     "url": "https://www.luogu.com.cn/problem/P1010"
+    },
+    {
+     "pid": "P1228",
+     "name": "地毯填补问题",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "递归",
+      "Special Judge",
+      "分治"
+     ],
+     "passed": false,
+     "order": 14,
+     "url": "https://www.luogu.com.cn/problem/P1228"
+    },
+    {
+     "pid": "P1498",
+     "name": "南蛮图腾",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "字符串",
+      "递归",
+      "湖南",
+      "分治",
+      "深度优先搜索 DFS"
+     ],
+     "passed": false,
+     "order": 15,
+     "url": "https://www.luogu.com.cn/problem/P1498"
+    }
+   ],
+   "next": {
+    "pid": "P1255",
+    "name": "数楼梯",
+    "difficulty": 2,
+    "diffLabel": "普及-",
+    "tags": [
+     "高精度",
+     "递推",
+     "Fibonacci 数列"
+    ],
+    "passed": false,
+    "order": 1,
+    "url": "https://www.luogu.com.cn/problem/P1255"
+   }
+  },
+  {
+   "id": 115,
+   "name": "【数据结构1-3】集合",
+   "problemCount": 15,
+   "markCount": 1318,
+   "desc": "有时候，我们并不关心数据之间的前后关系，也不关心数据的层次关系。一些确定元素只是单纯的聚集在一起，这样的元素聚集体被称为集合。\n\n当希望知道某个数据是否存在一个集合中，或者两个元素是否在同一个集合中时，就需要使用一些集合数据结构来维护集合元素之间的关系。\n\n![](https://cdn.luogu.com.cn/upload/image_hosting/c530dh53.png)\n\n**以上题单",
+   "done": 2,
+   "problems": [
+    {
+     "pid": "P1551",
+     "name": "亲戚",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "并查集"
+     ],
+     "passed": false,
+     "order": 1,
+     "url": "https://www.luogu.com.cn/problem/P1551"
+    },
+    {
+     "pid": "P1536",
+     "name": "村村通",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "图论",
+      "并查集",
+      "广度优先搜索 BFS",
+      "深度优先搜索 DFS",
+      "连通块"
+     ],
+     "passed": false,
+     "order": 2,
+     "url": "https://www.luogu.com.cn/problem/P1536"
+    },
+    {
+     "pid": "P3370",
+     "name": "【模板】字符串哈希",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "字符串",
+      "哈希 hashing",
+      "模板题"
+     ],
+     "passed": false,
+     "order": 3,
+     "url": "https://www.luogu.com.cn/problem/P3370"
+    },
+    {
+     "pid": "P3405",
+     "name": "[USACO16DEC] Cities and States S",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "字符串",
+      "2016",
+      "USACO",
+      "哈希表"
+     ],
+     "passed": false,
+     "order": 4,
+     "url": "https://www.luogu.com.cn/problem/P3405"
+    },
+    {
+     "pid": "P5250",
+     "name": "【深基17.例5】木材仓库",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "二分",
+      "STL"
+     ],
+     "passed": false,
+     "order": 5,
+     "url": "https://www.luogu.com.cn/problem/P5250"
+    },
+    {
+     "pid": "P5266",
+     "name": "【深基17.例6】学籍管理",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "模拟",
+      "字典树 Trie",
+      "哈希表",
+      "STL"
+     ],
+     "passed": false,
+     "order": 6,
+     "url": "https://www.luogu.com.cn/problem/P5266"
+    },
+    {
+     "pid": "P1102",
+     "name": "A-B 数对",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "数学",
+      "二分",
+      "离散化",
+      "排序",
+      "哈希 hashing",
+      "双指针 two-pointer",
+      "STL"
+     ],
+     "passed": true,
+     "order": 7,
+     "url": "https://www.luogu.com.cn/problem/P1102"
+    },
+    {
+     "pid": "P1918",
+     "name": "保龄球",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "二分",
+      "STL"
+     ],
+     "passed": false,
+     "order": 8,
+     "url": "https://www.luogu.com.cn/problem/P1918"
+    },
+    {
+     "pid": "P1525",
+     "name": "[NOIP 2010 提高组] 关押罪犯",
+     "difficulty": 4,
+     "diffLabel": "普及+/提高",
+     "tags": [
+      "图论",
+      "贪心",
+      "2010",
+      "二分",
+      "并查集",
+      "NOIP 提高组",
+      "排序",
+      "二分图"
+     ],
+     "passed": false,
+     "order": 9,
+     "url": "https://www.luogu.com.cn/problem/P1525"
+    },
+    {
+     "pid": "P1621",
+     "name": "集合",
+     "difficulty": 4,
+     "diffLabel": "普及+/提高",
+     "tags": [
+      "搜索",
+      "并查集",
+      "素数判断"
+     ],
+     "passed": false,
+     "order": 10,
+     "url": "https://www.luogu.com.cn/problem/P1621"
+    },
+    {
+     "pid": "P1892",
+     "name": "[BalticOI 2003] 团伙 (Day 2)",
+     "difficulty": 4,
+     "diffLabel": "普及+/提高",
+     "tags": [
+      "图论",
+      "2003",
+      "并查集",
+      "图遍历",
+      "BalticOI（波罗的海）"
+     ],
+     "passed": false,
+     "order": 11,
+     "url": "https://www.luogu.com.cn/problem/P1892"
+    },
+    {
+     "pid": "P1955",
+     "name": "[NOI2015] 程序自动分析",
+     "difficulty": 4,
+     "diffLabel": "普及+/提高",
+     "tags": [
+      "2015",
+      "并查集",
+      "NOI",
+      "离散化",
+      "哈希 hashing",
+      "启发式合并"
+     ],
+     "passed": true,
+     "order": 12,
+     "url": "https://www.luogu.com.cn/problem/P1955"
+    },
+    {
+     "pid": "P4305",
+     "name": "[JLOI2011] 不重复数字",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "2011",
+      "各省省选",
+      "吉林",
+      "O2优化",
+      "排序",
+      "哈希 hashing",
+      "哈希表",
+      "STL"
+     ],
+     "passed": false,
+     "order": 13,
+     "url": "https://www.luogu.com.cn/problem/P4305"
+    },
+    {
+     "pid": "P3879",
+     "name": "[TJOI2010] 阅读理解",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "字符串",
+      "2010",
+      "各省省选",
+      "哈希 hashing",
+      "字典树 Trie",
+      "天津",
+      "STL"
+     ],
+     "passed": false,
+     "order": 14,
+     "url": "https://www.luogu.com.cn/problem/P3879"
+    },
+    {
+     "pid": "P2814",
+     "name": "家谱",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "字符串",
+      "搜索",
+      "图论",
+      "线性数据结构",
+      "并查集",
+      "树的遍历"
+     ],
+     "passed": false,
+     "order": 15,
+     "url": "https://www.luogu.com.cn/problem/P2814"
+    }
+   ],
+   "next": {
+    "pid": "P1551",
+    "name": "亲戚",
+    "difficulty": 3,
+    "diffLabel": "普及/提高-",
+    "tags": [
+     "并查集"
+    ],
+    "passed": false,
+    "order": 1,
+    "url": "https://www.luogu.com.cn/problem/P1551"
+   }
+  },
+  {
+   "id": 108,
+   "name": "【算法1-3】暴力枚举",
+   "problemCount": 14,
+   "markCount": 5401,
+   "desc": "设想一下，你觉得家门口的山非常碍事，下决心发扬“愚公移山”精神，凭借一镐一担打算把山一点一点的移走。虽然精神值得褒奖，而且理论上是可行的，只要给予足够多的时间迟早能做到。但是，实际上并不可能给你那么多时间，所以使用这种办法在有生之年是不可能将山移开的（也许你可以使用更好的办法，比如使用魔法或者设法让天神感动，让他帮你移山）。然而，如果你只是把一个不到半人高的小沙堆给移走，那使用这种方法很快就可以完",
+   "done": 3,
+   "problems": [
+    {
+     "pid": "P2241",
+     "name": "统计方形（数据加强版）",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "数学",
+      "1997",
+      "NOIP 普及组",
+      "枚举"
+     ],
+     "passed": false,
+     "order": 1,
+     "url": "https://www.luogu.com.cn/problem/P2241"
+    },
+    {
+     "pid": "P2089",
+     "name": "烤鸡",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "搜索",
+      "递归",
+      "洛谷原创",
+      "枚举"
+     ],
+     "passed": false,
+     "order": 2,
+     "url": "https://www.luogu.com.cn/problem/P2089"
+    },
+    {
+     "pid": "P1618",
+     "name": "三连击（升级版）",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "枚举"
+     ],
+     "passed": false,
+     "order": 3,
+     "url": "https://www.luogu.com.cn/problem/P1618"
+    },
+    {
+     "pid": "P1036",
+     "name": "[NOIP 2002 普及组] 选数",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "搜索",
+      "2002",
+      "NOIP 普及组",
+      "枚举",
+      "深度优先搜索 DFS",
+      "剪枝",
+      "素数判断",
+      "状压 DP"
+     ],
+     "passed": true,
+     "order": 4,
+     "url": "https://www.luogu.com.cn/problem/P1036"
+    },
+    {
+     "pid": "P1157",
+     "name": "组合的输出",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "搜索",
+      "递归",
+      "深度优先搜索 DFS",
+      "排列组合"
+     ],
+     "passed": false,
+     "order": 5,
+     "url": "https://www.luogu.com.cn/problem/P1157"
+    },
+    {
+     "pid": "P1706",
+     "name": "全排列问题",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "搜索",
+      "数学",
+      "递归",
+      "深度优先搜索 DFS"
+     ],
+     "passed": true,
+     "order": 6,
+     "url": "https://www.luogu.com.cn/problem/P1706"
+    },
+    {
+     "pid": "P1088",
+     "name": "[NOIP 2004 普及组] 火星人",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "搜索",
+      "数学",
+      "2004",
+      "NOIP 普及组",
+      "排序"
+     ],
+     "passed": false,
+     "order": 7,
+     "url": "https://www.luogu.com.cn/problem/P1088"
+    },
+    {
+     "pid": "P3392",
+     "name": "涂条纹",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "2016",
+      "枚举",
+      "洛谷月赛"
+     ],
+     "passed": false,
+     "order": 8,
+     "url": "https://www.luogu.com.cn/problem/P3392"
+    },
+    {
+     "pid": "P3654",
+     "name": "First Step (ファーストステップ)",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "枚举",
+      "洛谷月赛"
+     ],
+     "passed": false,
+     "order": 9,
+     "url": "https://www.luogu.com.cn/problem/P3654"
+    },
+    {
+     "pid": "P1217",
+     "name": "[USACO1.5] 回文质数 Prime Palindromes",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "USACO",
+      "枚举",
+      "素数判断"
+     ],
+     "passed": true,
+     "order": 10,
+     "url": "https://www.luogu.com.cn/problem/P1217"
+    },
+    {
+     "pid": "P1149",
+     "name": "[NOIP 2008 提高组] 火柴棒等式",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "搜索",
+      "2008",
+      "NOIP 提高组",
+      "枚举"
+     ],
+     "passed": false,
+     "order": 11,
+     "url": "https://www.luogu.com.cn/problem/P1149"
+    },
+    {
+     "pid": "P3799",
+     "name": "小 Y 拼木棒",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "洛谷原创",
+      "枚举",
+      "组合数学",
+      "分类讨论",
+      "洛谷比赛"
+     ],
+     "passed": false,
+     "order": 12,
+     "url": "https://www.luogu.com.cn/problem/P3799"
+    },
+    {
+     "pid": "P2392",
+     "name": "kkksc03 考前临时抱佛脚",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "动态规划 DP",
+      "搜索",
+      "2015",
+      "递归",
+      "洛谷原创",
+      "背包 DP",
+      "洛谷月赛"
+     ],
+     "passed": false,
+     "order": 13,
+     "url": "https://www.luogu.com.cn/problem/P2392"
+    },
+    {
+     "pid": "P2036",
+     "name": "[COCI 2008/2009 #2] PERKET",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "搜索",
+      "2008",
+      "COCI（克罗地亚）"
+     ],
+     "passed": false,
+     "order": 14,
+     "url": "https://www.luogu.com.cn/problem/P2036"
+    }
+   ],
+   "next": {
+    "pid": "P2241",
+    "name": "统计方形（数据加强版）",
+    "difficulty": 2,
+    "diffLabel": "普及-",
+    "tags": [
+     "数学",
+     "1997",
+     "NOIP 普及组",
+     "枚举"
+    ],
+    "passed": false,
+    "order": 1,
+    "url": "https://www.luogu.com.cn/problem/P2241"
+   }
+  },
+  {
+   "id": 110,
+   "name": "【算法1-5】贪心",
+   "problemCount": 14,
+   "markCount": 6369,
+   "desc": "如果你想在算法竞赛中得奖，就要尽可能多读书、多思考、多练习。去完成尽可能多数量与种类的算法题目积累知识和经验，在考场上放平心态，就可以达到目标。但因为花了太多时间在编程上而极度压缩休息的时间，反而会效率低下，得不偿失。很多时候太贪婪不是一件好事，因为目光短浅，没有考虑到后面的事情，结果没有办法保证最后的结果做到最好。\n\n在算法竞赛中求解某些问题时，只需要做出在当前看来是最好的选择就能获得最好的结果",
+   "done": 6,
+   "problems": [
+    {
+     "pid": "P2240",
+     "name": "【深基12.例1】部分背包问题",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "贪心"
+     ],
+     "passed": true,
+     "order": 1,
+     "url": "https://www.luogu.com.cn/problem/P2240"
+    },
+    {
+     "pid": "P1223",
+     "name": "排队接水",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "贪心",
+      "排序"
+     ],
+     "passed": true,
+     "order": 2,
+     "url": "https://www.luogu.com.cn/problem/P1223"
+    },
+    {
+     "pid": "P1803",
+     "name": "凌乱的yyy / 线段覆盖",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "贪心",
+      "排序"
+     ],
+     "passed": true,
+     "order": 3,
+     "url": "https://www.luogu.com.cn/problem/P1803"
+    },
+    {
+     "pid": "P1090",
+     "name": "[NOIP 2004 提高组] 合并果子",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "贪心",
+      "2004",
+      "堆",
+      "NOIP 提高组",
+      "优先队列"
+     ],
+     "passed": true,
+     "order": 4,
+     "url": "https://www.luogu.com.cn/problem/P1090"
+    },
+    {
+     "pid": "P3817",
+     "name": "小 A 的糖果",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "贪心",
+      "洛谷月赛"
+     ],
+     "passed": false,
+     "order": 5,
+     "url": "https://www.luogu.com.cn/problem/P3817"
+    },
+    {
+     "pid": "P1106",
+     "name": "删数问题",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "字符串",
+      "贪心",
+      "ST 表",
+      "链表"
+     ],
+     "passed": true,
+     "order": 6,
+     "url": "https://www.luogu.com.cn/problem/P1106"
+    },
+    {
+     "pid": "P1478",
+     "name": "陶陶摘苹果（升级版）",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "贪心",
+      "洛谷原创",
+      "排序",
+      "背包 DP"
+     ],
+     "passed": false,
+     "order": 7,
+     "url": "https://www.luogu.com.cn/problem/P1478"
+    },
+    {
+     "pid": "P5019",
+     "name": "[NOIP 2018 提高组] 铺设道路",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "贪心",
+      "2018",
+      "NOIP 提高组",
+      "差分"
+     ],
+     "passed": false,
+     "order": 8,
+     "url": "https://www.luogu.com.cn/problem/P5019"
+    },
+    {
+     "pid": "P1208",
+     "name": "[USACO1.3] 混合牛奶 Mixing Milk",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "贪心",
+      "USACO"
+     ],
+     "passed": false,
+     "order": 9,
+     "url": "https://www.luogu.com.cn/problem/P1208"
+    },
+    {
+     "pid": "P1094",
+     "name": "[NOIP 2007 普及组] 纪念品分组",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "贪心",
+      "2007",
+      "NOIP 普及组",
+      "排序",
+      "双指针 two-pointer"
+     ],
+     "passed": true,
+     "order": 10,
+     "url": "https://www.luogu.com.cn/problem/P1094"
+    },
+    {
+     "pid": "P4995",
+     "name": "跳跳！",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "贪心",
+      "排序",
+      "洛谷月赛"
+     ],
+     "passed": false,
+     "order": 11,
+     "url": "https://www.luogu.com.cn/problem/P4995"
+    },
+    {
+     "pid": "P4447",
+     "name": "[AHOI2018初中组] 分组",
+     "difficulty": 4,
+     "diffLabel": "普及+/提高",
+     "tags": [
+      "贪心",
+      "2018",
+      "二分",
+      "安徽",
+      "队列"
+     ],
+     "passed": false,
+     "order": 12,
+     "url": "https://www.luogu.com.cn/problem/P4447"
+    },
+    {
+     "pid": "P1080",
+     "name": "[NOIP 2012 提高组] 国王游戏",
+     "difficulty": 5,
+     "diffLabel": "提高+/省选-",
+     "tags": [
+      "贪心",
+      "高精度",
+      "2012",
+      "NOIP 提高组",
+      "排序"
+     ],
+     "passed": false,
+     "order": 13,
+     "url": "https://www.luogu.com.cn/problem/P1080"
+    },
+    {
+     "pid": "P1012",
+     "name": "[NOIP 1998 提高组] 拼数",
+     "difficulty": 4,
+     "diffLabel": "普及+/提高",
+     "tags": [
+      "字符串",
+      "贪心",
+      "1998",
+      "NOIP 提高组",
+      "排序"
+     ],
+     "passed": false,
+     "order": 14,
+     "url": "https://www.luogu.com.cn/problem/P1012"
+    }
+   ],
+   "next": {
+    "pid": "P3817",
+    "name": "小 A 的糖果",
+    "difficulty": 2,
+    "diffLabel": "普及-",
+    "tags": [
+     "模拟",
+     "贪心",
+     "洛谷月赛"
+    ],
+    "passed": false,
+    "order": 5,
+    "url": "https://www.luogu.com.cn/problem/P3817"
+   }
+  },
+  {
+   "id": 107,
+   "name": "【算法1-2】排序",
+   "problemCount": 12,
+   "markCount": 6459,
+   "desc": "在生活中我们经常需要对一些东西排序。比如考试评卷后老师会要求你按照成绩高低将试卷排序，玩扑克牌时要按点数排序手牌，在洛谷刷题将题库按照难度排序然后简单题刷起（友情提示：长期只刷简单题不会有长进的）。多亏了排序过程，可以将无序的杂乱无章的东西整理清楚，便于查询统计和利用。\n\n![](https://cdn.luogu.com.cn/upload/image_hosting/m2xaxgnc.png)",
+   "done": 1,
+   "problems": [
+    {
+     "pid": "P1271",
+     "name": "【深基9.例1】选举学生会",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "排序"
+     ],
+     "passed": false,
+     "order": 1,
+     "url": "https://www.luogu.com.cn/problem/P1271"
+    },
+    {
+     "pid": "P1177",
+     "name": "【模板】排序",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "排序",
+      "模板题"
+     ],
+     "passed": true,
+     "order": 2,
+     "url": "https://www.luogu.com.cn/problem/P1177"
+    },
+    {
+     "pid": "P1923",
+     "name": "【深基9.例4】求第 k 小的数",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "分治"
+     ],
+     "passed": false,
+     "order": 3,
+     "url": "https://www.luogu.com.cn/problem/P1923"
+    },
+    {
+     "pid": "P1059",
+     "name": "[NOIP 2006 普及组] 明明的随机数",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "2006",
+      "NOIP 普及组",
+      "排序",
+      "STL"
+     ],
+     "passed": false,
+     "order": 4,
+     "url": "https://www.luogu.com.cn/problem/P1059"
+    },
+    {
+     "pid": "P1093",
+     "name": "[NOIP 2007 普及组] 奖学金",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "数学",
+      "2007",
+      "NOIP 普及组",
+      "排序"
+     ],
+     "passed": false,
+     "order": 5,
+     "url": "https://www.luogu.com.cn/problem/P1093"
+    },
+    {
+     "pid": "P1781",
+     "name": "宇宙总统",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "字符串",
+      "高精度",
+      "洛谷原创",
+      "排序"
+     ],
+     "passed": false,
+     "order": 6,
+     "url": "https://www.luogu.com.cn/problem/P1781"
+    },
+    {
+     "pid": "P2676",
+     "name": "[USACO07DEC] Bookshelf B",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "贪心",
+      "2007",
+      "USACO",
+      "排序"
+     ],
+     "passed": false,
+     "order": 7,
+     "url": "https://www.luogu.com.cn/problem/P2676"
+    },
+    {
+     "pid": "P1116",
+     "name": "车厢重组",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "排序"
+     ],
+     "passed": false,
+     "order": 8,
+     "url": "https://www.luogu.com.cn/problem/P1116"
+    },
+    {
+     "pid": "P1152",
+     "name": "欢乐的跳",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟",
+      "枚举",
+      "排序"
+     ],
+     "passed": false,
+     "order": 9,
+     "url": "https://www.luogu.com.cn/problem/P1152"
+    },
+    {
+     "pid": "P1068",
+     "name": "[NOIP 2009 普及组] 分数线划定",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "2009",
+      "NOIP 普及组",
+      "排序"
+     ],
+     "passed": false,
+     "order": 10,
+     "url": "https://www.luogu.com.cn/problem/P1068"
+    },
+    {
+     "pid": "P5143",
+     "name": "攀爬者",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "洛谷原创",
+      "排序",
+      "洛谷比赛"
+     ],
+     "passed": false,
+     "order": 11,
+     "url": "https://www.luogu.com.cn/problem/P5143"
+    },
+    {
+     "pid": "P1104",
+     "name": "生日",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "字符串",
+      "排序"
+     ],
+     "passed": false,
+     "order": 12,
+     "url": "https://www.luogu.com.cn/problem/P1104"
+    }
+   ],
+   "next": {
+    "pid": "P1271",
+    "name": "【深基9.例1】选举学生会",
+    "difficulty": 2,
+    "diffLabel": "普及-",
+    "tags": [
+     "排序"
+    ],
+    "passed": false,
+    "order": 1,
+    "url": "https://www.luogu.com.cn/problem/P1271"
+   }
+  },
+  {
+   "id": 111,
+   "name": "【算法1-6】二分查找与二分答案",
+   "problemCount": 11,
+   "markCount": 6754,
+   "desc": "大家还知道怎么在一本很厚的词典查找一个单词吗？字典中的单词是按照“字典序”进行排序的，比如 `code`<`pan`<`pancake`。如果我们要找一个单词，就要将字典从中间翻开，然后将这面单词跟想要找的单词比较。如果这面单词在需要寻找的单词之前，就将字典往后翻，否则就往前翻，直到找到准确的单词为止。\n\n大家可以发现，越接近需要查询的单词，翻动书面的页数就越少。你肯定不会从第一页开始一面一面翻，",
+   "done": 6,
+   "problems": [
+    {
+     "pid": "P2249",
+     "name": "【深基13.例1】查找",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "二分"
+     ],
+     "passed": true,
+     "order": 1,
+     "url": "https://www.luogu.com.cn/problem/P2249"
+    },
+    {
+     "pid": "P1102",
+     "name": "A-B 数对",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "数学",
+      "二分",
+      "离散化",
+      "排序",
+      "哈希 hashing",
+      "双指针 two-pointer",
+      "STL"
+     ],
+     "passed": true,
+     "order": 2,
+     "url": "https://www.luogu.com.cn/problem/P1102"
+    },
+    {
+     "pid": "P1873",
+     "name": "[COCI 2011/2012 #5] EKO / 砍树",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "贪心",
+      "2011",
+      "二分",
+      "COCI（克罗地亚）"
+     ],
+     "passed": true,
+     "order": 3,
+     "url": "https://www.luogu.com.cn/problem/P1873"
+    },
+    {
+     "pid": "P1024",
+     "name": "[NOIP 2001 提高组] 一元三次方程求解",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "数学",
+      "2001",
+      "二分",
+      "NOIP 提高组",
+      "O2优化",
+      "枚举",
+      "分治"
+     ],
+     "passed": true,
+     "order": 4,
+     "url": "https://www.luogu.com.cn/problem/P1024"
+    },
+    {
+     "pid": "P1678",
+     "name": "烦恼的高考志愿",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "贪心",
+      "二分",
+      "排序"
+     ],
+     "passed": false,
+     "order": 5,
+     "url": "https://www.luogu.com.cn/problem/P1678"
+    },
+    {
+     "pid": "P2440",
+     "name": "木材加工",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "贪心",
+      "二分"
+     ],
+     "passed": false,
+     "order": 6,
+     "url": "https://www.luogu.com.cn/problem/P2440"
+    },
+    {
+     "pid": "P2678",
+     "name": "[NOIP 2015 提高组] 跳石头",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "贪心",
+      "2015",
+      "二分",
+      "NOIP 提高组"
+     ],
+     "passed": true,
+     "order": 7,
+     "url": "https://www.luogu.com.cn/problem/P2678"
+    },
+    {
+     "pid": "P3853",
+     "name": "[TJOI2007] 路标设置",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "模拟",
+      "搜索",
+      "2007",
+      "二分",
+      "各省省选",
+      "天津"
+     ],
+     "passed": true,
+     "order": 8,
+     "url": "https://www.luogu.com.cn/problem/P3853"
+    },
+    {
+     "pid": "P1182",
+     "name": "数列分段 Section II",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "贪心",
+      "二分",
+      "前缀和"
+     ],
+     "passed": false,
+     "order": 9,
+     "url": "https://www.luogu.com.cn/problem/P1182"
+    },
+    {
+     "pid": "P1163",
+     "name": "银行贷款",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "数学",
+      "二分"
+     ],
+     "passed": false,
+     "order": 10,
+     "url": "https://www.luogu.com.cn/problem/P1163"
+    },
+    {
+     "pid": "P3743",
+     "name": "小鸟的设备",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "贪心",
+      "二分",
+      "Special Judge"
+     ],
+     "passed": false,
+     "order": 11,
+     "url": "https://www.luogu.com.cn/problem/P3743"
+    }
+   ],
+   "next": {
+    "pid": "P1678",
+    "name": "烦恼的高考志愿",
+    "difficulty": 2,
+    "diffLabel": "普及-",
+    "tags": [
+     "模拟",
+     "贪心",
+     "二分",
+     "排序"
+    ],
+    "passed": false,
+    "order": 5,
+    "url": "https://www.luogu.com.cn/problem/P1678"
+   }
+  },
+  {
+   "id": 113,
+   "name": "【数据结构1-1】线性表",
+   "problemCount": 10,
+   "markCount": 4281,
+   "desc": "我们之前已经研究过很多算法了！比如，二分法可以用来“给定单调函数，求零点”；冒泡排序可以用来“给定一个数组，将其排序后输出”……你已经知道算法很有用，接下来要学习的数据结构，也一样很有用！初学数据结构，您可能会觉得无从下手；不过不用担心，本书会用很多生活中实际存在的例子来解释这些数据结构。\n\n比如，在商场里面排队结账，或者在网上“秒杀”商品，差别很大；但它们都遵循着相同的规则——讲“先来后到”。早",
+   "done": 7,
+   "problems": [
+    {
+     "pid": "P3156",
+     "name": "【深基15.例1】询问学号",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [],
+     "passed": false,
+     "order": 1,
+     "url": "https://www.luogu.com.cn/problem/P3156"
+    },
+    {
+     "pid": "P3613",
+     "name": "【深基15.例2】寄包柜",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "STL"
+     ],
+     "passed": false,
+     "order": 2,
+     "url": "https://www.luogu.com.cn/problem/P3613"
+    },
+    {
+     "pid": "P1449",
+     "name": "后缀表达式",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "字符串",
+      "线性数据结构",
+      "栈"
+     ],
+     "passed": true,
+     "order": 3,
+     "url": "https://www.luogu.com.cn/problem/P1449"
+    },
+    {
+     "pid": "P1996",
+     "name": "约瑟夫问题",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "树状数组",
+      "队列",
+      "链表"
+     ],
+     "passed": true,
+     "order": 4,
+     "url": "https://www.luogu.com.cn/problem/P1996"
+    },
+    {
+     "pid": "P1160",
+     "name": "队列安排",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "模拟",
+      "线性数据结构",
+      "构造",
+      "链表"
+     ],
+     "passed": true,
+     "order": 5,
+     "url": "https://www.luogu.com.cn/problem/P1160"
+    },
+    {
+     "pid": "P1540",
+     "name": "[NOIP 2010 提高组] 机器翻译",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "2010",
+      "NOIP 提高组",
+      "队列"
+     ],
+     "passed": true,
+     "order": 6,
+     "url": "https://www.luogu.com.cn/problem/P1540"
+    },
+    {
+     "pid": "P2058",
+     "name": "[NOIP 2016 普及组] 海港",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "模拟",
+      "2016",
+      "NOIP 普及组",
+      "优先队列",
+      "队列",
+      "双指针 two-pointer"
+     ],
+     "passed": false,
+     "order": 7,
+     "url": "https://www.luogu.com.cn/problem/P2058"
+    },
+    {
+     "pid": "P1241",
+     "name": "括号序列",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "O2优化",
+      "栈"
+     ],
+     "passed": true,
+     "order": 8,
+     "url": "https://www.luogu.com.cn/problem/P1241"
+    },
+    {
+     "pid": "P4387",
+     "name": "【深基15.习9】验证栈序列",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "模拟",
+      "栈"
+     ],
+     "passed": true,
+     "order": 9,
+     "url": "https://www.luogu.com.cn/problem/P4387"
+    },
+    {
+     "pid": "P2234",
+     "name": "[HNOI2002] 营业额统计",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "2002",
+      "二分",
+      "各省省选",
+      "湖南",
+      "排序"
+     ],
+     "passed": true,
+     "order": 10,
+     "url": "https://www.luogu.com.cn/problem/P2234"
+    }
+   ],
+   "next": {
+    "pid": "P3156",
+    "name": "【深基15.例1】询问学号",
+    "difficulty": 1,
+    "diffLabel": "入门",
+    "tags": [],
+    "passed": false,
+    "order": 1,
+    "url": "https://www.luogu.com.cn/problem/P3156"
+   }
+  },
+  {
+   "id": 114,
+   "name": "【数据结构1-2】二叉树",
+   "problemCount": 10,
+   "markCount": 3065,
+   "desc": "我们之前介绍了线性表这一类数据结构，并且学习了如何使用线性表解决一类特定的问题（数据具有明显的前后关系，可以进行线性连接）。本章将介绍一类新的数据结构——二叉树。\n\n看看窗外的橡树吧。一般来说，树有一个粗壮的树干，再往上面树干就会分成两叉或者多叉，接着树枝会继续一直分下去，一直分到末端的叶子为止（不过也有可能是花或者果子）。\n\n如想统计一棵苹果树上面有多少苹果，只需要知道树杈左边的苹果数量和树杈右",
+   "done": 3,
+   "problems": [
+    {
+     "pid": "P4715",
+     "name": "【深基16.例1】淘汰赛",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "树形数据结构",
+      "队列"
+     ],
+     "passed": false,
+     "order": 1,
+     "url": "https://www.luogu.com.cn/problem/P4715"
+    },
+    {
+     "pid": "P4913",
+     "name": "【深基16.例3】二叉树深度",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "搜索",
+      "广度优先搜索 BFS",
+      "深度优先搜索 DFS"
+     ],
+     "passed": true,
+     "order": 2,
+     "url": "https://www.luogu.com.cn/problem/P4913"
+    },
+    {
+     "pid": "P1827",
+     "name": "[USACO3.4] 美国血统 American Heritage",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "模拟",
+      "树形数据结构",
+      "USACO",
+      "递归",
+      "构造"
+     ],
+     "passed": true,
+     "order": 3,
+     "url": "https://www.luogu.com.cn/problem/P1827"
+    },
+    {
+     "pid": "P5076",
+     "name": "【深基16.例7】普通二叉树（简化版）",
+     "difficulty": 4,
+     "diffLabel": "普及+/提高",
+     "tags": [
+      "模拟",
+      "树形数据结构",
+      "线段树",
+      "二分",
+      "平衡树",
+      "STL"
+     ],
+     "passed": false,
+     "order": 4,
+     "url": "https://www.luogu.com.cn/problem/P5076"
+    },
+    {
+     "pid": "P1364",
+     "name": "医院设置",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "动态规划 DP",
+      "树形数据结构",
+      "广度优先搜索 BFS",
+      "深度优先搜索 DFS",
+      "树形 DP",
+      "最短路",
+      "树的重心"
+     ],
+     "passed": true,
+     "order": 5,
+     "url": "https://www.luogu.com.cn/problem/P1364"
+    },
+    {
+     "pid": "P1229",
+     "name": "遍历问题",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "树形数据结构"
+     ],
+     "passed": false,
+     "order": 6,
+     "url": "https://www.luogu.com.cn/problem/P1229"
+    },
+    {
+     "pid": "P1305",
+     "name": "新二叉树",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "字符串",
+      "搜索",
+      "树形数据结构",
+      "递归"
+     ],
+     "passed": false,
+     "order": 7,
+     "url": "https://www.luogu.com.cn/problem/P1305"
+    },
+    {
+     "pid": "P1030",
+     "name": "[NOIP 2001 普及组] 求先序排列",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "字符串",
+      "树形数据结构",
+      "2001",
+      "递归",
+      "NOIP 普及组",
+      "深度优先搜索 DFS"
+     ],
+     "passed": false,
+     "order": 8,
+     "url": "https://www.luogu.com.cn/problem/P1030"
+    },
+    {
+     "pid": "P3884",
+     "name": "[JLOI2009] 二叉树问题",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "2009",
+      "各省省选",
+      "吉林",
+      "深度优先搜索 DFS",
+      "最近公共祖先 LCA"
+     ],
+     "passed": false,
+     "order": 9,
+     "url": "https://www.luogu.com.cn/problem/P3884"
+    },
+    {
+     "pid": "P1185",
+     "name": "绘制二叉树",
+     "difficulty": 4,
+     "diffLabel": "普及+/提高",
+     "tags": [
+      "模拟"
+     ],
+     "passed": false,
+     "order": 10,
+     "url": "https://www.luogu.com.cn/problem/P1185"
+    }
+   ],
+   "next": {
+    "pid": "P4715",
+    "name": "【深基16.例1】淘汰赛",
+    "difficulty": 2,
+    "diffLabel": "普及-",
+    "tags": [
+     "模拟",
+     "树形数据结构",
+     "队列"
+    ],
+    "passed": false,
+    "order": 1,
+    "url": "https://www.luogu.com.cn/problem/P4715"
+   }
+  },
+  {
+   "id": 116,
+   "name": "【数据结构1-4】图的基本应用",
+   "problemCount": 10,
+   "markCount": 2547,
+   "desc": "我们已经学过一些简单的数据结构，例如线性表和二叉树。现在，需要学习一种新的数据结构——图。虽然相比于前面讲过的数据结构，图会复杂一些，但是依然能用很多生活中存在的例子来解释图这种数据结构。\n\n比如，现在新同学站在校园的正门口，手里拿着校园地图。可以从地图上看到有很多建筑物。复杂的路网四通八达，连接着这些建筑物。如果希望偷个懒，走最近的道路到达目的地，或者是希望制定一种方案，参观完学校内的每一种建筑",
+   "done": 5,
+   "problems": [
+    {
+     "pid": "P5318",
+     "name": "【深基18.例3】查找文献",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "搜索",
+      "图论",
+      "广度优先搜索 BFS",
+      "深度优先搜索 DFS",
+      "图遍历"
+     ],
+     "passed": true,
+     "order": 1,
+     "url": "https://www.luogu.com.cn/problem/P5318"
+    },
+    {
+     "pid": "P3916",
+     "name": "图的遍历",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "搜索",
+      "图论",
+      "广度优先搜索 BFS",
+      "深度优先搜索 DFS",
+      "图论建模",
+      "强连通分量"
+     ],
+     "passed": true,
+     "order": 2,
+     "url": "https://www.luogu.com.cn/problem/P3916"
+    },
+    {
+     "pid": "P1113",
+     "name": "[USACO02FEB] 杂务",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "动态规划 DP",
+      "图论",
+      "递推",
+      "2002",
+      "USACO",
+      "拓扑排序"
+     ],
+     "passed": true,
+     "order": 3,
+     "url": "https://www.luogu.com.cn/problem/P1113"
+    },
+    {
+     "pid": "P4017",
+     "name": "最大食物链计数",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "动态规划 DP",
+      "搜索",
+      "图论",
+      "排序",
+      "深度优先搜索 DFS",
+      "记忆化搜索",
+      "拓扑排序"
+     ],
+     "passed": true,
+     "order": 4,
+     "url": "https://www.luogu.com.cn/problem/P4017"
+    },
+    {
+     "pid": "P1807",
+     "name": "最长路",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "动态规划 DP",
+      "图论",
+      "NOI 导刊",
+      "广度优先搜索 BFS",
+      "拓扑排序",
+      "最短路"
+     ],
+     "passed": true,
+     "order": 5,
+     "url": "https://www.luogu.com.cn/problem/P1807"
+    },
+    {
+     "pid": "P1127",
+     "name": "词链",
+     "difficulty": 4,
+     "diffLabel": "普及+/提高",
+     "tags": [
+      "字符串",
+      "搜索",
+      "图论",
+      "并查集",
+      "欧拉回路"
+     ],
+     "passed": false,
+     "order": 6,
+     "url": "https://www.luogu.com.cn/problem/P1127"
+    },
+    {
+     "pid": "P2853",
+     "name": "[USACO06DEC] Cow Picnic S",
+     "difficulty": 3,
+     "diffLabel": "普及/提高-",
+     "tags": [
+      "搜索",
+      "图论",
+      "贪心",
+      "2006",
+      "USACO",
+      "广度优先搜索 BFS",
+      "深度优先搜索 DFS",
+      "bitset",
+      "Floyd 算法"
+     ],
+     "passed": false,
+     "order": 7,
+     "url": "https://www.luogu.com.cn/problem/P2853"
+    },
+    {
+     "pid": "P1363",
+     "name": "幻象迷宫",
+     "difficulty": 4,
+     "diffLabel": "普及+/提高",
+     "tags": [
+      "搜索",
+      "图论",
+      "并查集",
+      "广度优先搜索 BFS",
+      "深度优先搜索 DFS",
+      "栈"
+     ],
+     "passed": false,
+     "order": 8,
+     "url": "https://www.luogu.com.cn/problem/P1363"
+    },
+    {
+     "pid": "P1347",
+     "name": "[ECNA 2001] 排序",
+     "difficulty": 4,
+     "diffLabel": "普及+/提高",
+     "tags": [
+      "图论",
+      "2001",
+      "并查集",
+      "福建省历届夏令营",
+      "拓扑排序",
+      "ICPC"
+     ],
+     "passed": false,
+     "order": 9,
+     "url": "https://www.luogu.com.cn/problem/P1347"
+    },
+    {
+     "pid": "P1983",
+     "name": "[NOIP 2013 普及组] 车站分级",
+     "difficulty": 4,
+     "diffLabel": "普及+/提高",
+     "tags": [
+      "图论",
+      "贪心",
+      "2013",
+      "NOIP 普及组",
+      "O2优化",
+      "排序",
+      "图论建模",
+      "拓扑排序"
+     ],
+     "passed": false,
+     "order": 10,
+     "url": "https://www.luogu.com.cn/problem/P1983"
+    }
+   ],
+   "next": {
+    "pid": "P1127",
+    "name": "词链",
+    "difficulty": 4,
+    "diffLabel": "普及+/提高",
+    "tags": [
+     "字符串",
+     "搜索",
+     "图论",
+     "并查集",
+     "欧拉回路"
+    ],
+    "passed": false,
+    "order": 6,
+    "url": "https://www.luogu.com.cn/problem/P1127"
+   }
+  }
+ ],
+ "elo": [
+  {
+   "contest": "【LGR-276-Div.3】洛谷蓝桥杯省赛模拟赛 2026",
+   "rating": 241,
+   "time": "2026-03-28T10:00:00.000Z"
+  }
+ ]
+}

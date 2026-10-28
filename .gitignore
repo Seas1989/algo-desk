@@ -1,0 +1,38 @@
+# 依赖
+node_modules/
+dist/
+dist-ssr
+
+# 抓取缓存（本地原始 API 响应，可随时重建）
+.cache/
+
+# 截图与调试产物
+.shots/
+
+# IDE 与本地私有配置（.idea 里有账号相关会话记录，不要提交）
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.local
+.env
+.env.*
+
+# 日志与系统文件
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.DS_Store
+Thumbs.db
+~$*
+*.suo
+*.sw?
+
+# 本目录里与本项目无关的个人文档
+*.docx
+*.pdf
+make_management_paper*.py
+学习任务看板.html
+新建文件夹/

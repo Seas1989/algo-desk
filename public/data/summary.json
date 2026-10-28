@@ -1,0 +1,634 @@
+{
+ "generatedAt": "2026-10-28T02:27:24.993Z",
+ "cf": {
+  "handle": "Seas1989",
+  "avatar": "https://userpic.codeforces.org/5552061/title/baf609fdf21ea41e.jpg",
+  "rating": 1422,
+  "maxRating": 1426,
+  "rank": "specialist",
+  "maxRank": "specialist",
+  "registeredAt": "2026-01-21T07:27:35.000Z",
+  "submissions": 262,
+  "solved": 112,
+  "contests": 15,
+  "upcoming": 8,
+  "unfinished": 67,
+  "halfDone": 14,
+  "practiceUnsolved": 1
+ },
+ "luogu": {
+  "uid": "1864907",
+  "name": "Seas1989",
+  "avatar": "https://cdn.luogu.com.cn/upload/usericon/1864907.png",
+  "rating": 130,
+  "ranking": 34740,
+  "passed": 160,
+  "submitted": 9,
+  "trainings": 18,
+  "registerTime": "2025-09-14T10:14:19.000Z"
+ },
+ "heat": [
+  {
+   "date": "2026-07-31",
+   "count": 0
+  },
+  {
+   "date": "2026-08-01",
+   "count": 0
+  },
+  {
+   "date": "2026-08-02",
+   "count": 0
+  },
+  {
+   "date": "2026-08-03",
+   "count": 0
+  },
+  {
+   "date": "2026-08-04",
+   "count": 6
+  },
+  {
+   "date": "2026-08-05",
+   "count": 5
+  },
+  {
+   "date": "2026-08-06",
+   "count": 0
+  },
+  {
+   "date": "2026-08-07",
+   "count": 0
+  },
+  {
+   "date": "2026-08-08",
+   "count": 0
+  },
+  {
+   "date": "2026-08-09",
+   "count": 0
+  },
+  {
+   "date": "2026-08-10",
+   "count": 0
+  },
+  {
+   "date": "2026-08-11",
+   "count": 0
+  },
+  {
+   "date": "2026-08-12",
+   "count": 0
+  },
+  {
+   "date": "2026-08-13",
+   "count": 0
+  },
+  {
+   "date": "2026-08-14",
+   "count": 2
+  },
+  {
+   "date": "2026-08-15",
+   "count": 2
+  },
+  {
+   "date": "2026-08-16",
+   "count": 0
+  },
+  {
+   "date": "2026-08-17",
+   "count": 0
+  },
+  {
+   "date": "2026-08-18",
+   "count": 0
+  },
+  {
+   "date": "2026-08-19",
+   "count": 0
+  },
+  {
+   "date": "2026-08-20",
+   "count": 0
+  },
+  {
+   "date": "2026-08-21",
+   "count": 0
+  },
+  {
+   "date": "2026-08-22",
+   "count": 0
+  },
+  {
+   "date": "2026-08-23",
+   "count": 0
+  },
+  {
+   "date": "2026-08-24",
+   "count": 0
+  },
+  {
+   "date": "2026-08-25",
+   "count": 0
+  },
+  {
+   "date": "2026-08-26",
+   "count": 0
+  },
+  {
+   "date": "2026-08-27",
+   "count": 0
+  },
+  {
+   "date": "2026-08-28",
+   "count": 0
+  },
+  {
+   "date": "2026-08-29",
+   "count": 0
+  },
+  {
+   "date": "2026-08-30",
+   "count": 0
+  },
+  {
+   "date": "2026-08-31",
+   "count": 0
+  },
+  {
+   "date": "2026-09-01",
+   "count": 0
+  },
+  {
+   "date": "2026-09-02",
+   "count": 0
+  },
+  {
+   "date": "2026-09-03",
+   "count": 0
+  },
+  {
+   "date": "2026-09-04",
+   "count": 0
+  },
+  {
+   "date": "2026-09-05",
+   "count": 0
+  },
+  {
+   "date": "2026-09-06",
+   "count": 0
+  },
+  {
+   "date": "2026-09-07",
+   "count": 0
+  },
+  {
+   "date": "2026-09-08",
+   "count": 0
+  },
+  {
+   "date": "2026-09-09",
+   "count": 0
+  },
+  {
+   "date": "2026-09-10",
+   "count": 0
+  },
+  {
+   "date": "2026-09-11",
+   "count": 0
+  },
+  {
+   "date": "2026-09-12",
+   "count": 0
+  },
+  {
+   "date": "2026-09-13",
+   "count": 0
+  },
+  {
+   "date": "2026-09-14",
+   "count": 0
+  },
+  {
+   "date": "2026-09-15",
+   "count": 0
+  },
+  {
+   "date": "2026-09-16",
+   "count": 0
+  },
+  {
+   "date": "2026-09-17",
+   "count": 0
+  },
+  {
+   "date": "2026-09-18",
+   "count": 0
+  },
+  {
+   "date": "2026-09-19",
+   "count": 0
+  },
+  {
+   "date": "2026-09-20",
+   "count": 0
+  },
+  {
+   "date": "2026-09-21",
+   "count": 5
+  },
+  {
+   "date": "2026-09-22",
+   "count": 0
+  },
+  {
+   "date": "2026-09-23",
+   "count": 0
+  },
+  {
+   "date": "2026-09-24",
+   "count": 0
+  },
+  {
+   "date": "2026-09-25",
+   "count": 0
+  },
+  {
+   "date": "2026-09-26",
+   "count": 0
+  },
+  {
+   "date": "2026-09-27",
+   "count": 0
+  },
+  {
+   "date": "2026-09-28",
+   "count": 0
+  },
+  {
+   "date": "2026-09-29",
+   "count": 0
+  },
+  {
+   "date": "2026-09-30",
+   "count": 0
+  },
+  {
+   "date": "2026-10-01",
+   "count": 0
+  },
+  {
+   "date": "2026-10-02",
+   "count": 0
+  },
+  {
+   "date": "2026-10-03",
+   "count": 0
+  },
+  {
+   "date": "2026-10-04",
+   "count": 0
+  },
+  {
+   "date": "2026-10-05",
+   "count": 0
+  },
+  {
+   "date": "2026-10-06",
+   "count": 0
+  },
+  {
+   "date": "2026-10-07",
+   "count": 0
+  },
+  {
+   "date": "2026-10-08",
+   "count": 4
+  },
+  {
+   "date": "2026-10-09",
+   "count": 0
+  },
+  {
+   "date": "2026-10-10",
+   "count": 0
+  },
+  {
+   "date": "2026-10-11",
+   "count": 0
+  },
+  {
+   "date": "2026-10-12",
+   "count": 0
+  },
+  {
+   "date": "2026-10-13",
+   "count": 0
+  },
+  {
+   "date": "2026-10-14",
+   "count": 0
+  },
+  {
+   "date": "2026-10-15",
+   "count": 0
+  },
+  {
+   "date": "2026-10-16",
+   "count": 0
+  },
+  {
+   "date": "2026-10-17",
+   "count": 0
+  },
+  {
+   "date": "2026-10-18",
+   "count": 0
+  },
+  {
+   "date": "2026-10-19",
+   "count": 0
+  },
+  {
+   "date": "2026-10-20",
+   "count": 0
+  },
+  {
+   "date": "2026-10-21",
+   "count": 0
+  },
+  {
+   "date": "2026-10-22",
+   "count": 0
+  },
+  {
+   "date": "2026-10-23",
+   "count": 0
+  },
+  {
+   "date": "2026-10-24",
+   "count": 0
+  },
+  {
+   "date": "2026-10-25",
+   "count": 0
+  },
+  {
+   "date": "2026-10-26",
+   "count": 0
+  },
+  {
+   "date": "2026-10-27",
+   "count": 4
+  },
+  {
+   "date": "2026-10-28",
+   "count": 0
+  }
+ ],
+ "weakTags": [
+  {
+   "tag": "greedy",
+   "missing": 27,
+   "solved": 39
+  },
+  {
+   "tag": "dp",
+   "missing": 25,
+   "solved": 10
+  },
+  {
+   "tag": "math",
+   "missing": 21,
+   "solved": 41
+  },
+  {
+   "tag": "binary search",
+   "missing": 19,
+   "solved": 10
+  },
+  {
+   "tag": "data structures",
+   "missing": 18,
+   "solved": 5
+  },
+  {
+   "tag": "implementation",
+   "missing": 14,
+   "solved": 13
+  },
+  {
+   "tag": "dfs and similar",
+   "missing": 13,
+   "solved": 4
+  },
+  {
+   "tag": "brute force",
+   "missing": 13,
+   "solved": 14
+  },
+  {
+   "tag": "trees",
+   "missing": 12,
+   "solved": 0
+  },
+  {
+   "tag": "constructive algorithms",
+   "missing": 11,
+   "solved": 22
+  }
+ ],
+ "nextUp": {
+  "cf": [
+   {
+    "index": "A",
+    "name": "Riptide",
+    "rating": 800,
+    "tags": [
+     "implementation",
+     "sortings"
+    ],
+    "status": "tried",
+    "tries": 1,
+    "lastVerdict": "跳过",
+    "url": "https://codeforces.com/contest/2254/problem/A",
+    "contestId": 2254,
+    "contestName": "Codeforces Round 1114 (Div. 3)",
+    "contestTime": 1785854100,
+    "source": "cf"
+   },
+   {
+    "index": "B",
+    "name": "Evanescent",
+    "rating": 900,
+    "tags": [
+     "implementation",
+     "strings",
+     "two pointers"
+    ],
+    "status": "tried",
+    "tries": 1,
+    "lastVerdict": "跳过",
+    "url": "https://codeforces.com/contest/2254/problem/B",
+    "contestId": 2254,
+    "contestName": "Codeforces Round 1114 (Div. 3)",
+    "contestTime": 1785854100,
+    "source": "cf"
+   },
+   {
+    "index": "C1",
+    "name": "Marenol (easy version)",
+    "rating": 1000,
+    "tags": [
+     "greedy"
+    ],
+    "status": "tried",
+    "tries": 2,
+    "lastVerdict": "跳过",
+    "url": "https://codeforces.com/contest/2254/problem/C1",
+    "contestId": 2254,
+    "contestName": "Codeforces Round 1114 (Div. 3)",
+    "contestTime": 1785854100,
+    "source": "cf"
+   }
+  ],
+  "cfNew": [
+   {
+    "index": "C",
+    "name": "Red-Black Pairs",
+    "rating": 1100,
+    "tags": [
+     "dp",
+     "greedy"
+    ],
+    "status": "todo",
+    "tries": 0,
+    "lastVerdict": "",
+    "url": "https://codeforces.com/contest/2225/problem/C",
+    "contestId": 2225,
+    "contestName": "Educational Codeforces Round 189 (Rated for Div. 2)",
+    "contestTime": 1776782100,
+    "source": "cf"
+   },
+   {
+    "index": "E",
+    "name": "Prime Destruction",
+    "rating": 1400,
+    "tags": [
+     "brute force",
+     "dp",
+     "math",
+     "number theory"
+    ],
+    "status": "todo",
+    "tries": 0,
+    "lastVerdict": "",
+    "url": "https://codeforces.com/contest/2266/problem/E",
+    "contestId": 2266,
+    "contestName": "Codeforces Round 1122 (Div. 3)",
+    "contestTime": 1790001300,
+    "source": "cf"
+   },
+   {
+    "index": "C2",
+    "name": "We Be Flipping (Hard Version)",
+    "rating": 1400,
+    "tags": [
+     "constructive algorithms",
+     "dp",
+     "greedy"
+    ],
+    "status": "todo",
+    "tries": 0,
+    "lastVerdict": "",
+    "url": "https://codeforces.com/contest/2229/problem/C2",
+    "contestId": 2229,
+    "contestName": "Spectral::Cup 2026 Round 2 (Codeforces Round 1100, Div. 1 + Div. 2)",
+    "contestTime": 1779546900,
+    "source": "cf"
+   }
+  ],
+  "luogu": [
+   {
+    "pid": "P1085",
+    "name": "[NOIP 2004 普及组] 不高兴的津津",
+    "difficulty": 1,
+    "diffLabel": "入门",
+    "url": "https://www.luogu.com.cn/problem/P1085"
+   },
+   {
+    "pid": "P5707",
+    "name": "【深基2.例12】上学迟到",
+    "difficulty": 1,
+    "diffLabel": "入门",
+    "url": "https://www.luogu.com.cn/problem/P5707"
+   },
+   {
+    "pid": "P1009",
+    "name": "[NOIP 1998 普及组] 阶乘之和",
+    "difficulty": 2,
+    "diffLabel": "普及-",
+    "url": "https://www.luogu.com.cn/problem/P1009"
+   }
+  ],
+  "training": [
+   {
+    "id": 117,
+    "name": "【数学1】基础数学问题",
+    "next": {
+     "pid": "P1100",
+     "name": "高低位交换",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "字符串",
+      "数学",
+      "进制",
+      "位运算"
+     ],
+     "passed": false,
+     "order": 3,
+     "url": "https://www.luogu.com.cn/problem/P1100"
+    }
+   },
+   {
+    "id": 102,
+    "name": "【入门3】循环结构",
+    "next": {
+     "pid": "P1009",
+     "name": "[NOIP 1998 普及组] 阶乘之和",
+     "difficulty": 2,
+     "diffLabel": "普及-",
+     "tags": [
+      "数学",
+      "高精度",
+      "1998",
+      "NOIP 普及组"
+     ],
+     "passed": false,
+     "order": 5,
+     "url": "https://www.luogu.com.cn/problem/P1009"
+    }
+   },
+   {
+    "id": 103,
+    "name": "【入门4】数组",
+    "next": {
+     "pid": "P1428",
+     "name": "小鱼比可爱",
+     "difficulty": 1,
+     "diffLabel": "入门",
+     "tags": [
+      "模拟"
+     ],
+     "passed": false,
+     "order": 1,
+     "url": "https://www.luogu.com.cn/problem/P1428"
+    }
+   }
+  ]
+ }
+}

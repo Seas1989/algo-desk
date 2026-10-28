@@ -1,0 +1,18 @@
+{
+  "name": "algo-training-desk",
+  "private": true,
+  "version": "0.1.0",
+  "description": "算法训练台：把 Codeforces 与洛谷的比赛、未完成题、题单汇总成一个静态站点",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "fetch": "node scripts/fetch-data.mjs",
+    "fetch:refresh": "node scripts/fetch-data.mjs --refresh"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.5",
+    "vite": "^8.1.5"
+  }
+}
