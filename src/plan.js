@@ -67,6 +67,36 @@ export function buildCandidates(data) {
 
 const toRef = (c) => ({ key: c.key, name: c.name, url: c.url, done: false });
 
+/* 洛谷题号有 P / B / CF 三种前缀，别的平台镜像题还会有 AT、UVA，先只认这三种 */
+const LG_PID_RE = /\b(P\d{4,7}|B\d{4,7}|CF\d{1,4}[A-Z][0-9]?)\b/i;
+
+/**
+ * 解析洛谷首页右侧「任务计划」侧栏复制出来的文本。
+ * 一行一题，打勾的（✓）算已完成：
+ *   ✓P1449 后缀表达式
+ *   P2947 [USACO09MAR]Look Up S
+ * 首页有 JS 反爬，脚本抓不到，所以让用户把这段直接复制过来。
+ */
+export function parseLuoguPlanText(text) {
+  const out = [];
+  const seen = new Set();
+  for (const raw of String(text || '').split(/\r?\n/)) {
+    const line = raw.trim();
+    if (!line) continue;
+    const m = LG_PID_RE.exec(line);
+    if (!m) continue;
+    const pid = m[0].toUpperCase();
+    if (seen.has(pid)) continue;
+    seen.add(pid);
+    out.push({
+      pid,
+      name: line.slice(m.index + m[0].length).replace(/^[\s\-–—:：]+/, '').trim() || pid,
+      done: /[✓√✔☑]|已完成/.test(line),
+    });
+  }
+  return out;
+}
+
 /** 把抓好的洛谷计划转成本地 plan 结构：有日期按日期分组，没有的今天起每天 3 题；已完成状态按题号保留 */
 function fromLuoguPlan(prev, lg) {
   const doneKeys = new Set((prev?.days || []).flatMap((d) => d.items.filter((i) => i.done).map((i) => i.key)));
@@ -75,7 +105,8 @@ function fromLuoguPlan(prev, lg) {
     name: p.name || p.pid,
     url: p.url || `https://www.luogu.com.cn/problem/${p.pid}`,
     isLG: true,
-    done: doneKeys.has(`lg:${p.pid}`),
+    // 洛谷那边已经打过勾的，直接算完成；本地勾过的也保留
+    done: !!p.done || doneKeys.has(`lg:${p.pid}`),
   });
   const byDate = new Map();
   const undated = [];
@@ -320,41 +351,77 @@ export function planView(data) {
   function importCard() {
     const ta = h('textarea', {
       class: 'input plan-ta',
-      rows: 5,
-      placeholder: '{"days":[{"date":"2026-10-28","items":[{"pid":"P1001","name":"A+B Problem"}]}]}',
+      rows: 6,
+      placeholder:
+        '两种都行：\n1) 洛谷首页右侧「任务计划」整段复制粘贴（一行一题，带 ✓ 的是已完成）\n2) 或者粘贴 {"days":[{"date":"2026-10-28","items":[{"pid":"P1001","name":"A+B Problem"}]}]}',
     });
     const err = h('div', { class: 'plan-err' });
+
+    const applyDays = (days) => {
+      plan = { createdAt: Date.now(), days };
+      save(plan);
+      redraw();
+    };
+
     const doImport = () => {
-      let j;
-      try {
-        j = JSON.parse(ta.value);
-      } catch {
-        err.textContent = '导入失败：不是合法的 JSON，检查引号和括号。页面保持原样。';
+      const text = ta.value.trim();
+      err.textContent = '';
+      if (!text) {
+        err.textContent = '先粘贴内容。';
         return;
       }
-      try {
-        if (!j || !Array.isArray(j.days) || !j.days.length) throw new Error('days 必须是非空数组');
-        const days = j.days.map((d) => {
-          if (!d || typeof d.date !== 'string') throw new Error('每天要有 date');
-          const items = (Array.isArray(d.items) ? d.items : []).map((it) => {
-            if (!it || typeof it.pid !== 'string' || typeof it.name !== 'string') throw new Error('每题要有 pid 和 name');
-            return { key: `lg:${it.pid}`, name: it.name, url: `https://www.luogu.com.cn/problem/${it.pid}`, isLG: true, done: false };
+
+      // JSON 走原来的路径
+      if (text.startsWith('{')) {
+        let j;
+        try {
+          j = JSON.parse(text);
+        } catch {
+          err.textContent = '导入失败：不是合法的 JSON，检查引号和括号。页面保持原样。';
+          return;
+        }
+        try {
+          if (!j || !Array.isArray(j.days) || !j.days.length) throw new Error('days 必须是非空数组');
+          const days = j.days.map((d) => {
+            if (!d || typeof d.date !== 'string') throw new Error('每天要有 date');
+            const items = (Array.isArray(d.items) ? d.items : []).map((it) => {
+              if (!it || typeof it.pid !== 'string' || typeof it.name !== 'string') throw new Error('每题要有 pid 和 name');
+              return { key: `lg:${it.pid}`, name: it.name, url: `https://www.luogu.com.cn/problem/${it.pid}`, isLG: true, done: !!it.done };
+            });
+            if (!items.length) throw new Error('每天有非空的 items');
+            return { date: d.date, items };
           });
-          if (!items.length) throw new Error('每天有非空的 items');
-          return { date: d.date, items };
-        });
-        plan = { createdAt: Date.now(), days };
-        save(plan);
-        err.textContent = '';
-        redraw();
-      } catch (e) {
-        err.textContent = `导入失败：${e.message || 'JSON 格式不对'}，页面保持原样。`;
+          applyDays(days);
+        } catch (e) {
+          err.textContent = `导入失败：${e.message || 'JSON 格式不对'}，页面保持原样。`;
+        }
+        return;
       }
+
+      // 其余按洛谷「任务计划」文本解析
+      const items = parseLuoguPlanText(text);
+      if (!items.length) {
+        err.textContent = '没认出题号。粘贴的内容里要能看到 P1165、B3666、CF5E 这样的编号。';
+        return;
+      }
+      const next = fromLuoguPlan(plan, { problems: items });
+      if (!next) {
+        err.textContent = '解析出来了，但排不出计划，检查一下内容。';
+        return;
+      }
+      plan = next;
+      save(plan);
+      redraw();
+      err.textContent = `导入 ${items.length} 题（其中 ${items.filter((i) => i.done).length} 题已完成），按每天 3 题铺开。`;
     };
+
     return h(
       'section',
       { class: 'card plan-import' },
-      sectionHeadLite('导入计划', '覆盖本地计划；也可在洛谷导出/用本机脚本抓取后粘贴到这里（格式见占位提示）。'),
+      sectionHeadLite(
+        '导入计划',
+        '直接把洛谷首页右侧「任务计划」那段复制进来就行；也支持覆盖本地计划的 JSON（格式见占位提示）。',
+      ),
       ta,
       h('div', { class: 'plan-import-row' }, h('button', { class: 'btn', type: 'button', onClick: doImport }, '导入'), err),
     );
