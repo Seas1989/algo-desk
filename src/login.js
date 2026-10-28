@@ -29,7 +29,7 @@ export function openLogin({ onChange } = {}) {
   const cfInput = h('input', {
     class: 'input',
     type: 'text',
-    placeholder: '比如 Seas1989',
+    placeholder: '你的 Codeforces handle',
     autocomplete: 'off',
     spellcheck: 'false',
     value: current?.cf || '',
@@ -37,7 +37,7 @@ export function openLogin({ onChange } = {}) {
   const lgInput = h('input', {
     class: 'input',
     type: 'text',
-    placeholder: '可选，比如 1864907',
+    placeholder: '可选',
     autocomplete: 'off',
     spellcheck: 'false',
     value: current?.luogu || '',
@@ -55,11 +55,9 @@ export function openLogin({ onChange } = {}) {
     h(
       'p',
       { class: 'acct-hint' },
-      'UID 就是洛谷个人主页地址里 /user/ 后面那串数字：',
-      h('span', { class: 'mono' }, 'luogu.com.cn/user/1864907'),
-      ' → ',
-      h('span', { class: 'mono' }, '1864907'),
-      '。也可以直接把整条主页链接粘进来。',
+      'UID 是洛谷个人主页地址里 /user/ 后面那串数字（',
+      h('span', { class: 'mono' }, 'luogu.com.cn/user/<UID>'),
+      '）；直接把整条主页链接粘进来也可以。',
     ),
     h('p', { class: 'acct-hint' }, 'CF 数据是实时拉的；洛谷没有开放接口，只有站点构建时收录过的 UID 才有数据。'),
     formError,

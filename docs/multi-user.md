@@ -23,19 +23,19 @@
 下次打开自动恢复。也可以直接分享链接：
 
 ```
-https://<站点>/?cf=Seas1989&lg=1864907    # 直接看某人的数据
-https://<站点>/?login=1                   # 直接弹出登录面板
+https://<站点>/?cf=<handle>&lg=<uid>    # 直接看某人的数据
+https://<站点>/?login=1                 # 直接弹出登录面板
 ```
 
 **站主**：把想收录的人写进 `config.json`，然后重新生成快照：
 
 ```json
 {
-  "cf": "Seas1989",
-  "luogu": "1864907",
+  "cf": "<站主的 handle>",
+  "luogu": "<站主的 UID>",
   "users": [
-    { "cf": "Seas1989", "luogu": "1864907", "label": "站主" },
-    { "cf": "alice", "luogu": "123456", "label": "Alice" }
+    { "cf": "<handle>", "luogu": "<uid>", "label": "站主" },
+    { "cf": "<另一个 handle>", "luogu": "<另一个 uid>", "label": "可选备注" }
   ]
 }
 ```
