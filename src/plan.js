@@ -391,7 +391,7 @@ export function planView(data) {
         plan = { createdAt: Date.now(), days: r.days, by: 'ai' };
         save(plan);
         remember(); // 要求存下来，redraw 之后能原样填回输入框
-        lastAiMsg = `排好了：${r.days.length} 天，从 ${r.total} 道候选里选。${r.dropped ? `丢弃了 ${r.dropped} 个对不上的题号。` : ''}`;
+        lastAiMsg = `排好了：${r.days.length} 天 × ${r.days[0]?.items.length || 0} 题，从 ${r.total} 道候选里选。${r.dropped ? `丢弃了 ${r.dropped} 个对不上的题号。` : ''}${r.note ? ` ${r.note}` : ''}`;
         redraw();
       } catch (e) {
         lastAiMsg = e.message || '生成失败，换个说法再试。';

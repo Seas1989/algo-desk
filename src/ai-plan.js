@@ -8,6 +8,7 @@
  * 编出来的题号一律丢掉——计划里出现不存在的题比排得丑严重得多。
  */
 import { buildPool, poolForAI, pickByKeys } from './problem-agent.js';
+import { TAG_CN, tagCN } from './i18n.js';
 
 const CFG_KEY = 'algodesk.ai';
 
@@ -58,6 +59,38 @@ function parseJson(text) {
 }
 
 /**
+ * 从「要求」里抠出明确约束。模型经常会忽略自然语言，所以这些约束我们自己也认一遍，
+ * 认出来就直接作用在候选池上——它根本拿不到别的题，就谈不上「不听」。
+ */
+function parseConstraints(requirement, pool) {
+  const txt = String(requirement || '');
+  const lower = txt.toLowerCase();
+
+  // 标签：中文名或英文名命中即算；只在池子里实际出现过的标签才算
+  const present = new Set(pool.flatMap((p) => p.tags || []));
+  const tags = [];
+  for (const [en, cn] of Object.entries(TAG_CN)) {
+    if (!present.has(en)) continue;
+    if (txt.includes(cn) || lower.includes(en.toLowerCase())) tags.push(en);
+  }
+
+  // 难度上限：「不超过 1600」「1600 以下」「别超过 1600」
+  const capMatch = /(?:不超过|别超过|不要超过|最高|上限|最多)\s*(\d{3,4})|(\d{3,4})\s*(?:分)?\s*(?:以下|以内|封顶)/.exec(txt);
+  const maxRating = capMatch ? Number(capMatch[1] || capMatch[2]) : null;
+
+  return { tags, maxRating, hasConstraint: tags.length > 0 || maxRating != null };
+}
+
+/** 按约束过滤候选池（洛谷题没有 CF rating，难度上限只对 CF 生效） */
+function applyConstraints(pool, { tags, maxRating }) {
+  return pool.filter((p) => {
+    if (tags.length && !(p.tags || []).some((t) => tags.includes(t))) return false;
+    if (maxRating != null && !p.isLG && p.rating != null && p.rating > maxRating) return false;
+    return true;
+  });
+}
+
+/**
  * @returns {{days: Array<{date:string, items:Array}>, dropped:number, used:number, total:number}}
  */
 export async function generatePlan({ data, box, requirement, days = 7, perDay = 3 }) {
@@ -66,15 +99,36 @@ export async function generatePlan({ data, box, requirement, days = 7, perDay = 
     throw new Error('还没配置 AI：点右下角 AI 按钮 → 设置，填 API 地址、Key、模型。');
   }
 
-  const pool = buildPool(data, box);
-  if (!pool.length) throw new Error('候选池是空的：先去「比赛」或「题单」页看看有没有欠的题。');
+  const all = buildPool(data, box);
+  if (!all.length) throw new Error('候选池是空的：先去「比赛」或「题单」页看看有没有欠的题。');
 
-  const { lines, keys, total, used } = poolForAI(pool, { limit: 60 });
+  const daysN = Math.max(1, Math.min(30, Number(days) || 7));
+  const perDayN = Math.max(1, Math.min(6, Number(perDay) || 3));
+  const want = daysN * perDayN;
+
+  const cons = parseConstraints(requirement, all);
+  const pool = cons.hasConstraint ? applyConstraints(all, cons) : all;
+
+  if (!pool.length) {
+    const why = [cons.tags.length ? `标签 ${cons.tags.map((t) => tagCN(t)).join('/')}` : '', cons.maxRating ? `难度 ≤ ${cons.maxRating}` : '']
+      .filter(Boolean)
+      .join('、');
+    throw new Error(`按你的要求（${why}）筛完，候选池一道题都不剩。放宽一点条件，或者先去把那类题做几道。`);
+  }
+
+  if (pool.length < want) {
+    // 池子不够就不要硬凑：把实际能排的说清楚
+    const note = `符合条件只有 ${pool.length} 道，排不满 ${daysN}×${perDayN}`;
+    return fillDeterministic({ pool, daysN, perDayN, note });
+  }
+
+  const { lines, total, used } = poolForAI(pool, { limit: 60 });
 
   const system = [
     '你是算法竞赛教练，负责排训练计划。',
-    `只能从用户给的候选题目里挑，返回的 key 必须逐字照抄，不许自己编题号。`,
-    `总共排 ${days} 天，每天 ${perDay} 题，难度从易到难推进，同一天尽量不要同一个标签。`,
+    '只能从用户给的候选题目里挑，返回的 key 必须逐字照抄，不许自己编题号。',
+    `必须排 ${daysN} 天，每天正好 ${perDayN} 题，一天不多一天不少。`,
+    '难度从易到难推进，同一天尽量不重复同一个标签。',
     '只输出 JSON，不要解释、不要 markdown 围栏。格式：',
     '{"days":[{"date":"YYYY-MM-DD","items":["cf:1968A","lg:P1001"]}]}',
     '第一个日期是今天，依次往后排。',
@@ -131,25 +185,57 @@ export async function generatePlan({ data, box, requirement, days = 7, perDay = 
   let dropped = 0;
   const outDays = [];
   const seen = new Set();
+  const spare = pool.filter((p) => true); // 备用池：AI 给少了就从这里按顺序补
+  let spareIdx = 0;
+
+  const toItem = (p) => ({ key: p.key, name: p.name, url: p.url, isLG: p.isLG, done: false });
 
   for (const [i, d] of (parsed.days || []).entries()) {
+    if (outDays.length >= daysN) break; // 天数是硬约束，多给的天直接丢
     const { items, bad } = pickByKeys(pool, Array.isArray(d.items) ? d.items : []);
     dropped += bad.length;
-    const uniq = items.filter((p) => (seen.has(p.key) ? false : seen.add(p.key)));
+    let uniq = items.filter((p) => (seen.has(p.key) ? false : seen.add(p.key)));
+
+    // 每天正好 perDayN 题：多了截断，少了从池子里补
+    if (uniq.length > perDayN) {
+      for (const p of uniq.slice(perDayN)) seen.delete(p.key); // 截掉的题放回可用集合
+      uniq = uniq.slice(0, perDayN);
+    }
+    while (uniq.length < perDayN) {
+      while (spareIdx < spare.length && seen.has(spare[spareIdx].key)) spareIdx++;
+      const p = spare[spareIdx++];
+      if (!p) break;
+      seen.add(p.key);
+      uniq.push(p);
+    }
     if (!uniq.length) continue;
     outDays.push({
-      date: usableDate(d.date, i),
-      items: uniq.map((p) => ({
-        key: p.key,
-        name: p.name,
-        url: p.url,
-        isLG: p.isLG,
-        done: false,
-      })),
+      date: usableDate(d.date, outDays.length),
+      items: uniq.map(toItem),
     });
   }
 
   if (!outDays.length) throw new Error('AI 返回的题号一个都对不上候选池，换个说法再试。');
 
-  return { days: outDays, dropped, used, total };
+  const note =
+    outDays.length < daysN
+      ? `符合条件的题只够排 ${outDays.length} 天（你要 ${daysN} 天），已按实际数量排。`
+      : '';
+
+  return { days: outDays, dropped, used, total, note };
+}
+
+/** 池子不够排满时，不调 AI，直接按难度顺序铺开 */
+function fillDeterministic({ pool, daysN, perDayN, note }) {
+  const out = [];
+  let i = 0;
+  for (let d = 0; d < daysN && i < pool.length; d++) {
+    const items = [];
+    for (let k = 0; k < perDayN && i < pool.length; k++, i++) {
+      const p = pool[i];
+      items.push({ key: p.key, name: p.name, url: p.url, isLG: p.isLG, done: false });
+    }
+    out.push({ date: dayStr(d), items });
+  }
+  return { days: out, dropped: 0, used: pool.length, total: pool.length, note };
 }
