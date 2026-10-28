@@ -31,8 +31,9 @@ jobs:
       - run: npm ci
 
       # 抓取失败不阻断部署，直接沿用仓库里已有的 public/data
+      # fetch:all = 主账号快照 + config.json 里额外收录的洛谷用户
       - name: Fetch latest data
-        run: npm run fetch
+        run: npm run fetch:all
         continue-on-error: true
 
       - run: npm run build
