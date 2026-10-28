@@ -142,7 +142,7 @@ export function openLogin({ onChange } = {}) {
     h(
       'div',
       { class: 'acct-foot' },
-      h('span', { class: 'muted' }, '不登录也能用：默认展示站主的数据。'),
+      h('span', { class: 'muted' }, '不登录只能看「关于」页。'),
       current
         ? h(
             'button',

@@ -274,3 +274,83 @@ body.acct-open {
     align-items: flex-start;
   }
 }
+
+/* ---------------- 未登录视图 ---------------- */
+.guest-hero {
+  padding: 46px 0 10px;
+  max-width: 760px;
+}
+.guest-hero h1 {
+  font-size: 46px;
+  line-height: 1.12;
+  margin: 10px 0 12px;
+  letter-spacing: -1px;
+  background: linear-gradient(180deg, var(--text), var(--muted));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.guest-actions {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0 10px;
+  flex-wrap: wrap;
+}
+.guest-note {
+  font-size: 12px;
+  color: var(--dim);
+  margin: 0;
+}
+.guest-feature h3 {
+  font-size: 15px;
+  margin: 0 0 6px;
+}
+.guest-feature p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.75;
+}
+.guest-data h2 {
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+.guest-list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 13.5px;
+  line-height: 2;
+}
+.guest-list b {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.guest-lock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  padding: 54px 24px;
+  margin-top: 26px;
+}
+.guest-lock-mark {
+  font-size: 26px;
+  color: var(--accent);
+  opacity: 0.85;
+}
+.guest-lock h2 {
+  margin: 0;
+  font-size: 18px;
+}
+.guest-lock .muted {
+  max-width: 46ch;
+  margin: 0;
+  font-size: 13.5px;
+}
+.guest-lock .guest-actions {
+  margin: 10px 0 0;
+}
+

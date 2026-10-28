@@ -5,6 +5,7 @@ import { TAG_CN } from './i18n.js';
 import * as views from './views.js';
 import { activeAccount, addAccount } from './accounts.js';
 import { accountButton, openLogin } from './login.js';
+import { guestLanding, guestPrompt } from './guest.js';
 
 const NAV = [
   { id: 'home', label: '总览' },
@@ -236,6 +237,24 @@ function shell(content) {
 
 function render() {
   const route = currentRoute();
+  const onAccountChange = () => applyAccount(activeAccount());
+  syncFab();
+
+  // 未登录：不展示、也不加载任何人的数据。「关于」页除外
+  if (!account) {
+    const el =
+      route === 'about'
+        ? views.about()
+        : route === 'home'
+          ? guestLanding({ onChange: onAccountChange })
+          : guestPrompt(route, { onChange: onAccountChange });
+    const main = h('main', { class: 'wrap page-in' }, el);
+    shell(main);
+    mountCountdowns(main);
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    return;
+  }
+
   if (!data) {
     shell(
       h(
@@ -250,7 +269,7 @@ function render() {
               h('p', { class: 'muted' }, '先在项目根目录跑一次抓取，再刷新：'),
               h('pre', { class: 'code' }, 'npm run fetch'),
             )
-          : h('div', { class: 'card' }, h('p', { class: 'muted' }, '正在读取本地数据…')),
+          : h('div', { class: 'card' }, h('p', { class: 'muted' }, '正在读取数据…')),
       ),
     );
     return;
@@ -268,6 +287,12 @@ function liveBanner() {
   // live.js 尚未加载时（连按需块都拉不下来）的短兜底
   if (liveError) return h('div', { class: 'card error' }, h('p', {}, '拉取数据失败，请稍后重试'));
   return null;
+}
+
+/* AI 教练要有数据才有意义：访客不显示那个悬浮按钮 */
+function syncFab() {
+  const fab = document.querySelector('.ai-fab');
+  if (fab) fab.style.display = account ? '' : 'none';
 }
 
 window.addEventListener('hashchange', render);
@@ -299,26 +324,18 @@ function aiFab() {
   if (!document.getElementById('root')) document.body.append(h('div', { id: 'root' }));
   initTips();
   document.body.append(aiFab());
-  render();
-  try {
-    staticData = await loadData();
-    data = staticData;
-  } catch (e) {
-    loadError = e;
-  }
-  render();
-  if (loadError) return;
 
-  // 地址栏里的账号优先（可分享链接），其次读本机保存的账号
+  // 先把访客视图渲出来（不发任何请求），有账号再去拉数据
+  render();
+
   const sp = new URLSearchParams(location.search);
   const cfParam = sp.get('cf');
   const lgParam = sp.get('lg') || '';
-  if (cfParam) {
-    applyAccount({ id: 'adhoc', cf: cfParam, luogu: lgParam, label: cfParam, adhoc: true });
-  } else {
-    const saved = activeAccount();
-    if (saved) applyAccount(saved);
-  }
+  const target = cfParam
+    ? { id: 'adhoc', cf: cfParam, luogu: lgParam, label: cfParam, adhoc: true }
+    : activeAccount();
+
+  if (target) applyAccount(target);
 
   // ?login=1 —— 分享一个「加账号」的链接，也方便第一次来的人直接落到登录框
   if (sp.get('login')) openLogin({ onChange: () => applyAccount(activeAccount()) });
