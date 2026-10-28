@@ -14,7 +14,7 @@
 | 数据 | 来源 | 谁能看 |
 | --- | --- | --- |
 | Codeforces | 浏览器直连 `codeforces.com/api`，实时 | 任何人，输入 handle 即可 |
-| 洛谷 · 站主 | 构建时生成 `public/data/luogu.json` | 所有人（默认视图） |
+| 洛谷 · 站主 | 构建时生成 `public/data/luogu.json` | 登录了站主账号的人（未登录看不到任何人的数据） |
 | 洛谷 · 其他人 | 构建时生成 `public/data/luogu-<uid>.json` | 只有被收录进 `config.json` 的人 |
 
 ## 用法
