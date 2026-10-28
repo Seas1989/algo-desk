@@ -1,5 +1,8 @@
 # 算法训练台 · Algo Desk
 
+[![Deploy](https://github.com/Seas1989/algo-desk/actions/workflows/deploy.yml/badge.svg)](https://github.com/Seas1989/algo-desk/actions/workflows/deploy.yml)
+线上地址：<https://seas1989.github.io/algo-desk/>
+
 把 **Codeforces** 和 **洛谷** 的账号、比赛、欠账的题放到一张桌子上。
 
 不用在 OJ 里点来点去翻自己的提交记录，也不用靠记忆找出「哪场比赛我做了一半」——打开一页就能看到：还有什么题没补、下一场什么时候开、最近几场在涨还是在掉。
