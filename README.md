@@ -11,14 +11,39 @@
 
 ![总览](docs/screenshot-home.png)
 
-## 访客怎么用：账号与「登录」
+## 多账号
 
-这个站没有服务器，所以**没有密码登录，也不假装有**。顶栏的「登录」做的是另一件事：
+没有服务器，所以不校验密码，也不假装有。顶栏「登录」做的事是：**在这台浏览器里记下你要看的账号**——一个 CF handle + 一个可选的洛谷 UID，存本机 `localStorage`，可存多个、来回切换、随时移除；退出后回到站主默认数据。handle 和 UID 本来就是公开标识，不存在泄露什么。
 
-- **不登录进来**：看到的是站主的数据快照（构建时抓好，人人可见，无需任何凭证）。
-- **点「登录」**：把「一个 CF handle + 一个可选的洛谷 UID」记在**你这台浏览器**的 `localStorage` 里，随时切换、随时退出。handle 和 UID 本来就是公开标识，不存在泄露什么。
-- **登录后看什么**：CF 数据由你的浏览器直连 Codeforces 公开 API 实时拉取；洛谷没有开放接口，只有本站构建时收录过的 UID 才有洛谷数据——登录框里把这条边界写明了，不做假象。
-- 换一台电脑需要重新添加一次；这是静态站的诚实边界，想要跨设备同步得配后端（见路线图）。
+三条数据路径：
+
+| 数据 | 来源 | 谁能看到 |
+| --- | --- | --- |
+| Codeforces | 你的浏览器直连官方 API，**实时** | 任何人，输入 handle 即可 |
+| 洛谷 · 站主 | 构建时生成 `public/data/luogu.json` 快照 | 所有人（默认视图） |
+| 洛谷 · 其他人 | 构建时生成 `public/data/luogu-<uid>.json` | 只有事先收录进 `config.json` 的人 |
+
+洛谷没有开放接口也没有 CORS，浏览器实时查不了——没被收录的 UID 登录后 CF 部分正常、洛谷部分为空，页面会说明原因。
+
+要收录其他人：把他们写进仓库根目录的 `config.json`，然后重新生成快照：
+
+```json
+{
+  "cf": "Seas1989",
+  "luogu": "1864907",
+  "users": [
+    { "cf": "Seas1989", "luogu": "1864907", "label": "站主" },
+    { "cf": "alice", "luogu": "123456", "label": "Alice" }
+  ]
+}
+```
+
+```bash
+npm run fetch:users  # 额外账号快照（luogu-<uid>.json）
+npm run fetch:all    # 主账号 + 额外账号一起跑
+```
+
+分享链接：`?cf=xxx&lg=xxx` 直接看某人的数据；`?login=1` 直接弹出登录面板。完整机制（请求细节、边界）见 [docs/multi-user.md](docs/multi-user.md)。
 
 顶栏搜索框按输入内容分流：
 
@@ -71,20 +96,21 @@ CF 按难度分档、CF 按算法分组、洛谷官方题单完成进度，全�
 
 ```bash
 npm install
-npm run fetch     # 抓取 CF + 洛谷，写入 public/data/*.json
+npm run fetch     # 主账号：抓取 CF + 洛谷，写入 public/data/*.json
+npm run fetch:users  # config.json 里的额外洛谷账号快照
 npm run dev       # 本地预览
 npm run build     # 产出 dist/
 ```
 
 `npm run fetch:refresh` 忽略缓存强制重抓。
 
-换账号（给整个部署换站主）：编辑 `scripts/fetch-data.mjs` 顶部的 `CF_HANDLE` / `LUOGU_UID`，或
+换站主（给整个部署换人）：编辑根目录 `config.json` 的 `cf` / `luogu` 字段，或
 
 ```bash
 node scripts/fetch-data.mjs --cf=你的handle --luogu=你的uid
 ```
 
-访客想临时看别人：不用碰上面这些，顶栏输 handle 即可。
+访客想临时看别人：不用碰上面这些，顶栏「登录」记个账号即可。
 
 ## 数据从哪来
 
@@ -104,8 +130,10 @@ node scripts/fetch-data.mjs --cf=你的handle --luogu=你的uid
 ## 目录结构
 
 ```
-scripts/fetch-data.mjs   抓取 + 聚合，产出三个 JSON
-src/main.js              hash 路由、主题切换、顶栏搜索分发、启动
+config.json              站主 handle/UID 与要收录的额外用户（fetch 脚本读取）
+scripts/fetch-data.mjs   抓取 + 聚合，产出主账号 JSON
+scripts/fetch-luogu-extra.mjs  按 config.json users 抓取额外洛谷快照 luogu-<uid>.json
+src/main.js              hash 路由、主题切换、顶栏搜索分发、账号应用、启动
 src/views.js             页面渲染入口（统一导出）
 src/plan.js              做题计划：生成排序、localStorage 进度、导入
 src/accounts.js          本地多账号：增删切换（存 localStorage，无密码）
@@ -118,7 +146,7 @@ src/ai.js                AI 教练抽屉（BYOK，按需加载）
 src/live.js              浏览器直连 CF API 的实时查询（按需加载）
 src/styles.css           全部样式（含深浅两套主题变量，无 CSS 框架）
 public/data/*.json       生成好的数据，随仓库提交，克隆即可跑
-docs/                    截图与交接文档
+docs/                    截图、交接文档与 multi-user.md（多账号机制）
 ```
 
 ## 部署到 GitHub Pages
@@ -140,7 +168,7 @@ docs/                    截图与交接文档
 - **洛谷个人题单没有公开接口**，只能读官方题单，因此题单页只覆盖官方题单。
 - **洛谷个人做题计划需要登录才能看到，没有公开接口**：做题计划页是按你两边欠账生成的离线自建计划，若要同步洛谷的计划，请在洛谷导出后粘贴到导入框。
 - **洛谷报名必须在洛谷站内完成**（依赖你自己的登录态），本站只做跳转，不代报名；洛谷也没有开放 API 与 CORS，无法像 CF 那样实时查询。
-- **「登录」是本地功能**：账号只记在本机浏览器，不跨设备；未收录的洛谷 UID 登录后没有洛谷数据。
+- **账号存在本机**：换设备 / 换浏览器要重新加一次（`localStorage`，不跨设备同步）；未收录的洛谷 UID 登录后没有洛谷数据。
 - 大型 ICPC / gym / 特殊赛的题目不在 `problemset.problems` 里，这类场次只显示已过题数，不给分母。
 - CF `contest.type` 字段不可靠（Div.3 也可能标成 `ICPC`），判断题目集是否完整改用题目数量。
 - 洛谷页面结构更新时，`scripts/fetch-data.mjs` 里的解析可能要跟着改。
