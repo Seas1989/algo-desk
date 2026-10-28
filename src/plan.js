@@ -67,6 +67,37 @@ export function buildCandidates(data) {
 
 const toRef = (c) => ({ key: c.key, name: c.name, url: c.url, done: false });
 
+/** 把抓好的洛谷计划转成本地 plan 结构：有日期按日期分组，没有的今天起每天 3 题；已完成状态按题号保留 */
+function fromLuoguPlan(prev, lg) {
+  const doneKeys = new Set((prev?.days || []).flatMap((d) => d.items.filter((i) => i.done).map((i) => i.key)));
+  const ref = (p) => ({
+    key: `lg:${p.pid}`,
+    name: p.name || p.pid,
+    url: p.url || `https://www.luogu.com.cn/problem/${p.pid}`,
+    isLG: true,
+    done: doneKeys.has(`lg:${p.pid}`),
+  });
+  const byDate = new Map();
+  const undated = [];
+  for (const p of lg.problems || []) {
+    if (p.planDate) {
+      if (!byDate.has(p.planDate)) byDate.set(p.planDate, []);
+      byDate.get(p.planDate).push(ref(p));
+    } else undated.push(ref(p));
+  }
+  const days = [...byDate.keys()].sort().map((date) => ({ date, items: byDate.get(date) }));
+  for (let i = 0, d = 0; i < undated.length; d++) {
+    const date = shift(today(), d);
+    const chunk = undated.slice(i, i + PER_DAY);
+    i += chunk.length;
+    const ex = days.find((x) => x.date === date);
+    if (ex) ex.items.push(...chunk);
+    else days.push({ date, items: chunk });
+  }
+  if (!days.length) return null;
+  return { createdAt: Date.now(), days };
+}
+
 /** 重新排：保留已完成，其余槽位按最新排序补满 */
 function regenerate(data, prev) {
   const keep = prev?.days?.map((d) => d.items.filter((i) => i.done)) || [];
@@ -228,6 +259,8 @@ export function planView(data) {
         ),
       ),
 
+      luoguPlanCard(data),
+
       importCard(),
 
       h(
@@ -242,6 +275,46 @@ export function planView(data) {
         ),
       ),
     ];
+  }
+
+  /** 本地脚本抓好的洛谷做题计划（public/data/luogu-plan.json），一键排进来 */
+  function luoguPlanCard(d) {
+    const lg = d.luoguPlan;
+    if (!lg?.problems?.length) return null;
+    const dated = lg.problems.filter((p) => p.planDate).length;
+    const msg = h('div', { class: 'plan-err' });
+    return h(
+      'section',
+      { class: 'card plan-import' },
+      sectionHeadLite(
+        '洛谷做题计划',
+        `本机脚本登录抓取，共 ${lg.problems.length} 题${dated ? `，其中 ${dated} 题带计划日期` : ''}。点按钮覆盖本地计划，已打勾的题会保持完成状态。`,
+      ),
+      h(
+        'div',
+        { class: 'plan-import-row' },
+        h(
+          'button',
+          {
+            class: 'btn primary',
+            type: 'button',
+            onClick: () => {
+              const next = fromLuoguPlan(plan, lg);
+              if (!next) {
+                msg.textContent = '转换失败：计划里没有可用的题。';
+                return;
+              }
+              plan = next;
+              msg.textContent = '';
+              redraw();
+            },
+          },
+          '按洛谷计划排进来',
+        ),
+        msg,
+      ),
+      h('p', { class: 'muted' }, `抓取时间：${(lg.fetchedAt || '').slice(0, 16).replace('T', ' ')}；更新请在仓库根目录跑 npm run fetch:plan。`),
+    );
   }
 
   function importCard() {
@@ -281,7 +354,7 @@ export function planView(data) {
     return h(
       'section',
       { class: 'card plan-import' },
-      sectionHeadLite('导入计划', '覆盖本地计划；洛谷个人计划需要登录、没有公开接口，这里是离线版，如需同步请在洛谷导出后粘贴。'),
+      sectionHeadLite('导入计划', '覆盖本地计划；也可在洛谷导出/用本机脚本抓取后粘贴到这里（格式见占位提示）。'),
       ta,
       h('div', { class: 'plan-import-row' }, h('button', { class: 'btn', type: 'button', onClick: doImport }, '导入'), err),
     );
@@ -289,7 +362,7 @@ export function planView(data) {
 
   const redraw = () => {
     save(plan);
-    body.replaceChildren(...render());
+    body.replaceChildren(...render().filter(Boolean)); // 卡片可能返回 null（没抓过洛谷计划），必须先滤掉
   };
   redraw();
   return body;

@@ -175,8 +175,21 @@ async function loadData() {
     if (!res.ok) throw new Error(`${f} → HTTP ${res.status}`);
     return res.json();
   };
-  const [summary, cf, luogu] = await Promise.all([get('summary.json'), get('cf.json'), get('luogu.json')]);
-  return { summary, cf, luogu };
+  const getOpt = async (f) => {
+    try {
+      const res = await fetch(new URL(f, dataBase), { cache: 'no-cache' });
+      return res.ok ? res.json() : null;
+    } catch {
+      return null;
+    }
+  };
+  const [summary, cf, luogu, luoguPlan] = await Promise.all([
+    get('summary.json'),
+    get('cf.json'),
+    get('luogu.json'),
+    getOpt('luogu-plan.json'), // 本地脚本抓的洛谷做题计划，没有就缺省
+  ]);
+  return { summary, cf, luogu, luoguPlan };
 }
 
 function currentRoute() {

@@ -43,7 +43,10 @@
 ```bash
 npm run fetch:users  # 额外账号快照（luogu-<uid>.json）
 npm run fetch:all    # 主账号 + 额外账号一起跑
+npm run fetch:plan   # 登录拉你的洛谷做题计划（需先建 luogu-cred.json，见下）
 ```
+
+拉做题计划前先在本机建 `luogu-cred.json`：`{"username":"你的账号或 UID","password":"你的密码"}`。这个文件已被 gitignore，密码不会进仓库、不会上传到任何第三方；若洛谷触发验证码/设备保护，改从浏览器 F12 复制 `lt` cookie 用 `npm run fetch:plan -- --cookie=lt=xxx`。产出 `public/data/luogu-plan.json`（题号题名和你排的日期，会随站点部署变公开）。
 
 分享链接：`?cf=xxx&lg=xxx` 直接看某人的数据（访客视图会直接切换过去，这是显式分享，不是围观默认态）；`?login=1` 直接弹出登录面板。完整机制（请求细节、边界）见 [docs/multi-user.md](docs/multi-user.md)。
 
@@ -70,7 +73,8 @@ npm run fetch:all    # 主账号 + 额外账号一起跑
 你会看到：一份能直接照着补的欠账清单。
 
 **做题计划**
-从两边欠账自动生成的一周清单：每天 3 题，卡过的优先、薄弱标签加权、难度爬坡。完成/跳过只存本机；跳过会自动补一道同标签、难度接近的题；也可粘贴洛谷导出的计划 JSON 替换。
+从两边欠账自动生成的一周清单：每天 3 题，卡过的优先、薄弱标签加权、难度爬坡。完成/跳过只存本机；跳过会自动补一道同标签、难度接近的题。
+**同步你洛谷里的做题计划**：洛谷的计划是私有数据，浏览器里登不了录（没有 CORS，密码也不该进网站）——在你自己电脑上跑一次 `npm run fetch:plan`，脚本用账号密码登录洛谷官方接口把计划拉下来，计划页就会出现「洛谷做题计划」卡片，点一下按你的排期重新铺开，已打勾的题保持完成状态。账号密码只存在本地 `luogu-cred.json`（已 gitignore，绝不提交），只发给 luogu.com.cn 官方域名；也可以改用浏览器里现成的登录态（`--cookie=lt=...`）。
 你会看到：今天该做哪三道题，和本周进度、连续打卡。
 
 **题单**
@@ -135,6 +139,7 @@ node scripts/fetch-data.mjs --cf=你的handle --luogu=你的uid
 config.json              站主 handle/UID 与要收录的额外用户（fetch 脚本读取）
 scripts/fetch-data.mjs   抓取 + 聚合，产出主账号 JSON
 scripts/fetch-luogu-extra.mjs  按 config.json users 抓取额外洛谷快照 luogu-<uid>.json
+scripts/fetch-luogu-plan.mjs   登录后拉你的洛谷做题计划（凭据只存本机 luogu-cred.json）
 src/main.js              hash 路由、主题切换、顶栏搜索分发、账号应用、启动
 src/views.js             页面渲染入口（统一导出）
 src/plan.js              做题计划：生成排序、localStorage 进度、导入
@@ -169,7 +174,7 @@ docs/                    截图、交接文档与 multi-user.md（多账号机�
 ## 已知限制
 
 - **洛谷个人题单没有公开接口**，只能读官方题单，因此题单页只覆盖官方题单。
-- **洛谷个人做题计划需要登录才能看到，没有公开接口**：做题计划页是按你两边欠账生成的离线自建计划，若要同步洛谷的计划，请在洛谷导出后粘贴到导入框。
+- **洛谷个人做题计划是私有数据，没有公开接口**：要同步用 `npm run fetch:plan` 在本机登录抓取（密码只存本地 gitignore 文件），或逐题粘贴到计划页的导入框；拉下来的计划 JSON 会随站点公开。
 - **洛谷报名必须在洛谷站内完成**（依赖你自己的登录态），本站只做跳转，不代报名；洛谷也没有开放 API 与 CORS，无法像 CF 那样实时查询。
 - **账号存在本机**：换设备 / 换浏览器要重新加一次（`localStorage`，不跨设备同步）；未收录的洛谷 UID 登录后没有洛谷数据。
 - **登录后才出数据**：未登录只渲染首页介绍与「关于」页，站主的数据也不会默认展示；想要站主视图的部署（比如给队伍用）需要访问者自行登录站主 handle。

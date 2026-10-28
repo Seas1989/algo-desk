@@ -11,6 +11,7 @@
     "fetch": "node scripts/fetch-data.mjs",
     "fetch:refresh": "node scripts/fetch-data.mjs --refresh",
     "fetch:users": "node scripts/fetch-luogu-extra.mjs",
+    "fetch:plan": "node scripts/fetch-luogu-plan.mjs",
     "fetch:all": "node scripts/fetch-data.mjs && node scripts/fetch-luogu-extra.mjs"
   },
   "devDependencies": {

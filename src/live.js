@@ -284,7 +284,7 @@ export async function loadAccount(account, base) {
     summary.luogu = emptyLuogu('').profile;
   }
 
-  return { summary, cf: r.cf, luogu, luoguMissing };
+  return { summary, cf: r.cf, luogu, luoguMissing, luoguPlan: base?.luoguPlan || null };
 }
 
 // 账号视图的顶栏提示；主包只留一个短兜底。
